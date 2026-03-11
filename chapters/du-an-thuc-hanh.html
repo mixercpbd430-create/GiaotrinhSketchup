@@ -35,6 +35,7 @@
             <li><a href="#science">🌋 Dự án 7: Trạm quan sát núi lửa — Google Earth (Liên môn)</a></li>
             <li><a href="#art">🎨 Dự án 8: Bảo tàng nghệ thuật số (Liên môn)</a></li>
             <li><a href="#geo">🌉 Dự án 9: Xây dựng trên Google Earth (Liên môn)</a></li>
+            <li><a href="#house-garage">🏘️ Dự án 10: Nhà có garage & sân vườn (Tổng hợp)</a></li>
           </ul>
         </div>
 
@@ -345,6 +346,85 @@
             <strong>•</strong> Tên lửa cạnh Trung tâm Vũ trụ Kennedy<br>
             <strong>•</strong> Mô hình trường học, nhà riêng (dùng ảnh thật "paint" lên mặt model)<br>
             <strong>•</strong> Lưu file SketchUp → <strong>Share Model</strong> → upload lên 3D Warehouse
+          </div>
+        </div>
+
+        <!-- ══════════════ HOUSE + GARAGE ══════════════ -->
+        <div class="section-divider"></div>
+        <h2 id="house-garage">🏘️ Dự án 10: Nhà có garage & sân vườn</h2>
+        <div class="project-meta">
+          <span class="project-meta__level project-meta__level--mid">Trung bình</span>
+          <span class="project-meta__category">Thiết kế tổng hợp</span>
+          <span class="project-meta__tools">Rectangle, Push/Pull, Line, Move, Eraser, Paint Bucket, Component, X-ray</span>
+        </div>
+        <p>Dự án hoàn chỉnh: dựng nhà có garage, 3 loại mái dốc khác nhau, đường và vỉa hè, trang trí bằng component. Thực hành kỹ thuật X-ray để xóa đường thừa.</p>
+
+        <h3>Phần 1: Tạo mặt bằng nhà</h3>
+        <ol class="steps">
+          <li>Vẽ <strong>Rectangle</strong> nền nhà chính (~11m × 8m)</li>
+          <li>Vẽ <strong>Rectangle</strong> garage liền bên (~4.2m × 6m)</li>
+          <li>Vẽ <strong>Rectangle</strong> lối vào phía trước (~2.1m × 3m)</li>
+          <li>Dùng <strong>Eraser</strong> xóa các đường chung giữa các hình — hợp nhất thành 1 mặt phẳng</li>
+          <li><strong>Push/Pull</strong> tường lên ~20cm tạo nền móng</li>
+        </ol>
+
+        <h3>Phần 2: Dựng tường & lối vào</h3>
+        <ol class="steps">
+          <li>Vẽ <strong>Rectangle</strong> trên nền lối vào (~50cm offset) → tạo bậc thêm</li>
+          <li><strong>Eraser</strong> xóa đường thừa → <strong>Push/Pull</strong> tường lên cao</li>
+          <li>Bật <strong>View → Face Style → X-ray</strong> để nhìn thấy đường bên trong</li>
+          <li>Dùng <strong>Eraser</strong> xóa các đường không cần thiết bên trong tường</li>
+        </ol>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Kỹ thuật X-ray</div>
+          <div class="info-box__content">
+            Bật <strong>X-ray mode</strong> (View → Face Style → X-ray) giúp nhìn xuyên qua tường để xóa đường thừa bên trong. 
+            Sau khi xóa xong, tắt X-ray để tiếp tục làm việc bình thường.
+          </div>
+        </div>
+
+        <h3>Phần 3: Tạo mái nhà chính</h3>
+        <ol class="steps">
+          <li>Dùng <strong>Line</strong> vẽ đường nối 2 <strong>Midpoint</strong> trên mặt trần nhà chính</li>
+          <li>Khi xuất hiện <strong>điểm xanh dương</strong> (midpoint indicator) → click</li>
+          <li><strong>Move</strong> đường vừa vẽ lên trên (theo trục Z) → tạo mái dốc 2 phía</li>
+        </ol>
+
+        <h3>Phần 4: Mái garage & mái lối vào</h3>
+        <ol class="steps">
+          <li>Dùng <strong>Line</strong> vẽ đường xiên từ đỉnh mái nhà chính xuống cạnh tường garage → tạo mái dốc 1 phía</li>
+          <li>Nối các đường Line hoàn chỉnh mặt mái garage</li>
+          <li>Bật <strong>X-ray</strong> → xóa các đường thừa bên trong mái</li>
+          <li>Tương tự, dùng <strong>Line</strong> tạo mái nhỏ cho lối vào phía trước</li>
+          <li>Vẽ đường tham chiếu (reference line) trước khi tạo mái → đảm bảo tỉ lệ đẹp</li>
+        </ol>
+
+        <h3>Phần 5: Vật liệu & cửa sổ</h3>
+        <ol class="steps">
+          <li><strong>Paint Bucket</strong>: tô mái = "Roofing", tường = "Bricks and Cladding"</li>
+          <li>Vẽ <strong>Rectangle</strong> trên tường → tạo cửa sổ và cửa đi</li>
+          <li><strong>Push/Pull</strong> cửa sổ vào trong → tạo chiều sâu khung cửa</li>
+          <li>Tô kính = vật liệu "Translucent"</li>
+        </ol>
+
+        <h3>Phần 6: Sân vườn & cảnh quan</h3>
+        <ol class="steps">
+          <li>Vẽ <strong>Rectangle</strong> lớn quanh nhà → tạo khu đất</li>
+          <li>Dùng <strong>Line</strong> vẽ đường (road) và vỉa hè (sidewalk) trên khu đất</li>
+          <li><strong>Push/Pull</strong> nhẹ vỉa hè lên (~10cm) để có chiều cao</li>
+          <li>Push/Pull lối vào garage xuống → tạo dốc</li>
+          <li>Tô vật liệu: đường = "Asphalt", vỉa hè = "Tile", sân = "Vegetation"</li>
+          <li>Mở <strong>Window → Components</strong> → tìm "tree", "car", "fence" → kéo thả vào model</li>
+          <li>Dùng <strong>Dimension</strong> (<span class="key">T</span>) ghi kích thước → <strong>3D Text</strong> ghi số nhà</li>
+        </ol>
+
+        <div class="info-box info-box--note">
+          <div class="info-box__title">📌 Mẹo hoàn thiện</div>
+          <div class="info-box__content">
+            <strong>•</strong> Dùng <strong>Section Plane</strong> để cắt ngang nhà → kiểm tra nội thất<br>
+            <strong>•</strong> Thêm <strong>Scenes</strong> cho các góc nhìn: mặt trước, sân sau, nhìn từ trên<br>
+            <strong>•</strong> Bật <strong>Shadows</strong> (View → Shadows) để thấy bóng đổ thực tế
           </div>
         </div>
       </div>

@@ -1,0 +1,287 @@
+
+===== PAGE 1 =====
+ 
+  
+2014  
+Juan Carlos Riofrio Herrera  
+Universidad Politécnica Salesiana  
+13-4-2014  Manual Google Sketchup Pro  
+
+===== PAGE 2 =====
+Contenido  
+INTRODUCCIÓN.  ................................ ................................ ................................ ............................  2 
+OBJETIVO GENERAL.  ................................ ................................ ................................ ......................  2 
+OBJETIVOS ESPECÍFICOS.  ................................ ................................ ................................ ...............  2 
+DESARROLLO.  ................................ ................................ ................................ ................................  3 
+1. Descripción de herramientas.  ................................ ................................ ...........................  3 
+2. Ejemplos.  ................................ ................................ ................................ ...........................  4 
+2.1. Iniciación del programa y selección de la plantilla.  ................................ ...................  4 
+2.2. Creación de la casa (Uso de la herramienta rectángulo).  ................................ .........  5 
+CONCLUSIONES.  ................................ ................................ ................................ ..........................  10 
+RECOMENDACIONES.  ................................ ................................ ................................ ..................  10 
+WEB BIBLIOGRAFÍA.  ................................ ................................ ................................ ....................  10 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+===== PAGE 3 =====
+ 
+INTRODUCCIÓN.  
+El presente documento trata paso a paso como realizar la instalación de la herramienta de 
+diseño en 3D Google Sketchup Pro 2014  (full + crack)  y su forma de uso, en donde se indicará 
+cual es la funcionalidad de cada una de sus herramientas , además se realizará un ejemplo básico 
+de una casa d onde se usará cada una de la s herramientas de esta aplicación . 
+Google Sketchup es  un programa de diseño gráfico y modelado en (3D) tres dimensiones basado 
+en caras. Para entornos de arquitectura, ingenie ría civil, diseño industrial, diseño escénico, GIS, 
+videojuegos o películas. Desarrollado por @Last Software, empresa adquirida por Google en 
+2006 y finalmente vendida a Trimble en 2012.  
+ 
+ 
+ 
+OBJETIVO GENERAL.  
+Aprender el uso de la herramienta Google Sketchup Pro 2014 para el diseño de 
+cableado estructurado.  
+ 
+ 
+ 
+OBJETIVOS ESPECÍFICOS.  
+ Aprender el uso de su paleta de herramientas.  
+ Lograr diseños en 3D de edificaciones.  
+ Modelar cableado estructurado soportado por la herramienta.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+===== PAGE 4 =====
+DESARROLLO.  
+ 
+1. Descripción de herramientas.  
+Las siguiente tabla muestra una lista descriptiva de las principales herramientas de la 
+aplicación indicando cuan es su función.  
+OPCIONES  DESCRIPCIÓN  
+ Herramienta Seleccionar. Se lecciona las entidades que se modi ficarán al utilizar 
+otras herramientas o comandos.  
+Herramienta Pintar . Asigna materiales y colores a las entidades.  
+ 
+ Crear Componentes. Crea un componente a partir de las entidades 
+seleccionadas  
+Herramienta Borrar .Borra entidades.  
+ 
+ Herramienta Línea . Dibuja aristas o entidades de línea.  
+ 
+Herramienta Mano alzada .Dibuja entidades de curva o de polilínea 3D 
+irregulares dibujadas a mano.  
+Herramienta arco de 2 puntos .Dibuja entidades con arco de 2 puntos.  
+ 
+Herramienta Arco .Dibuja entidades de arco.  
+ 
+ Herramienta Rectángulo .Dibuja entidades de cara rectangulares.  
+ 
+Herramienta Círculo .Dibuja entidades de círculo.  
+ 
+Herramienta Polígono .Dibuja entidades de polígono.  
+ 
+Herramienta Curvatura de cuerda .Dibuja entidades con curvatura de cuerda.  
+ 
+ Herramienta Mover .Mueve, alarga o copia entidades.  
+Herramienta Rotar .Rota, alarga, distorsiona o copia entidades siguiendo un 
+recorrido redondeado  
+Herramienta Escala .Redimensiona o amplía partes de la geometría con 
+respecto a otras e ntidades del modelo.  
+ Herramienta Empujar/tirar .Empuja entidades de caras o tira de ellas para 
+añadir o reducir volumen en los modelos 3D.  
+Herramienta Sígueme .Duplica u na cara siguiendo un recorrido.  
+Equidistancia Herramienta .Crea copias de líneas a una distancia uniforme de 
+las originales.  
+ Herramienta Acotación .Sitúa entidades de acotación.  
+ 
+Herramienta Texto .Sitúa entidades de texto.  
+ 
+Herramienta Texto 3D .Crea texto tridimensional con cualquier tipo de letra.  
+ 
+
+===== PAGE 5 =====
+ 
+ Herramienta Medir .Mide distancias,  crea líneas o puntos guía o cambia la 
+escala de un modelo.  
+Herramienta Transportador .Mide ángulos y crea líneas auxiliares.  
+ 
+Herramienta Ejes .Mueve o reorienta ejes de dibujo.  
+ 
+ Herramienta Desplazar .Mueve la cámara (la vista) horizontal o verticalmente.  
+ 
+Herramienta Ventana de zoom . Amplía un área concreta de la pantalla.  
+ 
+ 
+Anterior. Vuelve a la configuración de cámara anterior  
+ Herramienta Orbitar .Rota la cámara alrededor del modelo.  
+ 
+Herramienta Zoom .Acerca o aleja la cámara (la vista).  
+ 
+Ver modelo centrado. Aleja o acerca la cámara para mostrar todo el modelo.  
+ 
+ Herramienta Situar cámara .Sitúa la cámara (la vista) a una altura determinada 
+para poder examinar la línea de visión o pasear por un modelo.  
+Herramienta Caminar .Camina en (recorre) un modelo.  
+ 
+ Herramienta Girar .Pivota la cámara (la vista) desde un punto fijo.  
+ 
+Herramienta Plano de sección .Crea efectos de cortes de sección para poder 
+visualizar geometría en un modelo.  
+ 
+ 
+2. Ejemplos.  
+A continuación se procederá a la creación desde cero de una casa básica en 3D, donde se 
+mostrará el uso de las herramientas paso a paso.  
+2.1. Iniciación del programa y  selección de la plantilla.  
+Lo primero será escoger nuestra plantilla donde podremos escoger las unidades de medida en 
+las que vamos a trabajar, para nuestro caso la unidad será metros (damos clic en empezar a 
+utilizar Sketchup).  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 6 =====
+2.2. Creación de la casa  (Uso de la herramienta rectángulo) . 
+ 
+ Lo primero que vamos a hacer será crear algunos rectángulos  (con la herramienta 
+rectángulo),  que serán la base para nuestra casa; el primero que crearemos será una 
+base de 11.05 m. el siguiente será de  4.2m que servirá como la base para el garaje y el 
+último será de 2.1 m que será la entrada quedando nuestro modelo de la siguiente 
+forma.  
+ 
+ 
+ 
+ Lo siguiente es borrar las líneas que no nos sirven, esto para evitar problemas al 
+momento de unirlas con otros e lementos (Con la herramienta borrar), y procedemos a 
+darle tridimensionalidad con un espesor de unos 20 cm. (Con la herramienta 
+Empujar/Tirar).  
+ 
+ 
+ 
+ Lo siguiente será crear la entrada añadiendo un rectángulo de 50 cm (Herramienta 
+rectángulo).  
+ 
+ 
+
+===== PAGE 7 =====
+ Ahora proc edemos eliminar las líneas que no son necesarias (Herramienta eliminar).
+ 
+ Nuevamente damos tridimensionalidad con la herramienta (Empujar/ tirar).  
+ 
+ 
+ 
+ Ahora vamos a crear el techo para ello eliminamos las líneas que no vamos a usar y 
+dibujamos unas líneas cerrando la figura rectangular en el techo, para ello usamos la 
+herramienta (línea) y vemos que estamos haciendo bien cuando nos aparecen unos 
+puntos azules (esto nos indica que estamos dividiendo la mitad de la figura, es decir nos 
+muestran el centro).  
+ 
+ Lo siguiente es levantar el techo con la herramienta mover.  
+ 
+
+===== PAGE 8 =====
+ 
+ Lo siguiente es crear el techo del garaje, para ellos usamos la herramienta línea y 
+graficamos en primer lugar la parte del frente.  
+ 
+ 
+ Ahora vamos a completar el techo.  
+ 
+ Terminamos de unir to das las líneas necesarias y procedemos a eliminar las que no nos 
+sirvan con la ayuda de la herramienta (rayos X ). Teniendo antes y después lo 
+siguiente respectivamente . 
+ 
+
+===== PAGE 9 =====
+ 
+ Lo siguiente es crear el techo para la entrada usando la herramienta línea, pero 
+primero debemos trazar una línea de referencia para crear el techo.  
+ 
+ 
+ 
+ 
+ Ya con esto tenemos nuestra casa, ahora solamente añadiremos algunos elementos 
+para decorarla, como texturas y ventas.  
+ 
+
+===== PAGE 10 =====
+ Ahora para añadir  más detalles, podemos escoger  la opción de componentes, donde 
+encontraremos objetos predefinidos.  
+ 
+ Para darle un mejor efecto vamos a diseñar calles y veredas, donde añadiremos los 
+objetos que antes mencionamos , lo cual lo hacemos graficando un recuadro en la 
+base.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Sobre el recuadro dibujamos veredas y calles.  
+ 
+ 
+
+===== PAGE 11 =====
+ Lo siguiente es dar profundidades para que se vean la calle  y ver edas, a sí como la 
+entrada al garaje.  
+ 
+ Finalmente ap licando los objetos  y añadiendo detalles tenemos lo siguiente.  
+ 
+ 
+ 
+CONCLUSIONES . 
+ De este manual, se puede conc luir que Google Sketchup es una herramienta, simple de 
+usar e intuitiva, que permite crear diseños tridimensionales , partiendo de trazados 
+simples.  
+ Su uso  se vuelve  más sencillo  con la utilización de vista de rayos x, la cual nos permite 
+observar cómo  está  el diseño en su interior.  
+ Sus vistas ( cámaras ), son muy útiles para moverse a través  y dentro de los objetos.      
+RECOMENDACIONES . 
+ Se recomienda realizar prácticas  para mejorar la técnica  y ser más diestros en el uso de 
+la herramienta.  
+ Desarrollar prácticas  dentro de clases con la herramienta, para mejorar la técnica.  
+WEB BIBLIOGRAFÍA . 
+ 
+ https://www.youtube.com/watch?v=EDMBxfAaPgU . 
+ http://smashpipe.com /tech/videos/za2EG4fsDs8/Cableado_estructurado_Goo
+gle_Sketchup_V%C3%ADdeo_Presentaci%C3%B3n.html  
+ http://www.sketchup.com/es/products/sketchup -pro 
+
+===== PAGE 12 =====
+ 

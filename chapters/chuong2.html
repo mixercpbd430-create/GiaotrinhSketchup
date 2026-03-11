@@ -67,6 +67,10 @@
             <li><a href="#followme">4.9. Follow Me Tool (Alt+F)</a></li>
             <li><a href="#offset">4.10. Offset Tool (F)</a></li>
             <li><a href="#component">5. Component & Group</a></li>
+            <li><a href="#tape-measure">6.1. Tape Measure (T)</a></li>
+            <li><a href="#protractor">6.2. Protractor</a></li>
+            <li><a href="#dimension">6.3. Dimension & Text</a></li>
+            <li><a href="#section-plane">6.4. Section Plane</a></li>
           </ul>
         </div>
 
@@ -438,6 +442,133 @@
           <li><strong>Lưu ý:</strong> Model từ Warehouse không đảm bảo chất lượng — kiểm tra tỉ lệ và vị trí sau khi import</li>
           <li><strong>Upload:</strong> Bạn có thể chia sẻ mô hình của mình lên Warehouse (<strong>File → Share Model</strong>)</li>
         </ul>
+
+        <div class="section-divider"></div>
+
+        <!-- ═══ TAPE MEASURE ═══ -->
+        <h2 id="tape-measure">6.1. Tape Measure <span class="key">T</span></h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">📏</div>
+            <div class="tool-card__name">Tape Measure — Thước đo & Đường gióng</div>
+            <div class="tool-card__shortcut"><span class="key">T</span></div>
+          </div>
+          <div class="tool-card__body">
+            Đo khoảng cách giữa 2 điểm, tạo đường gióng (Guide Line) song song với cạnh, 
+            và thay đổi tỉ lệ toàn bộ mô hình.
+          </div>
+        </div>
+        <h4>Các chức năng chính</h4>
+        <ul>
+          <li><strong>Đo khoảng cách:</strong> Click điểm 1 → di chuột đến điểm 2 → khoảng cách hiện trong VCB</li>
+          <li><strong>Tạo Guide Line:</strong> Click vào cạnh → kéo chuột ra ngoài → nhập khoảng cách trong VCB → đường gióng nét đứt xuất hiện</li>
+          <li><strong>Tạo Guide Point:</strong> Click vào Endpoint → kéo → nhập khoảng cách → điểm gióng xuất hiện</li>
+          <li><strong>Thay đổi tỉ lệ:</strong> Đo một cạnh đã biết kích thước → nhập kích thước thật → SketchUp tự thu/phóng toàn bộ model</li>
+          <li><strong>Xóa Guide:</strong> Vào <strong>Edit → Delete Guides</strong> để xóa tất cả đường gióng</li>
+        </ul>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Guide Line rất hữu ích</div>
+          <div class="info-box__content">
+            Dùng Guide Line để đánh dấu vị trí cửa sổ, cửa đi, chia đều khoảng cách trên tường 
+            trước khi vẽ — đảm bảo chính xác mà không cần tính toán thủ công.
+          </div>
+        </div>
+
+        <!-- ═══ PROTRACTOR ═══ -->
+        <h2 id="protractor">6.2. Protractor — Thước đo góc</h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">📐</div>
+            <div class="tool-card__name">Protractor — Đo góc & Đường gióng góc</div>
+          </div>
+          <div class="tool-card__body">
+            Đo góc giữa 2 cạnh và tạo đường gióng theo góc xác định. 
+            Thước đo góc hiển thị như hình tròn với vạch chia độ.
+          </div>
+        </div>
+        <h4>Cách sử dụng</h4>
+        <ol class="steps">
+          <li>Chọn Protractor → đưa con trỏ vào mặt phẳng cần đo (thước xoay theo mặt phẳng)</li>
+          <li>Click chọn <strong>tâm góc</strong></li>
+          <li>Di chuột → click chọn <strong>cạnh chuẩn</strong> (cạnh thứ nhất)</li>
+          <li>Di chuột → click xác định <strong>cạnh đo</strong> (cạnh thứ hai) → góc hiện trong VCB</li>
+        </ol>
+        <ul>
+          <li><strong>Tạo đường gióng góc:</strong> Sau bước 3, nhập góc trong VCB (ví dụ: <span class="key">45</span>) → Enter → đường gióng nét đứt xuất hiện</li>
+          <li><strong>Màu sắc thước:</strong> Xanh = mặt OXY, Đỏ = mặt OYZ, Xanh dương = mặt OXZ</li>
+          <li><strong>Khóa mặt phẳng:</strong> Giữ <span class="key">Shift</span> để khóa thước trên mặt phẳng hiện tại</li>
+        </ul>
+
+        <!-- ═══ DIMENSION & TEXT ═══ -->
+        <h2 id="dimension">6.3. Dimension & Text — Chú thích kích thước</h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">✏️</div>
+            <div class="tool-card__name">Dimension, Text & 3D Text</div>
+          </div>
+          <div class="tool-card__body">
+            Gắn kích thước, văn bản chú thích và chữ 3D vào mô hình 
+            để truyền đạt thông tin thiết kế.
+          </div>
+        </div>
+
+        <h4>Dimension (Kích thước)</h4>
+        <ul>
+          <li>Click điểm đầu → click điểm cuối → kéo ra ngoài đặt vị trí kích thước</li>
+          <li>Kích thước tự động cập nhật khi thay đổi mô hình</li>
+          <li>Double-click vào kích thước để chỉnh sửa giá trị hiển thị</li>
+          <li>Đổi đơn vị: <strong>Window → Model Info → Units</strong></li>
+        </ul>
+
+        <h4>Text (Văn bản chú thích)</h4>
+        <ul>
+          <li>Click vào đối tượng → kéo ra ngoài → nhập nội dung chú thích</li>
+          <li>Text tự động hiển thị diện tích (face), chiều dài (edge), hoặc tọa độ (point)</li>
+          <li>Text luôn quay mặt về phía camera (không bị che khuất)</li>
+        </ul>
+
+        <h4>3D Text (<strong>Tools → 3D Text</strong>)</h4>
+        <ul>
+          <li>Nhập nội dung → chọn font, cỡ chữ, chiều cao → OK</li>
+          <li>Đặt lên mặt phẳng bất kỳ → chữ trở thành khối 3D</li>
+          <li>Ứng dụng: biển hiệu, số nhà, logo trên mặt tiền</li>
+        </ul>
+
+        <!-- ═══ SECTION PLANE ═══ -->
+        <h2 id="section-plane">6.4. Section Plane — Mặt cắt</h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">✂️</div>
+            <div class="tool-card__name">Section Plane — Tạo mặt cắt công trình</div>
+          </div>
+          <div class="tool-card__body">
+            Cắt mô hình theo mặt phẳng để nhìn vào bên trong. 
+            Rất hữu ích cho bản vẽ mặt cắt kiến trúc và kiểm tra nội thất.
+          </div>
+        </div>
+        <h4>Cách sử dụng</h4>
+        <ol class="steps">
+          <li>Chọn <strong>Section Plane</strong> từ toolbar (hoặc <strong>Tools → Section Plane</strong>)</li>
+          <li>Di chuột vào mặt phẳng cần cắt → mặt cắt hiện theo hướng mặt phẳng</li>
+          <li>Click để đặt mặt cắt → mô hình bị cắt ngay lập tức</li>
+          <li>Dùng <strong>Move</strong> (<span class="key">M</span>) để dịch chuyển vị trí mặt cắt</li>
+          <li>Dùng <strong>Rotate</strong> (<span class="key">Q</span>) để xoay hướng cắt</li>
+        </ol>
+        <ul>
+          <li><strong>Ẩn/hiện mặt cắt:</strong> Click phải → <strong>Active Cut</strong> để bật/tắt hiệu ứng cắt</li>
+          <li><strong>Ẩn viền cắt:</strong> <strong>View → Section Planes</strong> để ẩn/hiện đường viền mặt cắt</li>
+          <li><strong>Xuất mặt cắt:</strong> <strong>File → Export → Section Slice</strong> để xuất ra file DWG/DXF</li>
+        </ul>
+
+        <div class="info-box info-box--note">
+          <div class="info-box__title">📌 X-ray Mode — Chế độ trong suốt</div>
+          <div class="info-box__content">
+            Vào <strong>View → Face Style → X-ray</strong> để mô hình trở nên <strong>trong suốt</strong>. 
+            Rất tiện khi cần nhìn và chỉnh sửa các đường bên trong mô hình (ví dụ: xóa đường thừa bên trong nhà). 
+            Kết hợp X-ray với Section Plane giúp kiểm tra thiết kế nội thất từ mọi góc nhìn.
+          </div>
+        </div>
       </div>
 
       <div class="chapter-nav">
