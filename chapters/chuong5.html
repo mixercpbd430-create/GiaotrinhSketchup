@@ -10,7 +10,7 @@
   <div class="reading-progress" id="reading-progress"></div>
   <header class="header"><a href="../index.html" class="header__brand"><div class="header__logo">SU</div>Giáo Trình SketchUp</a><button class="header__toggle" id="sidebar-toggle">☰</button></header>
   <div class="sidebar-overlay" id="sidebar-overlay"></div>
-  <aside class="sidebar" id="sidebar"><div class="sidebar__section"><div class="sidebar__label">Nội dung</div><ul class="sidebar__nav"><li><a href="../index.html" class="sidebar__link"><span class="sidebar__icon">🏠</span>Trang chủ</a></li><li><a href="gioi-thieu.html" class="sidebar__link"><span class="sidebar__icon">📖</span>Giới thiệu</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Các Chương</div><ul class="sidebar__nav"><li><a href="chuong1.html" class="sidebar__link"><span class="sidebar__chapter-num">1</span>Giao diện người dùng</a></li><li><a href="chuong2.html" class="sidebar__link"><span class="sidebar__chapter-num">2</span>Các công cụ làm việc</a></li><li><a href="chuong3.html" class="sidebar__link"><span class="sidebar__chapter-num">3</span>Bài tập thực hành</a></li><li><a href="chuong4.html" class="sidebar__link"><span class="sidebar__chapter-num">4</span>Dựng biệt thự & nhà phố</a></li><li><a href="chuong5.html" class="sidebar__link active"><span class="sidebar__chapter-num">5</span>Sandbox Tools</a></li><li><a href="chuong6.html" class="sidebar__link"><span class="sidebar__chapter-num">6</span>Công cụ nâng cao</a></li><li><a href="chuong7.html" class="sidebar__link"><span class="sidebar__chapter-num">7</span>VRay cho SketchUp</a></li><li><a href="chuong8.html" class="sidebar__link"><span class="sidebar__chapter-num">8</span>Ôn tập</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Dự án</div><ul class="sidebar__nav"><li><a href="du-an-thuc-hanh.html" class="sidebar__link"><span class="sidebar__icon">🎯</span>Dự án thực hành</a></li></ul></div></aside>
+  <aside class="sidebar" id="sidebar"><div class="sidebar__section"><div class="sidebar__label">Nội dung</div><ul class="sidebar__nav"><li><a href="../index.html" class="sidebar__link"><span class="sidebar__icon">🏠</span>Trang chủ</a></li><li><a href="gioi-thieu.html" class="sidebar__link"><span class="sidebar__icon">📖</span>Giới thiệu</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Các Chương</div><ul class="sidebar__nav"><li><a href="chuong1.html" class="sidebar__link"><span class="sidebar__chapter-num">1</span>Giao diện người dùng</a></li><li><a href="chuong2.html" class="sidebar__link"><span class="sidebar__chapter-num">2</span>Các công cụ làm việc</a></li><li><a href="chuong3.html" class="sidebar__link"><span class="sidebar__chapter-num">3</span>Bài tập thực hành</a></li><li><a href="chuong4.html" class="sidebar__link"><span class="sidebar__chapter-num">4</span>Dựng biệt thự & nhà phố</a></li><li><a href="chuong5.html" class="sidebar__link active"><span class="sidebar__chapter-num">5</span>Sandbox Tools</a></li><li><a href="chuong6.html" class="sidebar__link"><span class="sidebar__chapter-num">6</span>Công cụ nâng cao</a></li><li><a href="chuong7.html" class="sidebar__link"><span class="sidebar__chapter-num">7</span>VRay cho SketchUp</a></li><li><a href="chuong8.html" class="sidebar__link"><span class="sidebar__chapter-num">8</span>Ôn tập</a></li><li><a href="chuong9.html" class="sidebar__link"><span class="sidebar__chapter-num">9</span>Site Plan Modeling</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Dự án</div><ul class="sidebar__nav"><li><a href="du-an-thuc-hanh.html" class="sidebar__link"><span class="sidebar__icon">🎯</span>Dự án thực hành</a></li></ul></div></aside>
 
   <main class="main">
     <div class="content">
@@ -152,6 +152,119 @@
           <li>Click xác nhận cạnh lật</li>
           <li>Chỉ những cạnh SketchUp cho phép mới có thể lật</li>
         </ul>
+
+        <!-- ==== TERRAIN ADVANCED - from SketchUp for Site Design ==== -->
+        <h2>8. Terrain Extensions — Mở rộng công cụ địa hình</h2>
+        <div class="info-box info-box--note">
+          <div class="info-box__title">📌 Nguồn bổ sung</div>
+          <div class="info-box__content">
+            Nội dung phần 8–11 tham khảo từ <strong>"SketchUp for Site Design"</strong> — Daniel Tal (Wiley, 2016).
+          </div>
+        </div>
+        <p>Ngoài Sandbox Tools có sẵn, các Extension sau giúp tạo địa hình chuyên nghiệp hơn:</p>
+
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🔧</div>
+            <div class="tool-card__name">Tools on Surface</div>
+          </div>
+          <div class="tool-card__body">Cho phép vẽ <strong>Line, Arc, Circle, Offset</strong> trực tiếp trên bề mặt cong của địa hình TIN. Cài từ Extension Warehouse.</div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">⬆️</div>
+            <div class="tool-card__name">JointPushPull</div>
+          </div>
+          <div class="tool-card__body">Mở rộng Push/Pull — cho phép đẩy/kéo nhiều face cùng lúc, kể cả face cong trên bề mặt TIN. Hỗ trợ: Normal PP, Vector PP, Joint PP.</div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🫧</div>
+            <div class="tool-card__name">Soap Skin Bubble</div>
+          </div>
+          <div class="tool-card__body">Tạo bề mặt cong phức tạp từ khung viền — mô phỏng bề mặt "bong bóng xà phòng". Dùng cho mái vòm, canopy, kết cấu tensile.</div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">⬇️</div>
+            <div class="tool-card__name">Drop GC</div>
+          </div>
+          <div class="tool-card__body">Hạ Component/Group xuống bề mặt địa hình — tự động căn chỉnh cao độ. VD: đặt cây, ghế lên đồi.</div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🎨</div>
+            <div class="tool-card__name">Artisan</div>
+          </div>
+          <div class="tool-card__body">Công cụ sculpt bề mặt mạnh mẽ: Sculpt, Subdivide, Mirror, Symmetry. Dùng cho địa hình chi tiết hoặc mặt cong kiến trúc.</div>
+        </div>
+
+        <h2>9. Intersect with Model — Giao cắt khối</h2>
+        <p>Công cụ tạo đường giao giữa các bề mặt — hữu ích khi cần cắt đường trên địa hình.</p>
+        <ol class="steps">
+          <li>Vẽ một mặt phẳng (Rectangle) cắt qua địa hình</li>
+          <li>Chọn toàn bộ → click phải → <strong>Intersect Faces → With Model</strong></li>
+          <li>SketchUp tạo ra các edge tại vị trí giao cắt</li>
+          <li>Xóa phần geometry thừa → giữ lại đường cắt trên địa hình</li>
+        </ol>
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Construction Geometry</div>
+          <div class="info-box__content">
+            Dùng <strong>Tape Measure (T)</strong> tạo Guide Line / Guide Point làm đường gióng tham chiếu khi làm việc với địa hình. Vào <strong>Edit → Delete Guides</strong> để xóa sau khi hoàn thành.
+          </div>
+        </div>
+
+        <h2>10. Conceptual Grading — San nền ý tưởng</h2>
+        <p>Phương pháp tạo mô hình san nền / tạo dốc cho cảnh quan:</p>
+
+        <h3>10.1. Dốc bộ hành (Pedestrian Ramp)</h3>
+        <ol class="steps">
+          <li>Vẽ <strong>Rectangle</strong> mặt bằng ramp (VD: <span class="key">1500 × 12000</span> mm)</li>
+          <li>Dùng <strong>Line</strong> chia thành 2 mặt tại vị trí ngã rẽ (nếu có)</li>
+          <li>Dùng <strong>Move (M)</strong> kéo cạnh lên cao <span class="key">600</span> mm tạo dốc</li>
+          <li>Độ dốc bộ hành tối đa: <strong>1:12</strong> (tức 8.33%)</li>
+        </ol>
+
+        <h3>10.2. Dốc xe hơi (Driveway Ramp)</h3>
+        <ol class="steps">
+          <li>Vẽ mặt bằng ramp xe với Rectangle + Line</li>
+          <li>Move cạnh lên/xuống tạo chênh cao</li>
+          <li>Độ dốc xe tối đa: <strong>1:6 → 1:8</strong> (12–17%)</li>
+          <li>Thêm bó vỉa 2 bên bằng Push/Pull</li>
+        </ol>
+
+        <h3>10.3. Park Landform — Địa hình công viên</h3>
+        <ol class="steps">
+          <li>Tạo mặt TIN phẳng bằng <strong>Sandbox from Scratch</strong></li>
+          <li>Dùng <strong>Smoove</strong> tạo gò đồi tự nhiên</li>
+          <li>Drape đường đi bộ lên bề mặt</li>
+          <li>Stamp khu vực đặt kiến trúc</li>
+          <li>Soften Edges → tô vật liệu Vegetation</li>
+        </ol>
+
+        <h2>11. Digital Elevation Modeling (DEM)</h2>
+        <p>Import dữ liệu địa hình thực tế từ bản vẽ đồng mức CAD:</p>
+
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🗺️</div>
+            <div class="tool-card__name">TopoShaper Extension</div>
+          </div>
+          <div class="tool-card__body">Tạo bề mặt TIN tự động từ đường đồng mức import từ CAD — nhanh hơn và chính xác hơn From Contours.</div>
+        </div>
+
+        <ol class="steps">
+          <li><strong>Import file CAD</strong> chứa đường đồng mức (contour lines)</li>
+          <li>Chọn toàn bộ đường → chạy <strong>TopoShaper</strong> → bề mặt TIN tạo tự động</li>
+          <li>Dùng <strong>Drape</strong> chiếu đường giao thông lên bề mặt</li>
+          <li>Đặt tòa nhà lên bề mặt → dùng <strong>Stamp</strong> san nền</li>
+          <li>Tạo <strong>proposed grades</strong> (cao độ thiết kế) bằng Smoove + Intersect</li>
+          <li>Hoàn thiện: tô vật liệu, thêm cảnh quan, xuất ảnh</li>
+        </ol>
       </div>
 
       <div class="chapter-nav">

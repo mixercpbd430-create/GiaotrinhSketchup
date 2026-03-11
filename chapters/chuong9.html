@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 9: Site Plan Modeling | Giáo Trình SketchUp</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="reading-progress" id="reading-progress"></div>
+  <header class="header"><a href="../index.html" class="header__brand"><div class="header__logo">SU</div>Giáo Trình SketchUp</a><button class="header__toggle" id="sidebar-toggle">☰</button></header>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <aside class="sidebar" id="sidebar"><div class="sidebar__section"><div class="sidebar__label">Nội dung</div><ul class="sidebar__nav"><li><a href="../index.html" class="sidebar__link"><span class="sidebar__icon">🏠</span>Trang chủ</a></li><li><a href="gioi-thieu.html" class="sidebar__link"><span class="sidebar__icon">📖</span>Giới thiệu</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Các Chương</div><ul class="sidebar__nav"><li><a href="chuong1.html" class="sidebar__link"><span class="sidebar__chapter-num">1</span>Giao diện người dùng</a></li><li><a href="chuong2.html" class="sidebar__link"><span class="sidebar__chapter-num">2</span>Các công cụ làm việc</a></li><li><a href="chuong3.html" class="sidebar__link"><span class="sidebar__chapter-num">3</span>Bài tập thực hành</a></li><li><a href="chuong4.html" class="sidebar__link"><span class="sidebar__chapter-num">4</span>Dựng biệt thự &amp; nhà phố</a></li><li><a href="chuong5.html" class="sidebar__link"><span class="sidebar__chapter-num">5</span>Sandbox Tools</a></li><li><a href="chuong6.html" class="sidebar__link"><span class="sidebar__chapter-num">6</span>Công cụ nâng cao</a></li><li><a href="chuong7.html" class="sidebar__link"><span class="sidebar__chapter-num">7</span>VRay cho SketchUp</a></li><li><a href="chuong8.html" class="sidebar__link"><span class="sidebar__chapter-num">8</span>Ôn tập</a></li><li><a href="chuong9.html" class="sidebar__link active"><span class="sidebar__chapter-num">9</span>Site Plan Modeling</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Dự án</div><ul class="sidebar__nav"><li><a href="du-an-thuc-hanh.html" class="sidebar__link"><span class="sidebar__icon">🎯</span>Dự án thực hành</a></li></ul></div></aside>
+
+  <main class="main">
+    <div class="content">
+      <div class="chapter-header">
+        <div class="chapter-header__breadcrumb"><a href="../index.html">Trang chủ</a> <span>/</span> <span>Chương 9</span></div>
+        <div class="chapter-header__num">Chương 9</div>
+        <h1 class="chapter-header__title">Site Plan Modeling</h1>
+        <p class="chapter-header__desc">Phương pháp SketchUp Process Modeling — dựng mô hình quy hoạch cảnh quan, mặt bằng tổng thể và kiến trúc ngoại thất.</p>
+      </div>
+
+      <div class="chapter-content">
+        <div class="info-box info-box--note">
+          <div class="info-box__title">📌 Nguồn tham khảo</div>
+          <div class="info-box__content">
+            Nội dung chương này dựa trên sách <strong>"SketchUp for Site Design: A Guide to Modeling Site Plans, Terrain, and Architecture"</strong> — Daniel Tal, ASLA, 2nd Edition (Wiley, 2016).
+          </div>
+        </div>
+
+        <!-- ==== SECTION 1: PROCESS MODELING ==== -->
+        <h2>1. Giới thiệu Process Modeling</h2>
+        <p>
+          <strong>SketchUp Process Modeling</strong> là phương pháp có hệ thống để dựng mô hình 3D từ mặt bằng quy hoạch.
+          Phương pháp tập trung vào ba lĩnh vực chính: <em>drafting</em> (vẽ nét), <em>modeling order</em> (thứ tự dựng), và <em>organization</em> (tổ chức mô hình).
+        </p>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Phương pháp 2D → 3D</div>
+          <div class="info-box__content">
+            Tất cả bắt đầu từ <strong>mặt phẳng 2D</strong> (Flatwork Base). Vẽ nét chia bề mặt → tô màu → Push/Pull tạo khối → thêm Component → hoàn thiện.
+          </div>
+        </div>
+
+        <h3>1.1. Khái niệm Flatwork Base</h3>
+        <p>
+          <strong>Flatwork Base</strong> là bề mặt phẳng 2D chứa toàn bộ layout của dự án: đường đi, bãi cỏ, bồn cây, 
+          tòa nhà (footprint), quảng trường, bãi đỗ xe... Mọi bề mặt được vẽ bằng nét và phân chia thành các <strong>face</strong> riêng biệt.
+        </p>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">📋</div>
+            <div class="tool-card__name">Quy trình tổng quát</div>
+          </div>
+          <div class="tool-card__body">
+            <ol class="steps">
+              <li><strong>Vẽ chu vi khu đất</strong> — Line, Rectangle, Arc</li>
+              <li><strong>Phân chia bề mặt</strong> — vẽ nét chia thành đường, vỉa hè, cỏ, tòa nhà</li>
+              <li><strong>Tô màu & vật liệu</strong> — Paint Bucket gán vật liệu cho từng face</li>
+              <li><strong>Tạo Group</strong> — chọn toàn bộ Flatwork → Make Group</li>
+              <li><strong>Thêm khối (Volume)</strong> — Push/Pull tường, bó vỉa, bậc cấp</li>
+              <li><strong>Thêm Component</strong> — cây xanh, ghế, đèn, người, xe</li>
+              <li><strong>Trình bày</strong> — Scenes, Shadow, Export</li>
+            </ol>
+          </div>
+        </div>
+
+        <h3>1.2. Sticky Geometry & Face Count</h3>
+        <p>
+          Trong SketchUp, các edge và face "dính" vào nhau (<strong>Sticky Geometry</strong>). Di chuyển một edge sẽ kéo theo toàn bộ geometry liên kết.
+          Để tránh xung đột, luôn sử dụng <strong>Component</strong> hoặc <strong>Group</strong> để gói ghém geometry.
+        </p>
+        <div class="info-box info-box--warning">
+          <div class="info-box__title">⚠️ Face Count & hiệu suất</div>
+          <div class="info-box__content">
+            Mỗi mặt (face) trong model đều ảnh hưởng đến tốc độ xử lý. Model có quá nhiều face (ví dụ: cây 3D chi tiết) sẽ chậm.
+            Giải pháp: đặt các đối tượng nặng vào <strong>Layer riêng</strong> → tắt khi không cần hiển thị.
+          </div>
+        </div>
+
+        <!-- ==== SECTION 2: DRAFTING THE SITE PLAN ==== -->
+        <h2>2. Dựng Site Plan cơ bản</h2>
+
+        <h3>2.1. Vẽ Flatwork Base</h3>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">✏️</div>
+            <div class="tool-card__name">Bài tập: Vẽ mặt bằng đơn giản</div>
+          </div>
+          <div class="tool-card__body">
+            <ol class="steps">
+              <li>Mở file mới → đặt đơn vị <strong>Window → Model Info → Units → Millimeters</strong></li>
+              <li>Vẽ hình chữ nhật khu đất <span class="key">100000 × 80000</span> mm</li>
+              <li>Dùng <strong>Offset (F)</strong> vào trong <span class="key">3000</span> mm — tạo vỉa hè xung quanh</li>
+              <li>Dùng <strong>Line (L)</strong> chia bên trong thành: đường, bãi cỏ, footprint tòa nhà</li>
+              <li>Dùng <strong>Rectangle</strong> vẽ footprint tòa nhà (35000 × 20000 mm)</li>
+              <li>Dùng <strong>Arc (A)</strong> vẽ lối đi bộ cong</li>
+              <li>Kiểm tra: mỗi vùng phải là một face riêng biệt (click chọn được)</li>
+            </ol>
+          </div>
+        </div>
+
+        <h3>2.2. Kiểm tra drawing (Review)</h3>
+        <ul>
+          <li>Click từng face bằng <strong>Select</strong> — đảm bảo tất cả vùng đều là face riêng</li>
+          <li>Nếu face bị thiếu → dùng <strong>Line</strong> vẽ nối lại cạnh để <em>heal face</em></li>
+          <li>Xóa các edge thừa bằng <strong>Eraser (E)</strong></li>
+          <li>Bật <strong>Profiles</strong> (View → Edge Style) để phân biệt cạnh chu vi và cạnh chia</li>
+        </ul>
+
+        <h3>2.3. Tô màu & vật liệu</h3>
+        <ol class="steps">
+          <li>Mở <strong>Window → Materials</strong></li>
+          <li>Chọn vật liệu phù hợp cho từng vùng:
+            <ul>
+              <li><strong>Vegetation</strong> → mặt cỏ, bồn cây</li>
+              <li><strong>Stone</strong> → vỉa hè, lối đi</li>
+              <li><strong>Asphalt</strong> hoặc <strong>Colors → Gray</strong> → đường xe</li>
+              <li><strong>Colors → Green</strong> → khu vườn</li>
+            </ul>
+          </li>
+          <li>Click <strong>Paint Bucket</strong> vào từng face</li>
+          <li>Vào <strong>Edit</strong> tab để chỉnh kích thước vật liệu nếu cần</li>
+        </ol>
+
+        <h3>2.4. Tạo Flatwork Group</h3>
+        <ol class="steps">
+          <li><strong>Triple-click</strong> để chọn toàn bộ geometry</li>
+          <li>Click phải → <strong>Make Group</strong></li>
+          <li>Tạo Layer "FLATWORK" → gán Group vào Layer này</li>
+        </ol>
+
+        <!-- ==== SECTION 3: IMPORT SITE PLAN ==== -->
+        <h2>3. Import Site Plan từ ảnh</h2>
+        <p>
+          Bạn có thể import bản vẽ tay (scan) hoặc ảnh site plan để làm mẫu trace (vẽ theo).
+        </p>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🖼️</div>
+            <div class="tool-card__name">Import & Scale ảnh</div>
+          </div>
+          <div class="tool-card__body">
+            <ol class="steps">
+              <li><strong>File → Import</strong> → chọn file ảnh (JPG/PNG)</li>
+              <li>Chọn <strong>"Use as Image"</strong> → click đặt vị trí → kéo xác định kích thước</li>
+              <li>Dùng <strong>Tape Measure (T)</strong> đo một khoảng cách đã biết trên ảnh</li>
+              <li>Nhập giá trị thực vào VCB → SketchUp hỏi <em>"Do you want to resize?"</em> → chọn <strong>Yes</strong></li>
+              <li>Đặt ảnh vào Layer riêng "SITE PLAN IMAGE"</li>
+              <li>Dùng <strong>Line, Arc, Rectangle</strong> trace (vẽ theo) lên trên ảnh</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Mẹo trace hiệu quả</div>
+          <div class="info-box__content">
+            <ul>
+              <li>Vẽ chu vi khu đất trước → chia lớn trước, chi tiết sau</li>
+              <li>Vẽ footprint tòa nhà → vỉa hè → đường → cỏ</li>
+              <li>Giữ <strong>Shift</strong> để khóa hướng khi vẽ Line</li>
+              <li>Dùng <strong>Offset</strong> tạo vỉa hè song song với đường</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ==== SECTION 4: ADDING VOLUMES ==== -->
+        <h2>4. Thêm khối lượng (Volume)</h2>
+        <p>
+          Sau khi hoàn thành Flatwork Base, ta bắt đầu tạo khối 3D cho các yếu tố cảnh quan.
+        </p>
+
+        <h3>4.1. Đường & bó vỉa (Curb)</h3>
+        <ol class="steps">
+          <li>Double-click vào Flatwork Group để vào instance</li>
+          <li>Click chọn face đường xe</li>
+          <li>Dùng <strong>Push/Pull (P)</strong> đẩy xuống <span class="key">-150</span> mm (hạ thấp đường)</li>
+          <li>Bó vỉa tự động tạo thành do chênh lệch chiều cao giữa vỉa hè và đường</li>
+        </ol>
+
+        <h3>4.2. Bậc cấp & ramp</h3>
+        <ol class="steps">
+          <li>Vẽ <strong>Rectangle</strong> trên face vỉa hè tại vị trí bậc cấp</li>
+          <li><strong>Push/Pull</strong> lên <span class="key">150</span> mm cho mỗi bậc</li>
+          <li>Copy bậc lên bằng <strong>Move + Ctrl</strong></li>
+          <li>Đối với ramp: dùng <strong>Line</strong> vẽ đường chéo + <strong>Push/Pull</strong></li>
+        </ol>
+
+        <h3>4.3. Tường chắn & bồn cây (Planter Wall)</h3>
+        <ol class="steps">
+          <li>Chọn face bồn cây → <strong>Push/Pull</strong> lên <span class="key">600</span> mm</li>
+          <li>Chọn face mặt trên → <strong>Offset</strong> vào <span class="key">200</span> mm (tạo viền tường)</li>
+          <li><strong>Push/Pull</strong> face bên trong xuống <span class="key">-400</span> mm (tạo lõm trồng cây)</li>
+          <li>Tô vật liệu: tường ngoài = Stone, đất bên trong = Vegetation</li>
+        </ol>
+
+        <h3>4.4. Tòa nhà (Building Volume)</h3>
+        <ol class="steps">
+          <li>Chọn face footprint tòa nhà</li>
+          <li><strong>Push/Pull</strong> lên chiều cao mong muốn (ví dụ: <span class="key">12000</span> mm cho 4 tầng)</li>
+          <li>Click phải → <strong>Make Component</strong> → đặt tên "Building"</li>
+          <li>Đặt vào Layer "BUILDINGS"</li>
+        </ol>
+
+        <!-- ==== SECTION 5: CUSTOM FURNISHINGS ==== -->
+        <h2>5. Tạo đồ ngoại thất tùy chỉnh (Custom Furnishings)</h2>
+        <p>
+          Ngoài thư viện 3D Warehouse, bạn có thể tự tạo các Component ngoại thất để thêm chi tiết cho model.
+        </p>
+
+        <h3>5.1. Bollard (Trụ chắn)</h3>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🔩</div>
+            <div class="tool-card__name">Tạo Bollard</div>
+          </div>
+          <div class="tool-card__body">
+            <ol class="steps">
+              <li>Vẽ <strong>Circle</strong> bán kính <span class="key">75</span> mm</li>
+              <li><strong>Push/Pull</strong> lên <span class="key">900</span> mm</li>
+              <li>Vẽ <strong>Arc</strong> profile trên face trên cùng → <strong>Follow Me</strong> xoay tròn tạo đỉnh bo</li>
+              <li>Chọn toàn bộ → <strong>Make Component</strong> "Bollard"</li>
+              <li>Tô vật liệu Metal</li>
+            </ol>
+          </div>
+        </div>
+
+        <h3>5.2. Đèn đường (Pedestrian Light)</h3>
+        <ol class="steps">
+          <li>Vẽ <strong>Circle</strong> bán kính <span class="key">100</span> mm → <strong>Push/Pull</strong> lên <span class="key">3500</span> mm (thân cột)</li>
+          <li>Tại đỉnh cột, vẽ hình profile chụp đèn (Arc + Line)</li>
+          <li>Dùng <strong>Follow Me</strong> xoay profile quanh trục tạo chụp đèn</li>
+          <li>Tạo cánh tay đèn bằng <strong>Line + Push/Pull</strong> hoặc <strong>Follow Me</strong></li>
+          <li><strong>Make Component</strong> "Pedestrian Light"</li>
+        </ol>
+
+        <h3>5.3. Ghế công viên (Park Bench)</h3>
+        <ol class="steps">
+          <li>Vẽ chân ghế: <strong>Rectangle</strong> <span class="key">50 × 400</span> mm → <strong>Push/Pull</strong> lên <span class="key">450</span> mm</li>
+          <li>Vẽ profile tay vịn bằng <strong>Arc + Line</strong></li>
+          <li>Tạo thanh ngồi: <strong>Rectangle</strong> <span class="key">50 × 1500</span> mm → <strong>Push/Pull</strong> dày <span class="key">30</span> mm</li>
+          <li>Copy thanh ngồi bằng <strong>Move + Ctrl</strong>, nhập <span class="key">x5</span> trong VCB</li>
+          <li>Tạo lưng tựa tương tự</li>
+          <li>Group chân ghế → <strong>Make Component</strong> "Bench Leg"</li>
+          <li>Copy chân ghế sang đầu kia → <strong>Make Component</strong> "Park Bench"</li>
+          <li>Tô vật liệu: chân = Metal, thanh gỗ = Wood</li>
+        </ol>
+
+        <h3>5.4. Lan can trang trí (Decorative Rail / Handrail)</h3>
+        <ol class="steps">
+          <li>Vẽ profile tiết diện tay vịn (hình chữ nhật bo góc)</li>
+          <li>Vẽ <strong>đường dẫn</strong> (path) cho lan can bằng <strong>Line + Arc</strong></li>
+          <li>Dùng <strong>Follow Me</strong>: chọn đường dẫn → chọn tiết diện → tay vịn tạo tự động</li>
+          <li>Vẽ từng thanh chắn đứng bằng <strong>Rectangle + Push/Pull</strong></li>
+          <li>Copy thanh chắn dọc theo lan can bằng <strong>Move + Ctrl</strong> + nhập <span class="key">/n</span> trong VCB</li>
+          <li><strong>Make Component</strong> "Handrail"</li>
+        </ol>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Profile Builder Extension</div>
+          <div class="info-box__content">
+            Extension <strong>Profile Builder</strong> cho phép tạo lan can, tường, gờ chỉ… tự động bằng cách vẽ profile + chọn đường dẫn.
+            Cài từ <strong>Extension Warehouse</strong>.
+          </div>
+        </div>
+
+        <!-- ==== SECTION 6: CUSTOM ARCHITECTURE ==== -->
+        <h2>6. Kiến trúc tùy chỉnh (Custom Architecture)</h2>
+        <p>
+          Phương pháp "điêu khắc" (sculpting) tòa nhà: bắt đầu từ khối hộp đơn giản,
+          cắt/thêm chi tiết bằng cách subdivide face.
+        </p>
+
+        <h3>6.1. Sculpting the Building</h3>
+        <ol class="steps">
+          <li>Từ khối hộp tòa nhà, <strong>Offset</strong> face mặt trước <span class="key">3000</span> mm vào trong</li>
+          <li><strong>Push/Pull</strong> face offset ra ngoài <span class="key">1500</span> mm → tạo ban công nhô</li>
+          <li>Dùng <strong>Rectangle</strong> vẽ trực tiếp trên face → chia vùng cửa sổ</li>
+          <li><strong>Push/Pull</strong> vùng cửa vào <span class="key">-200</span> mm → tạo hốc cửa</li>
+        </ol>
+
+        <h3>6.2. Window Component</h3>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🪟</div>
+            <div class="tool-card__name">Tạo cửa sổ Component</div>
+          </div>
+          <div class="tool-card__body">
+            <ol class="steps">
+              <li>Trên mặt tường, vẽ <strong>Rectangle</strong> kích thước cửa sổ (ví dụ: <span class="key">1200 × 1500</span> mm)</li>
+              <li><strong>Push/Pull</strong> vào <span class="key">-200</span> mm (bề dày tường)</li>
+              <li>Vẽ khung cửa bằng <strong>Offset</strong> face mặt trước <span class="key">50</span> mm</li>
+              <li>Tạo kính: <strong>Push/Pull</strong> face trong <span class="key">10</span> mm → tô vật liệu <strong>Translucent</strong></li>
+              <li>Vẽ thanh chia ngang/dọc bằng <strong>Line</strong></li>
+              <li>Chọn toàn bộ → <strong>Make Component</strong> "Window-01" → check <strong>"Cut Opening"</strong></li>
+              <li>Khi đặt lên tường, cửa sổ tự động khoét lỗ trên bề mặt</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="info-box info-box--note">
+          <div class="info-box__title">📌 Cut Opening</div>
+          <div class="info-box__content">
+            Khi tạo Component, bật tùy chọn <strong>"Cut Opening"</strong> — component sẽ tự động cắt lỗ trên face mà nó được gắn vào. Rất hữu ích cho cửa sổ & cửa đi.
+          </div>
+        </div>
+
+        <h3>6.3. Door Component</h3>
+        <ol class="steps">
+          <li>Vẽ tương tự Window nhưng kích thước cửa đi (ví dụ: <span class="key">900 × 2100</span> mm)</li>
+          <li>Thêm tay nắm: <strong>Circle → Push/Pull</strong></li>
+          <li><strong>Make Component</strong> "Door-01" → check "Cut Opening"</li>
+        </ol>
+
+        <h3>6.4. Balcony Component</h3>
+        <ol class="steps">
+          <li>Vẽ sàn ban công: <strong>Rectangle</strong> → <strong>Push/Pull</strong> dày <span class="key">150</span> mm</li>
+          <li>Thêm lan can bao quanh (tham khảo mục 5.4)</li>
+          <li>Thêm trụ đỡ nếu cần</li>
+          <li><strong>Make Component</strong> "Balcony-01"</li>
+          <li>Dùng <strong>Move/Copy</strong> đặt lên vị trí ban công trên tòa nhà</li>
+        </ol>
+
+        <!-- ==== SECTION 7: ARRANGING & PRESENTING ==== -->
+        <h2>7. Sắp xếp & trình bày mô hình</h2>
+
+        <h3>7.1. Logical Order — Thứ tự sắp xếp</h3>
+        <ol class="steps">
+          <li><strong>Buildings</strong> — đặt tòa nhà trước (anchor point)</li>
+          <li><strong>3D Vegetation</strong> — cây xanh lớn, tạo bóng đổ</li>
+          <li><strong>Furnishings</strong> — ghế, đèn, bollard</li>
+          <li><strong>People & Cars</strong> — thêm người và xe tạo tỉ lệ</li>
+        </ol>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Tổ chức Layer hiệu quả</div>
+          <div class="info-box__content">
+            Mỗi nhóm đối tượng nên có Layer riêng. Tắt Layer cây 3D khi làm việc với tòa nhà → tăng tốc độ SketchUp đáng kể.
+            <br><br>
+            <strong>Layer gợi ý:</strong> FLATWORK, BUILDINGS, TREES-3D, TREES-2D, FURNITURE, PEOPLE, CARS, SITE-PLAN-IMAGE
+          </div>
+        </div>
+
+        <h3>7.2. Scenes & Camera</h3>
+        <ol class="steps">
+          <li>Điều chỉnh góc nhìn bằng <strong>Orbit, Pan, Zoom</strong></li>
+          <li>Dùng <strong>Position Camera</strong> — đặt camera ở chiều cao mắt người (<span class="key">1700</span> mm)</li>
+          <li>Dùng <strong>Look Around</strong> — nhìn xung quanh từ vị trí camera</li>
+          <li>Dùng <strong>Zoom</strong> — thay đổi focal length (35mm, 45mm, 60mm...)</li>
+          <li>Vào <strong>Window → Scenes</strong> → click dấu <strong>"+"</strong> lưu khung nhìn</li>
+          <li>Tạo nhiều Scene cho các góc nhìn khác nhau (Perspective, Elevation, Plan View)</li>
+        </ol>
+
+        <h3>7.3. Shadow & Sky</h3>
+        <ol class="steps">
+          <li>Vào <strong>Window → Shadows</strong> → bật Display Shadow</li>
+          <li>Chỉnh <strong>Time</strong> và <strong>Date</strong> cho bóng đổ phù hợp thời điểm thiết kế</li>
+          <li>Chỉnh <strong>Light/Dark</strong> cho cường độ sáng phù hợp</li>
+          <li>Vào <strong>Styles → Background</strong> → bật <strong>Sky</strong> để hiển thị bầu trời</li>
+        </ol>
+
+        <h3>7.4. Xuất ảnh (Export)</h3>
+        <ol class="steps">
+          <li>Chọn Scene muốn xuất</li>
+          <li><strong>File → Export → 2D Graphic</strong></li>
+          <li>Chọn định dạng: JPG (nhẹ) hoặc PNG (trong suốt)</li>
+          <li>Click <strong>Options</strong> → bỏ chọn "Use View Size" → nhập Width: <span class="key">3840</span>, Height: <span class="key">2160</span></li>
+          <li>Check <strong>Anti-alias</strong> → OK → <strong>Export</strong></li>
+        </ol>
+
+        <!-- ==== SECTION 8: AUTOCAD TO SKETCHUP ==== -->
+        <h2>8. AutoCAD to SketchUp — Quy trình chuyên sâu</h2>
+        <p>
+          Khi bạn có bản vẽ AutoCAD chi tiết, quy trình sau đây giúp chuyển đổi hiệu quả sang SketchUp.
+        </p>
+
+        <h3>8.1. Chuẩn bị file AutoCAD</h3>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">📐</div>
+            <div class="tool-card__name">Tổ chức file CAD trước khi import</div>
+          </div>
+          <div class="tool-card__body">
+            <ol class="steps">
+              <li><strong>Save As</strong> bản sao mới (giữ file gốc)</li>
+              <li>Dùng <strong>Filter</strong> xóa Dimension, Hatch, Text, Leader</li>
+              <li>Gộp tất cả về <strong>Layer 0</strong></li>
+              <li><strong>Purge</strong> xóa dữ liệu thừa</li>
+              <li>Tách bề mặt (surfaces) thành file riêng — <strong>Write Block (WBlock)</strong></li>
+              <li>Tách đối tượng (cây, ghế…) thành <strong>AutoCAD Block</strong> → WBlock riêng</li>
+              <li>Xoay mặt bằng sao cho <strong>lối vào chính hướng xuống</strong> (tương ứng Front trong SketchUp)</li>
+            </ol>
+          </div>
+        </div>
+
+        <h3>8.2. Import vào SketchUp</h3>
+        <ol class="steps">
+          <li><strong>File → Import</strong> → chọn AutoCAD File (*.dwg, *.dxf)</li>
+          <li>Click <strong>Options</strong> → <strong>Scale = mm</strong> (rất quan trọng!)</li>
+          <li>Click <strong>Open</strong> → Kiểm tra Import Results</li>
+          <li>Zoom Extents → kiểm tra tỉ lệ bằng <strong>Tape Measure</strong></li>
+        </ol>
+
+        <h3>8.3. Heal the Flatwork Base</h3>
+        <p>
+          Các đường CAD thường có lỗi khiến SketchUp không tạo được face. Cần "chữa" (heal):
+        </p>
+        <ol class="steps">
+          <li>Dùng <strong>Line (L)</strong> vẽ lại các cạnh bị thiếu → face tự xuất hiện</li>
+          <li>Kiểm tra đường chồng lấn (<strong>Overlapping Lines</strong>) → xóa đường trùng</li>
+          <li>Kiểm tra đường quá ngắn (<strong>Short Lines</strong>) → gộp hoặc xóa</li>
+          <li>Extension hỗ trợ: <strong>CleanUp³</strong>, <strong>Edge Tools</strong> trên Extension Warehouse</li>
+        </ol>
+
+        <div class="info-box info-box--note">
+          <div class="info-box__title">📌 Extension hỗ trợ CAD Cleanup</div>
+          <div class="info-box__content">
+            <ul>
+              <li><strong>CleanUp³</strong> — tự động xóa đường trùng, merge vertex gần nhau</li>
+              <li><strong>Edge Tools</strong> — tìm và sửa edge bị hở</li>
+              <li><strong>Weld</strong> — hàn nhiều edge liền kề thành một polyline</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>8.4. Hoàn thiện model</h3>
+        <ol class="steps">
+          <li>Sau khi heal xong → tô vật liệu → tạo Group Flatwork</li>
+          <li>Import file đối tượng (WBlock) → <strong>Explode</strong> → thay thế bằng Component 3D</li>
+          <li>Áp dụng Volume (Push/Pull) + Component + Scenes như các bước trước</li>
+        </ol>
+
+        <!-- ==== SECTION 9: BÀI TẬP ==== -->
+        <h2>9. Bài tập: Dự án Site Plan Plaza</h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🏗️</div>
+            <div class="tool-card__name">Dự án thực hành tổng hợp</div>
+          </div>
+          <div class="tool-card__body">
+            <p>Dựng mô hình quảng trường đô thị hoàn chỉnh theo phương pháp Process Modeling:</p>
+            <ol class="steps">
+              <li><strong>Vẽ Flatwork</strong>: khu đất 120m × 90m, đường bao, vỉa hè, quảng trường trung tâm, 2 tòa nhà</li>
+              <li><strong>Tô vật liệu</strong>: Stone cho quảng trường, Vegetation cho cảnh quan, Asphalt cho đường</li>
+              <li><strong>Tạo Volume</strong>:
+                <ul>
+                  <li>Hạ đường xe -150mm</li>
+                  <li>Bó vỉa 150mm</li>
+                  <li>Bậc cấp 3 × 150mm</li>
+                  <li>Tường chắn bồn cây 600mm</li>
+                  <li>Tòa nhà A: 15000mm (5 tầng)</li>
+                  <li>Tòa nhà B: 9000mm (3 tầng)</li>
+                </ul>
+              </li>
+              <li><strong>Tạo Custom Component</strong>:
+                <ul>
+                  <li>4× Bollard dọc vỉa hè</li>
+                  <li>6× Ghế công viên quanh quảng trường</li>
+                  <li>4× Đèn đường</li>
+                  <li>Lan can bậc cấp</li>
+                </ul>
+              </li>
+              <li><strong>Kiến trúc</strong>:
+                <ul>
+                  <li>Sculpt tòa nhà A: tạo hốc cửa, ban công tầng 2–5</li>
+                  <li>Tạo Window Component (Cut Opening) → copy dọc mặt đứng</li>
+                  <li>Tạo Door Component → đặt tầng trệt</li>
+                </ul>
+              </li>
+              <li><strong>Cảnh quan</strong>: thêm cây xanh từ 3D Warehouse, người và xe</li>
+              <li><strong>Trình bày</strong>: 3 Scenes (Perspective, Bird-Eye, Elevation), bật Shadow, xuất ảnh 4K</li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="chapter-nav">
+        <a href="chuong8.html" class="chapter-nav__link chapter-nav__link--prev"><span class="chapter-nav__label">← Trước</span><span class="chapter-nav__title">Chương 8: Ôn tập</span></a>
+        <a href="du-an-thuc-hanh.html" class="chapter-nav__link chapter-nav__link--next"><span class="chapter-nav__label">Tiếp theo →</span><span class="chapter-nav__title">Dự án thực hành</span></a>
+      </div>
+      <footer class="footer"><p class="footer__text">Giáo trình SketchUp — <span class="footer__author">DORIC</span> — KTS: <span class="footer__author">Nguyễn Văn Duy</span></p></footer>
+    </div>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>

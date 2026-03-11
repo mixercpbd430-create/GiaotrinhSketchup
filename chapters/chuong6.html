@@ -10,7 +10,7 @@
   <div class="reading-progress" id="reading-progress"></div>
   <header class="header"><a href="../index.html" class="header__brand"><div class="header__logo">SU</div>Giáo Trình SketchUp</a><button class="header__toggle" id="sidebar-toggle">☰</button></header>
   <div class="sidebar-overlay" id="sidebar-overlay"></div>
-  <aside class="sidebar" id="sidebar"><div class="sidebar__section"><div class="sidebar__label">Nội dung</div><ul class="sidebar__nav"><li><a href="../index.html" class="sidebar__link"><span class="sidebar__icon">🏠</span>Trang chủ</a></li><li><a href="gioi-thieu.html" class="sidebar__link"><span class="sidebar__icon">📖</span>Giới thiệu</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Các Chương</div><ul class="sidebar__nav"><li><a href="chuong1.html" class="sidebar__link"><span class="sidebar__chapter-num">1</span>Giao diện người dùng</a></li><li><a href="chuong2.html" class="sidebar__link"><span class="sidebar__chapter-num">2</span>Các công cụ làm việc</a></li><li><a href="chuong3.html" class="sidebar__link"><span class="sidebar__chapter-num">3</span>Bài tập thực hành</a></li><li><a href="chuong4.html" class="sidebar__link"><span class="sidebar__chapter-num">4</span>Dựng biệt thự & nhà phố</a></li><li><a href="chuong5.html" class="sidebar__link"><span class="sidebar__chapter-num">5</span>Sandbox Tools</a></li><li><a href="chuong6.html" class="sidebar__link active"><span class="sidebar__chapter-num">6</span>Công cụ nâng cao</a></li><li><a href="chuong7.html" class="sidebar__link"><span class="sidebar__chapter-num">7</span>VRay cho SketchUp</a></li><li><a href="chuong8.html" class="sidebar__link"><span class="sidebar__chapter-num">8</span>Ôn tập</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Dự án</div><ul class="sidebar__nav"><li><a href="du-an-thuc-hanh.html" class="sidebar__link"><span class="sidebar__icon">🎯</span>Dự án thực hành</a></li></ul></div></aside>
+  <aside class="sidebar" id="sidebar"><div class="sidebar__section"><div class="sidebar__label">Nội dung</div><ul class="sidebar__nav"><li><a href="../index.html" class="sidebar__link"><span class="sidebar__icon">🏠</span>Trang chủ</a></li><li><a href="gioi-thieu.html" class="sidebar__link"><span class="sidebar__icon">📖</span>Giới thiệu</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Các Chương</div><ul class="sidebar__nav"><li><a href="chuong1.html" class="sidebar__link"><span class="sidebar__chapter-num">1</span>Giao diện người dùng</a></li><li><a href="chuong2.html" class="sidebar__link"><span class="sidebar__chapter-num">2</span>Các công cụ làm việc</a></li><li><a href="chuong3.html" class="sidebar__link"><span class="sidebar__chapter-num">3</span>Bài tập thực hành</a></li><li><a href="chuong4.html" class="sidebar__link"><span class="sidebar__chapter-num">4</span>Dựng biệt thự & nhà phố</a></li><li><a href="chuong5.html" class="sidebar__link"><span class="sidebar__chapter-num">5</span>Sandbox Tools</a></li><li><a href="chuong6.html" class="sidebar__link active"><span class="sidebar__chapter-num">6</span>Công cụ nâng cao</a></li><li><a href="chuong7.html" class="sidebar__link"><span class="sidebar__chapter-num">7</span>VRay cho SketchUp</a></li><li><a href="chuong8.html" class="sidebar__link"><span class="sidebar__chapter-num">8</span>Ôn tập</a></li><li><a href="chuong9.html" class="sidebar__link"><span class="sidebar__chapter-num">9</span>Site Plan Modeling</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Dự án</div><ul class="sidebar__nav"><li><a href="du-an-thuc-hanh.html" class="sidebar__link"><span class="sidebar__icon">🎯</span>Dự án thực hành</a></li></ul></div></aside>
 
   <main class="main">
     <div class="content">
@@ -22,6 +22,72 @@
       </div>
 
       <div class="chapter-content">
+        <!-- ==== EXTENSION WAREHOUSE - from SketchUp for Site Design ==== -->
+        <h2>Extension Warehouse — Cài đặt Extension</h2>
+        <div class="info-box info-box--note">
+          <div class="info-box__title">📌 Nguồn bổ sung</div>
+          <div class="info-box__content">
+            Phần Extension Warehouse tham khảo từ <strong>"SketchUp for Site Design"</strong> — Daniel Tal (Wiley, 2016), Chapter 5.
+          </div>
+        </div>
+        <p>
+          Ngoài các công cụ có sẵn, SketchUp hỗ trợ cài đặt <strong>Extension</strong> (trước đây gọi là Plugin/Ruby Script) 
+          để mở rộng khả năng. Extension Warehouse là kho ứng dụng chính thức của SketchUp.
+        </p>
+
+        <h3>Cách cài đặt Extension từ Extension Warehouse</h3>
+        <ol class="steps">
+          <li>Vào <strong>Window → Extension Warehouse</strong></li>
+          <li>Đăng nhập tài khoản Google/Trimble</li>
+          <li>Tìm kiếm tên extension (VD: "Weld", "JointPushPull")</li>
+          <li>Click <strong>Install</strong> → SketchUp tải và cài tự động</li>
+          <li>Khởi động lại SketchUp nếu cần</li>
+        </ol>
+
+        <h3>Cách cài đặt Extension từ file .rbz</h3>
+        <ol class="steps">
+          <li>Tải file <strong>.rbz</strong> từ website của tác giả (VD: SketchUcation, Smustard)</li>
+          <li>Vào <strong>Window → Preferences → Extensions</strong></li>
+          <li>Click <strong>Install Extension</strong> → chọn file .rbz</li>
+          <li>Click <strong>Yes</strong> để xác nhận → khởi động lại</li>
+        </ol>
+
+        <h3>Extension được khuyến nghị cho Site Design</h3>
+        <div class="plugin-grid">
+          <div class="plugin-item">
+            <div class="plugin-item__num">⭐</div>
+            <div class="plugin-item__name">Weld</div>
+            <div class="plugin-item__desc">Hàn nhiều edge liền kề thành một polyline liên tục. Rất hữu ích khi cần Follow Me trên đường phức tạp.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">⭐</div>
+            <div class="plugin-item__name">JointPushPull</div>
+            <div class="plugin-item__desc">Push/Pull nhiều face cùng lúc, kể cả face cong. Hỗ trợ Normal PP, Vector PP, Joint PP.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">⭐</div>
+            <div class="plugin-item__name">Soap Skin Bubble</div>
+            <div class="plugin-item__desc">Tạo bề mặt cong tensile từ khung viền — dùng cho canopy, mái vòm, kết cấu căng.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">⭐</div>
+            <div class="plugin-item__name">Profile Builder</div>
+            <div class="plugin-item__desc">Tạo lan can, gờ chỉ, viền… tự động bằng cách vẽ profile rồi chọn đường dẫn.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">⭐</div>
+            <div class="plugin-item__name">TopoShaper</div>
+            <div class="plugin-item__desc">Tạo bề mặt TIN từ đường đồng mức — chính xác hơn Sandbox From Contours.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">⭐</div>
+            <div class="plugin-item__name">CleanUp³</div>
+            <div class="plugin-item__desc">Dọn dẹp model: xóa đường trùng, gộp vertex gần, xóa face ẩn. Rất cần khi import từ CAD.</div>
+          </div>
+        </div>
+
+        <hr style="margin: 2rem 0; border-color: rgba(255,255,255,0.1);">
+
         <h2>Plugin 1001 Bit</h2>
         <p>Trình bày một số nhóm Ruby hữu hiệu nhất và thông dụng nhất cho SketchUp. Plugin 1001 Bit cung cấp hơn 30 công cụ chuyên dụng cho thiết kế kiến trúc.</p>
 
