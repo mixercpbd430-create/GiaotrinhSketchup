@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 3: Bài tập thực hành | Giáo Trình SketchUp</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="reading-progress" id="reading-progress"></div>
+  <header class="header"><a href="../index.html" class="header__brand"><div class="header__logo">SU</div>Giáo Trình SketchUp</a><button class="header__toggle" id="sidebar-toggle">☰</button></header>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <aside class="sidebar" id="sidebar"><div class="sidebar__section"><div class="sidebar__label">Nội dung</div><ul class="sidebar__nav"><li><a href="../index.html" class="sidebar__link"><span class="sidebar__icon">🏠</span>Trang chủ</a></li><li><a href="gioi-thieu.html" class="sidebar__link"><span class="sidebar__icon">📖</span>Giới thiệu</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Các Chương</div><ul class="sidebar__nav"><li><a href="chuong1.html" class="sidebar__link"><span class="sidebar__chapter-num">1</span>Giao diện người dùng</a></li><li><a href="chuong2.html" class="sidebar__link"><span class="sidebar__chapter-num">2</span>Các công cụ làm việc</a></li><li><a href="chuong3.html" class="sidebar__link active"><span class="sidebar__chapter-num">3</span>Bài tập thực hành</a></li><li><a href="chuong4.html" class="sidebar__link"><span class="sidebar__chapter-num">4</span>Dựng biệt thự & nhà phố</a></li><li><a href="chuong5.html" class="sidebar__link"><span class="sidebar__chapter-num">5</span>Sandbox Tools</a></li><li><a href="chuong6.html" class="sidebar__link"><span class="sidebar__chapter-num">6</span>Công cụ nâng cao</a></li><li><a href="chuong7.html" class="sidebar__link"><span class="sidebar__chapter-num">7</span>VRay cho SketchUp</a></li><li><a href="chuong8.html" class="sidebar__link"><span class="sidebar__chapter-num">8</span>Ôn tập</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Dự án</div><ul class="sidebar__nav"><li><a href="du-an-thuc-hanh.html" class="sidebar__link"><span class="sidebar__icon">🎯</span>Dự án thực hành</a></li></ul></div></aside>
+
+  <main class="main">
+    <div class="content">
+      <div class="chapter-header">
+        <div class="chapter-header__breadcrumb"><a href="../index.html">Trang chủ</a> <span>/</span> <span>Chương 3</span></div>
+        <div class="chapter-header__num">Chương 3</div>
+        <h1 class="chapter-header__title">Bài tập thực hành các công cụ đã học</h1>
+        <p class="chapter-header__desc">Thực hành dựng hình bộ phận kiến trúc — ví dụ dựng hình 1 cánh cửa đi từ bản vẽ AutoCAD.</p>
+      </div>
+
+      <div class="chapter-content">
+        <h2>Mục tiêu</h2>
+        <p>Trình bày các ví dụ dựng hình bộ phận kiến trúc, kết hợp các công cụ đã học ở Chương 2: Line, Rectangle, Push/Pull, Offset, Move, Rotate, Scale, Follow Me, Group, Component.</p>
+
+        <h2>Ví dụ: Dựng hình 1 cánh cửa đi</h2>
+
+        <h3>Bước 1: Import bản vẽ AutoCAD</h3>
+        <ol class="steps">
+          <li>Vào <strong>File → Import</strong>, chọn file AutoCAD</li>
+          <li>Click <strong>Options</strong> → thiết lập đơn vị, tỉ lệ đúng → Click OK</li>
+          <li>Click <strong>Open</strong> → xuất hiện bảng Import Results → click Close</li>
+        </ol>
+
+        <div class="info-box info-box--note">
+          <div class="info-box__title">📌 Lưu ý Import CAD</div>
+          <div class="info-box__content">
+            Trước khi Import, cần chỉnh đơn vị trong phần <strong>Options</strong> cho khớp với bản vẽ CAD. 
+            Sau khi Import, <strong>Group từng bộ phận</strong> cánh cửa lại trước khi thao tác vẽ.
+          </div>
+        </div>
+
+        <h3>Bước 2: Chuẩn bị</h3>
+        <ol class="steps">
+          <li>Group từng bộ phận cánh cửa lại</li>
+          <li>Dùng <strong>Rotate</strong> xoay cánh cửa dọc theo trục Z</li>
+          <li>Vào Style chỉnh nét hiển thị mảnh cho dễ vẽ</li>
+        </ol>
+
+        <h3>Bước 3: Dựng khung ngoại cửa</h3>
+        <ol class="steps">
+          <li>Sử dụng công cụ <strong>Line</strong>, <strong>Rectangle</strong> để vẽ khung ngoại</li>
+          <li>Dùng <strong>Push/Pull</strong> → nhập độ dày 250mm</li>
+          <li>Click chọn khung vừa vẽ → <strong>Make Group</strong></li>
+          <li>Click chọn <strong>Hide</strong> khung cửa cho dễ vẽ các bước tiếp theo</li>
+        </ol>
+
+        <h3>Bước 4: Vẽ cánh cửa</h3>
+        <ol class="steps">
+          <li>Xóa các mặt không cần thiết</li>
+          <li><strong>Push/Pull</strong> khung cửa dày 40mm</li>
+          <li>Vẽ khung cửa phía trên tương tự</li>
+          <li><strong>Group</strong> cánh cửa lại → chọn <strong>Hide</strong></li>
+        </ol>
+
+        <h3>Bước 5: Vẽ các Pano cửa</h3>
+        <ol class="steps">
+          <li>Vẽ đường bao của khung cửa → <strong>Push/Pull</strong> chiều dày 5mm</li>
+          <li>Vẽ đường bao trong → nối các đường chéo góc</li>
+          <li>Dùng <strong>Move</strong> đưa mặt phẳng chọn ra 5mm</li>
+          <li><strong>Push/Pull</strong> mặt phẳng vừa Move ra thêm 5mm</li>
+          <li>Làm tương tự cho mặt sau</li>
+          <li><strong>Group</strong> Pano cửa → Copy ra cho các vị trí khác.</li>
+        </ol>
+
+        <h3>Bước 6: Lắp ráp</h3>
+        <ol class="steps">
+          <li>Vào <strong>Edit → Unhide → All</strong> để hiện lại tất cả các bộ phận</li>
+          <li><strong>Move</strong> các Pano cửa vào giữa cánh cửa</li>
+          <li>Vẽ thêm nẹp che khung cửa với tường</li>
+          <li>Vẽ đường dẫn xung quanh khung cửa</li>
+          <li>Sử dụng <strong>Follow Me</strong> để trượt hình nẹp theo đường dẫn</li>
+          <li><strong>Make Component</strong> nẹp → Copy → dùng <strong>Scale</strong> để đối xứng</li>
+        </ol>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Kết hợp Component + Scale</div>
+          <div class="info-box__content">
+            Khi cần tạo nẹp đối xứng: <strong>Make Component</strong> nẹp ban đầu → Copy ra → 
+            dùng <strong>Scale</strong> kéo grip giữa ngược chiều đến khi VCB hiển thị <strong>"-1"</strong> 
+            để tạo phép đối xứng hoàn hảo.
+          </div>
+        </div>
+
+        <h2>Tổng kết các công cụ đã dùng</h2>
+        <table>
+          <thead>
+            <tr><th>Công cụ</th><th>Ứng dụng trong bài</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Import</td><td>Đưa bản vẽ CAD vào SketchUp</td></tr>
+            <tr><td>Line & Rectangle</td><td>Vẽ khung cửa, nẹp</td></tr>
+            <tr><td>Push/Pull</td><td>Tạo độ dày cho khung, cánh, pano</td></tr>
+            <tr><td>Move</td><td>Di chuyển, lắp ráp các bộ phận</td></tr>
+            <tr><td>Rotate</td><td>Xoay cánh cửa theo trục Z</td></tr>
+            <tr><td>Scale</td><td>Tạo đối xứng nẹp cửa</td></tr>
+            <tr><td>Follow Me</td><td>Trượt dẫn nẹp theo đường dẫn</td></tr>
+            <tr><td>Group / Component</td><td>Nhóm và quản lý các bộ phận</td></tr>
+            <tr><td>Hide / Unhide</td><td>Ẩn/hiện bộ phận khi làm việc</td></tr>
+          </tbody>
+        </table>
+
+        <div class="section-divider"></div>
+
+        <h2>Bài tập bổ sung 1: Dựng ngôi nhà đơn giản</h2>
+        <p>Bài tập cơ bản giúp làm quen với các công cụ chính: Rectangle, Push/Pull, Line, Move, Arc, Eraser, Paint Bucket.</p>
+        
+        <h3>Bước 1: Tạo khối hộp</h3>
+        <ol class="steps">
+          <li>Vẽ <strong>Rectangle</strong> trên mặt đất</li>
+          <li>Dùng <strong>Push/Pull</strong> kéo lên thành khối hộp (tường nhà)</li>
+        </ol>
+
+        <h3>Bước 2: Vẽ mái nhà</h3>
+        <ol class="steps">
+          <li>Dùng <strong>Line</strong> vẽ đường nối 2 <strong>Midpoint</strong> (trung điểm) trên mái</li>
+          <li>Dùng <strong>Move</strong> kéo đường vừa vẽ lên trên (theo trục xanh dương) để tạo mái dốc</li>
+        </ol>
+
+        <h3>Bước 3: Cửa đi</h3>
+        <ol class="steps">
+          <li>Vẽ <strong>Rectangle</strong> trên mặt trước → tạo hình cửa</li>
+          <li>Dùng <strong>Arc</strong> vẽ cung tròn ở đỉnh cửa → tạo cửa vòm</li>
+          <li>Dùng <strong>Eraser</strong> xóa cạnh ngang trên → hợp nhất thành 1 mặt cửa</li>
+          <li>Click phải vào mặt cửa → <strong>Erase</strong> để tạo lỗ nhìn xuyên qua nhà</li>
+        </ol>
+
+        <h3>Bước 4: Cửa sổ</h3>
+        <ol class="steps">
+          <li>Vẽ <strong>Rectangle</strong> trên mặt bên → tạo cửa sổ</li>
+          <li>Có thể dùng <strong>Line</strong> vẽ hình dạng bất kỳ — đảm bảo tooltip <strong>"On Face"</strong> khi vẽ</li>
+          <li>Kết thúc hình tại điểm bắt đầu — đường viền sẽ trở nên mảnh khi đúng</li>
+        </ol>
+
+        <h3>Bước 5: Tô màu & vật liệu</h3>
+        <ol class="steps">
+          <li>Click <strong>Paint Bucket</strong> (<span class="key">B</span>) → mở cửa sổ Materials</li>
+          <li>Chọn thư mục <strong>"Roofing"</strong> → chọn vật liệu mái → click từng mặt mái</li>
+          <li>Chọn thư mục <strong>"Bricks and Cladding"</strong> → tô tường</li>
+          <li>Chọn thư mục <strong>"Translucent"</strong> → tô kính cửa sổ (trong suốt)</li>
+          <li>Vẽ <strong>Line</strong> chia mặt kính → tô nhiều màu Translucent tạo cửa sổ nhiều màu</li>
+        </ol>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Mẹo thêm chi tiết</div>
+          <div class="info-box__content">
+            <strong>Cửa đi:</strong> Vẽ lại cạnh cửa bằng Line → mặt cửa xuất hiện trở lại → tô vật liệu gỗ từ "Wood" → thêm Circle làm mắt cửa.<br>
+            <strong>3D Text:</strong> Dùng <strong>Tools → 3D Text</strong> để in tên/số nhà lên mặt tiền.
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <h2>Bài tập bổ sung 2: Tòa nhà với Component</h2>
+        <p>Bài tập trung bình — thực hành Component, Copy Array, Make Unique. Dựng tòa nhà cao tầng với hệ cửa sổ tròn lặp lại.</p>
+
+        <h3>Bước 1: Dựng khối nhà</h3>
+        <ol class="steps">
+          <li>Dựng khối hộp cao (tòa nhà)</li>
+          <li>Dùng <strong>Arc</strong> vẽ nửa vòng tròn trên mái (đảm bảo vẽ theo hướng trục xanh dương)</li>
+          <li><strong>Push/Pull</strong> hình cung sang phía đối diện → tạo mái vòm</li>
+          <li>Dùng <strong>Move</strong> kéo 1 cạnh giữa tường → chia tường thành 2 phần: thẳng đứng và nghiêng</li>
+        </ol>
+
+        <h3>Bước 2: Tạo Component cửa sổ</h3>
+        <ol class="steps">
+          <li>Tô Paint Bucket cho mặt tường</li>
+          <li>Vẽ 2 <strong>Circle</strong> đồng tâm tại góc tường → tạo cửa sổ tròn có khung</li>
+          <li><strong>Select</strong> cả 2 mặt → Click phải → <strong>Make Component</strong></li>
+          <li>Đặt tên, check <strong>"Cut Opening"</strong> và <strong>"Replace selection with component"</strong></li>
+        </ol>
+
+        <div class="info-box info-box--note">
+          <div class="info-box__title">📌 Cut Opening</div>
+          <div class="info-box__content">
+            Thuộc tính <strong>Cut Opening</strong> khiến component tự khoét lỗ khi đặt lên mặt phẳng — 
+            hoàn hảo cho cửa sổ và cửa đi. Khi copy component sang mặt khác, lỗ cũng tự tạo.
+          </div>
+        </div>
+
+        <h3>Bước 3: Copy dãy cửa sổ</h3>
+        <ol class="steps">
+          <li>Dùng <strong>Move</strong> + <span class="key">Ctrl</span> → copy cửa sổ sang bên phải</li>
+          <li>Nhập <span class="key">x3</span> → Enter → tạo dãy 4 cửa sổ ngang</li>
+          <li><strong>Select</strong> cả dãy → Move + <span class="key">Ctrl</span> copy lên trên → nhập <span class="key">x2</span> → tạo thêm 2 hàng</li>
+          <li>Copy một số cửa sổ lên mặt nghiêng — chúng tự cắt mặt nghiêng</li>
+        </ol>
+
+        <h3>Bước 4: Chỉnh sửa đồng loạt + Make Unique</h3>
+        <ol class="steps">
+          <li><strong>Double-click</strong> vào bất kỳ cửa sổ nào → vào chế độ chỉnh sửa component</li>
+          <li>Dùng <strong>Push/Pull</strong> đẩy vòng ngoài → tạo khung nổi</li>
+          <li>Tô màu → <strong>Tất cả cửa sổ tự cập nhật</strong></li>
+          <li>Click ngoài để đóng → Chọn các cửa sổ trên mặt nghiêng → Click phải → <strong>Make Unique</strong></li>
+          <li>Chỉnh sửa cửa sổ Unique: thêm mái che bằng <strong>Push/Pull</strong> + <span class="key">Ctrl</span></li>
+        </ol>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Push/Pull + Ctrl</div>
+          <div class="info-box__content">
+            Giữ <span class="key">Ctrl</span> khi Pull sẽ tạo <strong>phần mới</strong> thay vì kéo mặt phẳng hiện tại. 
+            Rất hữu ích khi thêm chi tiết (mái che, gờ, khung cửa) mà không ảnh hưởng hình dạng gốc.
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter-nav">
+        <a href="chuong2.html" class="chapter-nav__link chapter-nav__link--prev"><span class="chapter-nav__label">← Trước</span><span class="chapter-nav__title">Chương 2: Các công cụ làm việc</span></a>
+        <a href="chuong4.html" class="chapter-nav__link chapter-nav__link--next"><span class="chapter-nav__label">Tiếp theo →</span><span class="chapter-nav__title">Chương 4: Dựng biệt thự & nhà phố</span></a>
+      </div>
+      <footer class="footer"><p class="footer__text">Giáo trình SketchUp — <span class="footer__author">DORIC</span> — KTS: <span class="footer__author">Nguyễn Văn Duy</span></p></footer>
+    </div>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dự án thực hành | Giáo Trình SketchUp</title>
+  <meta name="description" content="9 dự án thực hành SketchUp chia 3 cấp độ: thiết kế, toán học, liên môn. Từ ngôi nhà đơn giản đến icosahedron và tích hợp Google Earth.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="reading-progress" id="reading-progress"></div>
+  <header class="header"><a href="../index.html" class="header__brand"><div class="header__logo">SU</div>Giáo Trình SketchUp</a><button class="header__toggle" id="sidebar-toggle">☰</button></header>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <aside class="sidebar" id="sidebar"><div class="sidebar__section"><div class="sidebar__label">Nội dung</div><ul class="sidebar__nav"><li><a href="../index.html" class="sidebar__link"><span class="sidebar__icon">🏠</span>Trang chủ</a></li><li><a href="gioi-thieu.html" class="sidebar__link"><span class="sidebar__icon">📖</span>Giới thiệu</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Các Chương</div><ul class="sidebar__nav"><li><a href="chuong1.html" class="sidebar__link"><span class="sidebar__chapter-num">1</span>Giao diện người dùng</a></li><li><a href="chuong2.html" class="sidebar__link"><span class="sidebar__chapter-num">2</span>Các công cụ làm việc</a></li><li><a href="chuong3.html" class="sidebar__link"><span class="sidebar__chapter-num">3</span>Bài tập thực hành</a></li><li><a href="chuong4.html" class="sidebar__link"><span class="sidebar__chapter-num">4</span>Dựng biệt thự & nhà phố</a></li><li><a href="chuong5.html" class="sidebar__link"><span class="sidebar__chapter-num">5</span>Sandbox Tools</a></li><li><a href="chuong6.html" class="sidebar__link"><span class="sidebar__chapter-num">6</span>Công cụ nâng cao</a></li><li><a href="chuong7.html" class="sidebar__link"><span class="sidebar__chapter-num">7</span>VRay cho SketchUp</a></li><li><a href="chuong8.html" class="sidebar__link"><span class="sidebar__chapter-num">8</span>Ôn tập</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Dự án</div><ul class="sidebar__nav"><li><a href="du-an-thuc-hanh.html" class="sidebar__link active"><span class="sidebar__icon">🎯</span>Dự án thực hành</a></li></ul></div></aside>
+
+  <main class="main">
+    <div class="content">
+      <div class="chapter-header">
+        <div class="chapter-header__breadcrumb"><a href="../index.html">Trang chủ</a> <span>/</span> <span>Dự án thực hành</span></div>
+        <div class="chapter-header__num">Projects</div>
+        <h1 class="chapter-header__title">Dự án thực hành SketchUp</h1>
+        <p class="chapter-header__desc">9 dự án thực hành theo 3 cấp độ — Thiết kế, Toán học, và Liên môn. Mỗi dự án kết hợp nhiều công cụ để tạo sản phẩm hoàn chỉnh.</p>
+      </div>
+
+      <div class="chapter-content">
+        <div class="toc">
+          <div class="toc__title">Danh sách dự án</div>
+          <ul class="toc__list">
+            <li><a href="#design-basic">🏠 Dự án 1: Ngôi nhà đầy màu sắc (Cơ bản)</a></li>
+            <li><a href="#design-mid">🏢 Dự án 2: Tòa nhà với Component (Trung bình)</a></li>
+            <li><a href="#design-adv">🛏️ Dự án 3: Phòng ngủ Loft — Dream Bedroom (Nâng cao)</a></li>
+            <li><a href="#math-basic">⭕ Dự án 4: Hoa văn hình tròn & lục giác (Cơ bản)</a></li>
+            <li><a href="#math-mid">📦 Dự án 5: Gấp & mở hình khối 3D (Trung bình)</a></li>
+            <li><a href="#math-adv">⚽ Dự án 6: Golden Section → Icosahedron → Quả bóng (Nâng cao)</a></li>
+            <li><a href="#science">🌋 Dự án 7: Trạm quan sát núi lửa — Google Earth (Liên môn)</a></li>
+            <li><a href="#art">🎨 Dự án 8: Bảo tàng nghệ thuật số (Liên môn)</a></li>
+            <li><a href="#geo">🌉 Dự án 9: Xây dựng trên Google Earth (Liên môn)</a></li>
+          </ul>
+        </div>
+
+        <!-- ══════════════ DESIGN BASIC ══════════════ -->
+        <div class="section-divider"></div>
+        <h2 id="design-basic">🏠 Dự án 1: Ngôi nhà đầy màu sắc</h2>
+        <div class="project-meta">
+          <span class="project-meta__level project-meta__level--basic">Cơ bản</span>
+          <span class="project-meta__category">Thiết kế</span>
+          <span class="project-meta__tools">Rectangle, Push/Pull, Line, Arc, Eraser, Paint Bucket, 3D Text</span>
+        </div>
+        <p>Dựng ngôi nhà đơn giản với mái dốc, cửa vòm, cửa sổ nhiều màu, và tô vật liệu phong phú. Bài tập hoàn hảo để làm quen với các công cụ cơ bản.</p>
+        
+        <ol class="steps">
+          <li>Vẽ <strong>Rectangle</strong> → <strong>Push/Pull</strong> lên thành khối hộp</li>
+          <li>Dùng <strong>Line</strong> nối 2 Midpoint trên mặt trên → <strong>Move</strong> đường lên trên tạo mái nhà</li>
+          <li>Vẽ <strong>Rectangle</strong> + <strong>Arc</strong> trên mặt trước tạo cửa vòm → <strong>Eraser</strong> xóa cạnh thừa</li>
+          <li>Click phải cửa → <strong>Erase</strong> tạo lỗ trống</li>
+          <li>Vẽ cửa sổ hình bất kỳ bằng <strong>Line</strong> (đảm bảo "On Face") trên mặt bên</li>
+          <li><strong>Paint Bucket</strong>: Mái = "Roofing", Tường = "Bricks and Cladding", Cửa sổ = "Translucent"</li>
+          <li>Thêm <strong>3D Text</strong> tên nhà lên mặt tiền (<strong>Tools → 3D Text</strong>)</li>
+        </ol>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Mở rộng</div>
+          <div class="info-box__content">Vẽ Line chia mặt kính cửa sổ → tô nhiều màu Translucent khác nhau để tạo cửa sổ kính nghệ thuật (stained glass).</div>
+        </div>
+
+        <!-- ══════════════ DESIGN MID ══════════════ -->
+        <div class="section-divider"></div>
+        <h2 id="design-mid">🏢 Dự án 2: Tòa nhà cao tầng với Component</h2>
+        <div class="project-meta">
+          <span class="project-meta__level project-meta__level--mid">Trung bình</span>
+          <span class="project-meta__category">Thiết kế</span>
+          <span class="project-meta__tools">Arc, Push/Pull, Move, Component, Copy Array, Make Unique</span>
+        </div>
+        <p>Tạo tòa nhà với mái vòm, hệ cửa sổ tròn lặp lại bằng Component, và mái che cho cửa sổ nâng cao bằng Make Unique.</p>
+
+        <ol class="steps">
+          <li>Dựng khối hộp cao → <strong>Arc</strong> tạo mái vòm → <strong>Push/Pull</strong> mái sang bên</li>
+          <li>Dùng <strong>Move</strong> trên cạnh giữa tường → tạo phần tường nghiêng</li>
+          <li>Vẽ 2 <strong>Circle</strong> đồng tâm → Select → <strong>Make Component</strong> (check "Cut Opening")</li>
+          <li><strong>Move + Ctrl</strong> copy → nhập <span class="key">x3</span> → dãy 4 cửa sổ ngang</li>
+          <li>Select dãy → copy lên → nhập <span class="key">x2</span> → lưới cửa sổ</li>
+          <li>Copy cửa sổ sang mặt bên và mặt nghiêng — component tự cắt mặt</li>
+          <li><strong>Double-click</strong> 1 cửa sổ → chỉnh sửa (Push/Pull khung, tô màu) → tất cả cập nhật</li>
+          <li>Chọn cửa sổ trên mặt nghiêng → <strong>Make Unique</strong> → chỉnh sửa thêm mái che</li>
+        </ol>
+
+        <div class="info-box info-box--note">
+          <div class="info-box__title">📌 Copy thông minh với "/" </div>
+          <div class="info-box__content">
+            Ngoài <span class="key">x3</span> (nhân bản), bạn có thể dùng <span class="key">/6</span> để chia đều khoảng cách giữa điểm đầu và cuối thành 6 phần bằng nhau — rất tiện cho việc phân bố cửa sổ đều trên tường.
+          </div>
+        </div>
+
+        <!-- ══════════════ DESIGN ADVANCED ══════════════ -->
+        <div class="section-divider"></div>
+        <h2 id="design-adv">🛏️ Dự án 3: Phòng ngủ Loft — Dream Bedroom</h2>
+        <div class="project-meta">
+          <span class="project-meta__level project-meta__level--adv">Nâng cao</span>
+          <span class="project-meta__category">Thiết kế</span>
+          <span class="project-meta__tools">Rectangle, Push/Pull, Offset, Scale, Component, Follow Me, Line, 3D Warehouse</span>
+        </div>
+        <p>Thiết kế phòng ngủ 2 tầng (loft) có hồ bơi, cầu thang component, lan can Follow Me, ván nhảy, và nội thất từ 3D Warehouse.</p>
+
+        <h3>Phần 1: Cấu trúc phòng</h3>
+        <ol class="steps">
+          <li>Vẽ <strong>Rectangle</strong> sàn (~30' × 40') → <strong>Push/Pull</strong> lên ~20'</li>
+          <li><strong>Eraser</strong> xóa trần và 2 tường → nhìn vào bên trong</li>
+          <li>Vẽ <strong>Rectangle</strong> hồ bơi → <strong>Offset</strong> tạo thành hồ</li>
+          <li><strong>Push/Pull</strong> thành hồ lên + kéo sàn hồ lên (giữ <span class="key">Ctrl</span> để giữ sàn phòng)</li>
+          <li>Tô nước bằng vật liệu <strong>"Water"</strong> (Translucent)</li>
+        </ol>
+
+        <h3>Phần 2: Sàn loft và cầu thang</h3>
+        <ol class="steps">
+          <li>Dùng <strong>Line</strong> vẽ sàn tầng loft phía trên hồ bơi</li>
+          <li>Giữ <span class="key">Shift</span> khi vẽ Line để khóa hướng → chiều dài chính xác</li>
+          <li>Vẽ bậc thang nhỏ (~12" × 2") → Select → <strong>Make Component</strong></li>
+          <li>Edit component → <strong>Push/Pull</strong> ra ~4 feet</li>
+          <li>Copy bậc thang đến đỉnh → nhập <span class="key">/9</span> chia đều 10 bậc</li>
+        </ol>
+
+        <h3>Phần 3: Lan can bằng Follow Me</h3>
+        <ol class="steps">
+          <li>Edit bậc thang → vẽ <strong>Line</strong> đứng (~3') từ góc dưới</li>
+          <li>Vẽ <strong>Line</strong> nối đầu thanh này sang thanh bậc kế tiếp</li>
+          <li>Vẽ <strong>Circle</strong> nhỏ tại chân thanh đứng</li>
+          <li><strong>Select</strong> 2 đường thẳng → <strong>Follow Me</strong> → click Circle → lan can tự tạo ở mọi bậc</li>
+        </ol>
+
+        <h3>Phần 4: Nội thất từ 3D Warehouse</h3>
+        <ol class="steps">
+          <li>Mở <strong>Window → Components</strong> → click mũi tên → chọn <strong>"Architecture"</strong></li>
+          <li>Tìm kiếm: giường, tủ, bàn, TV, tủ lạnh, bàn bi-a...</li>
+          <li>Kéo thả component vào phòng → <strong>Rotate</strong> và <strong>Move</strong> để sắp xếp</li>
+          <li>Thêm cửa sổ bằng <strong>Line</strong> hoặc import component cửa sổ</li>
+        </ol>
+
+        <!-- ══════════════ MATH BASIC ══════════════ -->
+        <div class="section-divider"></div>
+        <h2 id="math-basic">⭕ Dự án 4: Hoa văn hình tròn & lục giác</h2>
+        <div class="project-meta">
+          <span class="project-meta__level project-meta__level--basic">Cơ bản</span>
+          <span class="project-meta__category">Toán học</span>
+          <span class="project-meta__tools">Circle, Line, Paint Bucket, Eraser, Move + Copy</span>
+        </div>
+        <p>Khám phá mối quan hệ giữa hình tròn và số 6 — tạo hoa văn tessellation từ circle đến hexagon.</p>
+
+        <h3>Phần 1: Hoa văn 6 vòng tròn</h3>
+        <ol class="steps">
+          <li>Làm việc ở chế độ <strong>Top view</strong> (Camera → Standard Views → Top)</li>
+          <li>Vẽ <strong>Circle</strong> đầu tiên</li>
+          <li>Vẽ Circle thứ 2: tâm tại điểm chu vi circle 1, kết thúc tại tâm circle 1</li>
+          <li>Vẽ Circle thứ 3: tâm tại giao điểm 2 circle, kết thúc tại tâm circle 1</li>
+          <li>Tiếp tục → tổng cộng <strong>6 circle</strong> bao quanh circle trung tâm</li>
+          <li><strong>Paint Bucket</strong> tô màu các mặt tạo hoa văn đẹp</li>
+          <li>Mở rộng: thêm 2 vòng circle ngoài (vẫn 6 circle mỗi vòng) → tạo hoa văn phức tạp</li>
+        </ol>
+
+        <h3>Phần 2: Từ Circle đến Hexagon</h3>
+        <ol class="steps">
+          <li>Vẽ 3 circle theo cùng nguyên tắc (tâm này trên chu vi kia)</li>
+          <li>Dùng <strong>Line</strong> nối từ tâm circle 3 đến giao điểm với circle 2</li>
+          <li>Vẽ 5 đường tương tự trong circle giữa → tổng 6 đường</li>
+          <li><strong>Eraser</strong> xóa tất cả circle → còn lại <strong>Hexagon hoàn hảo</strong></li>
+          <li>Vẽ <strong>Line</strong> từ các đỉnh → chia hexagon thành tam giác</li>
+          <li>Tô màu → dùng <strong>Move + Ctrl</strong> copy → tạo mosaic tessellation</li>
+        </ol>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Tessellation — Mảnh ghép</div>
+          <div class="info-box__content">
+            Hexagon là một trong 3 hình duy nhất (tam giác đều, hình vuông, lục giác đều) có thể lát kín mặt phẳng mà không có khe hở. Từ 1 circle ban đầu, bạn có thể tạo toàn bộ bức tranh mosaic!
+          </div>
+        </div>
+
+        <!-- ══════════════ MATH MID ══════════════ -->
+        <div class="section-divider"></div>
+        <h2 id="math-mid">📦 Dự án 5: Gấp & mở hình khối 3D</h2>
+        <div class="project-meta">
+          <span class="project-meta__level project-meta__level--mid">Trung bình</span>
+          <span class="project-meta__category">Toán học</span>
+          <span class="project-meta__tools">Rectangle, Polygon, Push/Pull, Scale, Rotate, Group, Print</span>
+        </div>
+        <p>Tạo hình khối 3D (cube, pyramid) rồi trải phẳng, in ra và gấp thành hình thật. Kết hợp SketchUp với hoạt động thực tế.</p>
+
+        <h3>Phần 1: Trải hình trong Top View</h3>
+        <ol class="steps">
+          <li>Ở Top view, vẽ 6 <strong>Rectangle</strong> (hình vuông) xếp hình chữ thập → lưới trải cube</li>
+          <li>Dùng <strong>Polygon</strong> (3 cạnh) vẽ 4 tam giác đều liền nhau → lưới trải pyramid</li>
+          <li><strong>File → Print</strong> → in ra giấy → cắt và gấp thành khối</li>
+        </ol>
+
+        <h3>Phần 2: Mở khối 3D</h3>
+        <ol class="steps">
+          <li>Dựng hộp bằng <strong>Rectangle + Push/Pull</strong></li>
+          <li>Dùng <strong>Scale</strong> + <span class="key">Ctrl</span> thu nhỏ mặt trên từ tâm → khối thang</li>
+          <li>Double-click từng mặt → Click phải → <strong>Make Group</strong> (tách từng mặt)</li>
+          <li><strong>Select</strong> mặt → <strong>Rotate</strong> → click-drag đặt trục quay tại cạnh → mở mặt ra phẳng</li>
+          <li>Lần lượt mở từng mặt — chú ý mở nhiều mặt liên kết cùng lúc</li>
+          <li>Kết quả: lưới trải phẳng hoàn chỉnh có thể in và gấp lại</li>
+        </ol>
+
+        <div class="info-box info-box--warning">
+          <div class="info-box__title">⚠️ Lưu ý quan trọng</div>
+          <div class="info-box__content">
+            Khi mở (unfold) mặt, nếu có mặt liên kết phía trên, <strong>Select cả 2 mặt rồi mở cùng lúc</strong> — tránh để mặt "lơ lửng" trong không gian. Cũng cần chú ý không để mặt chồng lấn khi trải phẳng.
+          </div>
+        </div>
+
+        <!-- ══════════════ MATH ADV ══════════════ -->
+        <div class="section-divider"></div>
+        <h2 id="math-adv">⚽ Dự án 6: Golden Section → Icosahedron → Quả bóng</h2>
+        <div class="project-meta">
+          <span class="project-meta__level project-meta__level--adv">Nâng cao</span>
+          <span class="project-meta__category">Toán học</span>
+          <span class="project-meta__tools">Rectangle, Move, Rotate + Copy, Line, Divide, Eraser</span>
+        </div>
+        <p>Từ hình chữ nhật vàng (Golden Section), tạo Icosahedron 20 mặt, Great Dodecahedron, và quả bóng đá (Buckyball).</p>
+
+        <h3>Phần 1: Icosahedron (20 mặt tam giác đều)</h3>
+        <ol class="steps">
+          <li>Vẽ <strong>Rectangle</strong> tỉ lệ vàng (Golden Section) → <strong>Move</strong> đặt tâm tại gốc tọa độ</li>
+          <li><strong>Rotate + Ctrl</strong> copy hình chữ nhật 1 lần → xoay bản copy</li>
+          <li>Lặp lại theo hướng vuông góc → 3 hình chữ nhật giao nhau tại gốc</li>
+          <li>Dùng <strong>Line</strong> nối các đỉnh gần nhau → tạo 20 tam giác đều</li>
+          <li>Thử thách: tô 5 màu sao cho <strong>không có góc nào lặp lại màu</strong></li>
+        </ol>
+
+        <h3>Phần 2: Great Dodecahedron</h3>
+        <ol class="steps">
+          <li>Copy icosahedron → <strong>Eraser</strong> xóa 20 tam giác</li>
+          <li>Kết quả: mỗi "mặt chính" là một pentagon có ngôi sao nhô ra</li>
+          <li>Thử thách: tô 6 màu, mỗi mặt pentagon/star không lặp màu</li>
+        </ol>
+
+        <h3>Phần 3: Quả bóng đá (Buckyball)</h3>
+        <ol class="steps">
+          <li>Từ Icosahedron, chọn 1 cạnh tam giác → click phải → <strong>Divide</strong> chia 3 đoạn</li>
+          <li>Dùng <strong>Line</strong> nối các điểm chia → tạo hexagon trên mặt tam giác</li>
+          <li>Dùng <strong>Rotate + Ctrl</strong> copy hexagon sang 19 mặt còn lại</li>
+          <li>Tại mỗi góc, <strong>Eraser</strong> xóa cạnh tam giác → <strong>Line</strong> vẽ lại tạo pentagon</li>
+          <li>Làm 12 pentagon → Hoàn thành quả bóng: 12 pentagon + 20 hexagon</li>
+        </ol>
+
+        <!-- ══════════════ SCIENCE ══════════════ -->
+        <div class="section-divider"></div>
+        <h2 id="science">🌋 Dự án 7: Trạm quan sát núi lửa — Google Earth</h2>
+        <div class="project-meta">
+          <span class="project-meta__level project-meta__level--mid">Trung bình</span>
+          <span class="project-meta__category">Khoa học / Địa lý</span>
+          <span class="project-meta__tools">Add Location, Toggle Terrain, Push/Pull, Line, Paint Bucket</span>
+        </div>
+        <p>Tìm núi lửa trên Google Earth, đưa địa hình vào SketchUp, xây trạm quan sát và tường chắn, rồi xem lại trong Google Earth.</p>
+
+        <ol class="steps">
+          <li>Mở <strong>Google Earth</strong> → bật layer <strong>"Volcanoes"</strong> (trong Gallery) → tìm núi lửa (VD: Mt. St. Helens)</li>
+          <li>Trong SketchUp: click <strong>Add Location</strong> → nhập tên núi lửa</li>
+          <li>Zoom ra → kéo ảnh vệ tinh → click <strong>Select Region → Grab</strong></li>
+          <li>Lặp lại <strong>Add More Imagery</strong> cho đến khi phủ hết khu vực cần thiết</li>
+          <li>Click <strong>Toggle Terrain</strong> → thấy đồi núi 3D thật</li>
+          <li>Tắt Terrain → dùng <strong>Rectangle + Push/Pull</strong> xây tường chắn, bậc thang, kính quan sát</li>
+          <li>Bật lại Terrain → chỉnh kích thước tường phù hợp</li>
+          <li>Click <strong>Preview Model in Google Earth</strong> → xem công trình trên Earth</li>
+        </ol>
+
+        <div class="info-box info-box--note">
+          <div class="info-box__title">📌 Lưu và chia sẻ</div>
+          <div class="info-box__content">
+            Trong Google Earth: <strong>File → Save → Save Place As</strong> (.kmz) để lưu vị trí. 
+            Mô hình ở chế độ "tạm" — không xuất hiện trên Google Earth công cộng. 
+            Nếu muốn upload lên chính thức, check "<strong>Google Earth Ready</strong>" khi upload lên 3D Warehouse.
+          </div>
+        </div>
+
+        <!-- ══════════════ ART ══════════════ -->
+        <div class="section-divider"></div>
+        <h2 id="art">🎨 Dự án 8: Bảo tàng nghệ thuật số</h2>
+        <div class="project-meta">
+          <span class="project-meta__level project-meta__level--mid">Trung bình</span>
+          <span class="project-meta__category">Nghệ thuật / Lịch sử</span>
+          <span class="project-meta__tools">File Import, Push/Pull, Offset, Follow Me, Polygon, Scenes, Animation</span>
+        </div>
+        <p>Tìm tranh trên Internet, đóng khung trong SketchUp, xây bảo tàng hexagon và treo tranh. Tạo slide show bằng Scenes.</p>
+
+        <h3>Phần 1: Tạo khung tranh</h3>
+        <ol class="steps">
+          <li>Tìm ảnh tranh trên Internet → Click phải → <strong>Save Image As</strong></li>
+          <li>Trong SketchUp: <strong>File → Import</strong> → chọn "Image files" → check <strong>"Use as image"</strong></li>
+          <li>Đặt ảnh tại gốc tọa độ → chú ý kích thước thực tế</li>
+          <li>Click phải ảnh → <strong>Explode</strong> → biến thành face</li>
+          <li><strong>Push/Pull</strong> mặt tranh lên nhỏ (tránh cùng mặt phẳng với tường)</li>
+          <li><strong>Offset</strong> mặt sau → tạo khung → <strong>Push/Pull</strong> khung ra + tô màu gỗ</li>
+          <li>Vào <strong>Window → Model Info → File</strong> → Glue to: <strong>Any</strong></li>
+          <li><strong>File → Save As</strong> lưu riêng từng bức tranh</li>
+        </ol>
+
+        <h3>Phần 2: Xây bảo tàng</h3>
+        <ol class="steps">
+          <li>Mở file mới → <strong>Polygon</strong> (6 cạnh) vẽ hình lục giác</li>
+          <li><strong>Offset</strong> tạo tường → <strong>Push/Pull</strong> tường lên</li>
+          <li>Bỏ qua mái tạm → tạo lỗ cửa ra vào</li>
+          <li><strong>File → Import</strong> (chọn SketchUp files) → import khung tranh</li>
+          <li>Tranh tự dán lên tường (nhờ Glue to Any) → <strong>Scale</strong> nếu cần</li>
+          <li>Import tất cả tranh lên các tường</li>
+        </ol>
+
+        <h3>Phần 3: Slide Show</h3>
+        <ol class="steps">
+          <li>Dùng <strong>Walk</strong>, <strong>Look Around</strong>, <strong>Position Camera</strong> để tìm góc nhìn đẹp</li>
+          <li>Mỗi góc nhìn: <strong>Window → Scenes</strong> → click <strong>"+"</strong> lưu Scene</li>
+          <li><strong>View → Animation → Play</strong> → trình chiếu slide show qua các Scene</li>
+          <li>Chỉnh tốc độ: <strong>Window → Model Info → Animation</strong></li>
+        </ol>
+
+        <!-- ══════════════ GEOGRAPHY ══════════════ -->
+        <div class="section-divider"></div>
+        <h2 id="geo">🌉 Dự án 9: Xây dựng công trình trên Google Earth</h2>
+        <div class="project-meta">
+          <span class="project-meta__level project-meta__level--adv">Nâng cao</span>
+          <span class="project-meta__category">Địa lý / Lịch sử</span>
+          <span class="project-meta__tools">Add Location, Circle, Push/Pull, Rotate, Follow Me, Toggle Terrain</span>
+        </div>
+        <p>Đặt công trình kiến trúc (đài vọng cảnh) cạnh Coit Tower, San Francisco trên Google Earth. Kết hợp thiết kế 3D với địa lý thực tế.</p>
+
+        <ol class="steps">
+          <li>Mở SketchUp → <strong>Add Location</strong> → tìm "Coit Tower"</li>
+          <li>Zoom ra → <strong>Select Region</strong> bao gồm cả tháp và khu vực xung quanh → <strong>Grab</strong></li>
+          <li>Dùng <strong>Circle + Push/Pull</strong> tạo trụ tạm tại vị trí xây dựng</li>
+          <li>Click <strong>Toggle Terrain</strong> → thấy đồi thật → chỉnh vị trí trụ</li>
+          <li>Click <strong>Preview Model in Google Earth</strong> → xem thử</li>
+          <li>Quay lại SketchUp → thay thế trụ bằng thiết kế thật:
+            <ul>
+              <li>Cột: dùng <strong>Circle + Push/Pull</strong> → <strong>Rotate + Ctrl</strong> copy dãy tròn</li>
+              <li>Mái: dùng tiết diện + <strong>Follow Me</strong></li>
+              <li>Chi tiết: cầu thang, hàng rào, bệ quan sát</li>
+            </ul>
+          </li>
+          <li><strong>Preview Model in Google Earth</strong> lần cuối → chiêm ngưỡng công trình</li>
+        </ol>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Ý tưởng dự án mở rộng</div>
+          <div class="info-box__content">
+            <strong>•</strong> Cầu bắc qua thác Niagara<br>
+            <strong>•</strong> Tên lửa cạnh Trung tâm Vũ trụ Kennedy<br>
+            <strong>•</strong> Mô hình trường học, nhà riêng (dùng ảnh thật "paint" lên mặt model)<br>
+            <strong>•</strong> Lưu file SketchUp → <strong>Share Model</strong> → upload lên 3D Warehouse
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter-nav">
+        <a href="chuong8.html" class="chapter-nav__link chapter-nav__link--prev"><span class="chapter-nav__label">← Trước</span><span class="chapter-nav__title">Chương 8: Ôn tập</span></a>
+        <a href="../index.html" class="chapter-nav__link chapter-nav__link--next"><span class="chapter-nav__label">Về trang chủ →</span><span class="chapter-nav__title">Trang chủ</span></a>
+      </div>
+      <footer class="footer"><p class="footer__text">Giáo trình SketchUp — <span class="footer__author">DORIC</span> — KTS: <span class="footer__author">Nguyễn Văn Duy</span></p></footer>
+    </div>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>

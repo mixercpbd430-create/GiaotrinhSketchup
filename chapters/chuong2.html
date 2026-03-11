@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chương 2: Các công cụ làm việc trong SketchUp - Line, Rectangle, Push/Pull, Arc, Circle, Move, Rotate, Scale, Follow Me, Offset">
+  <title>Chương 2: Các công cụ làm việc | Giáo Trình SketchUp</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="reading-progress" id="reading-progress"></div>
+  <header class="header">
+    <a href="../index.html" class="header__brand"><div class="header__logo">SU</div>Giáo Trình SketchUp</a>
+    <button class="header__toggle" id="sidebar-toggle">☰</button>
+  </header>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__section">
+      <div class="sidebar__label">Nội dung</div>
+      <ul class="sidebar__nav">
+        <li><a href="../index.html" class="sidebar__link"><span class="sidebar__icon">🏠</span>Trang chủ</a></li>
+        <li><a href="gioi-thieu.html" class="sidebar__link"><span class="sidebar__icon">📖</span>Giới thiệu</a></li>
+      </ul>
+    </div>
+    <div class="sidebar__section">
+      <div class="sidebar__label">Các Chương</div>
+      <ul class="sidebar__nav">
+        <li><a href="chuong1.html" class="sidebar__link"><span class="sidebar__chapter-num">1</span>Giao diện người dùng</a></li>
+        <li><a href="chuong2.html" class="sidebar__link active"><span class="sidebar__chapter-num">2</span>Các công cụ làm việc</a></li>
+        <li><a href="chuong3.html" class="sidebar__link"><span class="sidebar__chapter-num">3</span>Bài tập thực hành</a></li>
+        <li><a href="chuong4.html" class="sidebar__link"><span class="sidebar__chapter-num">4</span>Dựng biệt thự & nhà phố</a></li>
+        <li><a href="chuong5.html" class="sidebar__link"><span class="sidebar__chapter-num">5</span>Sandbox Tools</a></li>
+        <li><a href="chuong6.html" class="sidebar__link"><span class="sidebar__chapter-num">6</span>Công cụ nâng cao</a></li>
+        <li><a href="chuong7.html" class="sidebar__link"><span class="sidebar__chapter-num">7</span>VRay cho SketchUp</a></li>
+        <li><a href="chuong8.html" class="sidebar__link"><span class="sidebar__chapter-num">8</span>Ôn tập</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="content">
+      <div class="chapter-header">
+        <div class="chapter-header__breadcrumb">
+          <a href="../index.html">Trang chủ</a> <span>/</span> <span>Chương 2</span>
+        </div>
+        <div class="chapter-header__num">Chương 2</div>
+        <h1 class="chapter-header__title">Các công cụ làm việc trong SketchUp</h1>
+        <p class="chapter-header__desc">Thực hành các công cụ cơ bản và quan trọng: thiết lập bản vẽ, chế độ bắt điểm, và 12 công cụ dựng hình.</p>
+      </div>
+
+      <div class="chapter-content">
+        <div class="toc">
+          <div class="toc__title">Nội dung chương</div>
+          <ul class="toc__list">
+            <li><a href="#thiet-lap">1. Cách thiết lập bản vẽ</a></li>
+            <li><a href="#bat-diem">2. Chế độ khóa đường và bắt điểm</a></li>
+            <li><a href="#line">3.1. Công cụ Line (L)</a></li>
+            <li><a href="#rectangle">3.2. Công cụ Rectangle (R)</a></li>
+            <li><a href="#pushpull">4.1. Push/Pull Tool (P)</a></li>
+            <li><a href="#arc">4.2. Arc Tool (A)</a></li>
+            <li><a href="#circle">4.3. Circle Tool (C)</a></li>
+            <li><a href="#polygon">4.4. Polygon Tool (Ctrl+P)</a></li>
+            <li><a href="#freehand">4.5. Freehand Tool (Ctrl+F)</a></li>
+            <li><a href="#move">4.6. Move Tool (M)</a></li>
+            <li><a href="#rotate">4.7. Rotate Tool (Q)</a></li>
+            <li><a href="#scale">4.8. Scale Tool (S)</a></li>
+            <li><a href="#followme">4.9. Follow Me Tool (Alt+F)</a></li>
+            <li><a href="#offset">4.10. Offset Tool (F)</a></li>
+            <li><a href="#component">5. Component & Group</a></li>
+          </ul>
+        </div>
+
+        <h2 id="thiet-lap">1. Cách thiết lập bản vẽ</h2>
+        <p>Vào <strong>Windows/Preferences</strong>, chọn <strong>Drawing</strong> để thiết lập kiểu vẽ. Có 3 trường hợp:</p>
+        <ul>
+          <li><strong>Click-drag-release:</strong> Dùng việc kéo chuột để tạo đường kẻ</li>
+          <li><strong>Click-move-click:</strong> Xác định đường kẻ bằng 2 điểm</li>
+          <li><strong>Auto detect:</strong> Bao gồm cả hai phương pháp trên</li>
+        </ul>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Continue line drawing</div>
+          <div class="info-box__content">
+            Nếu chọn <strong>Continue line drawing</strong>, sau khi hoàn thành 1 đường kẻ sẽ tự động tiếp tục 
+            đường kẻ tiếp theo bắt đầu từ điểm cuối của đường kẻ trước.
+          </div>
+        </div>
+
+        <h2 id="bat-diem">2. Chế độ khóa đường và bắt điểm</h2>
+        <h3>a. Khóa đường</h3>
+        <p>Các đường song song với trục tọa độ sẽ có màu tương ứng:</p>
+        <ul>
+          <li><strong style="color:#ea4335;">Đỏ</strong> — song song trục X</li>
+          <li><strong style="color:#34a853;">Xanh lá</strong> — song song trục Y</li>
+          <li><strong style="color:#4285f4;">Xanh dương</strong> — song song trục Z</li>
+          <li><strong style="color:#a78bfa;">Tím</strong> — Parallel hoặc Perpendicular</li>
+          <li><strong>Gạch đứt</strong> — Going điểm (From point)</li>
+        </ul>
+
+        <h3>b. Chế độ bắt điểm</h3>
+        <p>Luôn thường trú, giúp nhận biết và truy bắt các điểm đặc biệt. Khi bắt điểm, tooltip bật tên theo bảng:</p>
+        <table>
+          <thead>
+            <tr><th>Tooltip</th><th>Ý nghĩa</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Endpoint</td><td>Điểm cuối đoạn thẳng</td></tr>
+            <tr><td>Midpoint</td><td>Trung điểm</td></tr>
+            <tr><td>On Edge</td><td>Trên cạnh</td></tr>
+            <tr><td>On Face</td><td>Trên mặt phẳng</td></tr>
+            <tr><td>Center</td><td>Tâm đường tròn/cung</td></tr>
+            <tr><td>Intersection</td><td>Giao điểm</td></tr>
+            <tr><td>On Red/Green/Blue Axis</td><td>Song song với trục tương ứng</td></tr>
+            <tr><td>Perpendicular</td><td>Vuông góc</td></tr>
+            <tr><td>Parallel to Edge</td><td>Song song với cạnh</td></tr>
+            <tr><td>From Point</td><td>Gióng điểm</td></tr>
+          </tbody>
+        </table>
+
+        <div class="section-divider"></div>
+
+        <!-- ═══ LINE ═══ -->
+        <h2 id="line">3.1. Công cụ LINE <span class="key">L</span></h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">📏</div>
+            <div class="tool-card__name">Line Tool — Đoạn thẳng</div>
+            <div class="tool-card__shortcut"><span class="key">L</span></div>
+          </div>
+          <div class="tool-card__body">
+            Công cụ cơ bản nhất trong SketchUp. Vẽ các đoạn thẳng, tạo mặt phẳng khi khép kín.
+          </div>
+        </div>
+        <h4>Thực hành vẽ Line</h4>
+        <ol class="steps">
+          <li>Click chuột vào điểm đầu tiên, di chuyển con trỏ — xuất hiện <strong>"On Red Axis"</strong> tức đường thẳng song song với trục X. Click chuột xác định điểm thứ 2.</li>
+          <li>Kéo chuột hướng khác, xuất hiện <strong>"On Green Axis"</strong> (song song trục Y). Click xác định điểm tiếp theo.</li>
+          <li>Đưa chuột vào trung điểm của đường thẳng — xuất hiện <strong>"Midpoint"</strong>. Không click vào điểm này.</li>
+          <li>Từ trung điểm, đưa chuột theo đường nét đứt màu xanh. Bấm <span class="key">Shift</span> để khóa hướng, click chuột xác định điểm kế tiếp.</li>
+          <li>Di chuyển con trỏ vuông góc với đường mới vẽ — xuất hiện <strong>"Perpendicular"</strong> (đường màu tím). Click chuột xác định điểm tiếp theo.</li>
+          <li>Tiếp tục vẽ kết hợp <strong>"Parallel"</strong> với nhấn <span class="key">Shift</span>. Đường màu đỏ sẽ trở nên đậm hơn (đã khóa hướng).</li>
+          <li>Vẽ hoàn thành mặt phẳng: <strong>Những đường Line khép kín sẽ tạo được 1 mặt phẳng.</strong></li>
+        </ol>
+
+        <div class="info-box info-box--note">
+          <div class="info-box__title">📌 Quy tắc quan trọng</div>
+          <div class="info-box__content">
+            <strong>Đường thẳng có thể chia bề mặt.</strong> Vẽ 1 đường thẳng nối 2 trung điểm sẽ tạo ra 2 mặt phẳng.<br>
+            <strong>Xóa 1 cạnh biên → mặt phẳng bị mất.</strong> Dùng Line vẽ lại → mặt phẳng xuất hiện trở lại.<br>
+            Vào <strong>Style &gt; Color &gt; By Axis</strong> để hiển thị cạnh theo màu trục tương ứng.
+          </div>
+        </div>
+
+        <!-- ═══ RECTANGLE ═══ -->
+        <h2 id="rectangle">3.2. Công cụ Rectangle <span class="key">R</span></h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">⬜</div>
+            <div class="tool-card__name">Rectangle — Hình chữ nhật</div>
+            <div class="tool-card__shortcut"><span class="key">R</span></div>
+          </div>
+          <div class="tool-card__body">
+            Click điểm thứ 1 rồi kéo chuột vào điểm 2 để tạo hình chữ nhật. Có các trường hợp đặc biệt:
+          </div>
+        </div>
+        <ul>
+          <li><strong>Square (Hình vuông):</strong> Khi kéo thấy đường chéo nét đứt và xuất hiện "Square"</li>
+          <li><strong>Golden Section (Hình chữ nhật vàng):</strong> Khi xuất hiện "Golden Section"</li>
+        </ul>
+
+        <div class="section-divider"></div>
+
+        <!-- ═══ PUSH/PULL ═══ -->
+        <h2 id="pushpull">4.1. Push/Pull Tool <span class="key">P</span></h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">⬆️</div>
+            <div class="tool-card__name">Push/Pull — Kéo/Nén đối tượng</div>
+            <div class="tool-card__shortcut"><span class="key">P</span></div>
+          </div>
+          <div class="tool-card__body">
+            Luôn đẩy hay kéo mặt phẳng theo phương thẳng đứng với mặt phẳng. 
+            Nhập cao độ trong VCB rồi Enter.
+          </div>
+        </div>
+        <h4>Các kỹ thuật Push/Pull</h4>
+        <ul>
+          <li><strong>Click đôi:</strong> Kéo bằng độ cao hình trước đó</li>
+          <li><strong>Tạo lỗ trống:</strong> Push/Pull mặt phẳng xuyên qua cạnh đáy khối hộp</li>
+          <li><strong>Giữ <span class="key">Ctrl</span>:</strong> Tạo mặt phẳng mới khi kéo (xuất hiện đường thẳng dọc)</li>
+          <li><strong>Gióng điểm:</strong> Rê chuột vào cạnh để gióng chiều sâu bằng nhau</li>
+        </ul>
+
+        <!-- ═══ ARC ═══ -->
+        <h2 id="arc">4.2. Arc Tool <span class="key">A</span></h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">⌒</div>
+            <div class="tool-card__name">Arc — Cung tròn</div>
+            <div class="tool-card__shortcut"><span class="key">A</span></div>
+          </div>
+          <div class="tool-card__body">
+            Vẽ hình cung bằng cách xác định 2 điểm dây cung → di chuyển con trỏ để xác định độ cong.
+          </div>
+        </div>
+        <ul>
+          <li><strong>Tangent to Edge:</strong> Hình cung màu lục lam — tiếp tuyến với cạnh</li>
+          <li><strong>Tangent at Vertex:</strong> Hình cung nối tiếp mượt mà</li>
+          <li>Thêm <strong>"r"</strong> sau trị số VCB để xác định bán kính (ví dụ: <span class="key">100r</span>)</li>
+          <li>Nhập <strong>"5s"</strong> để thay đổi số phân đoạn của dây cung</li>
+          <li>Thay đổi bán kính và segment qua <strong>Window/Entity Info</strong></li>
+        </ul>
+
+        <!-- ═══ CIRCLE ═══ -->
+        <h2 id="circle">4.3. Circle Tool <span class="key">C</span></h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">⭕</div>
+            <div class="tool-card__name">Circle — Hình tròn</div>
+            <div class="tool-card__shortcut"><span class="key">C</span></div>
+          </div>
+          <div class="tool-card__body">
+            Click chọn tâm, kéo chuột xác định bán kính. Màu sắc đường tròn thể hiện mặt phẳng làm việc: 
+            xanh dương (OXY), xanh lá (OXZ), đỏ (OYZ).
+          </div>
+        </div>
+        <ul>
+          <li>Nhập <strong>"30s"</strong> → Enter trước khi vẽ để thay đổi số cạnh (segment)</li>
+          <li>Đường tròn là tập hợp đoạn thẳng — nhập "6s" sẽ tạo hình đa giác 6 cạnh</li>
+          <li>Sau khi vẽ: click phải chuột → <strong>Entity Info</strong> để thay đổi segment và bán kính</li>
+        </ul>
+
+        <!-- ═══ POLYGON ═══ -->
+        <h2 id="polygon">4.4. Polygon Tool <span class="key">Ctrl+P</span></h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">⬡</div>
+            <div class="tool-card__name">Polygon — Hình đa giác</div>
+            <div class="tool-card__shortcut"><span class="key">Ctrl+P</span></div>
+          </div>
+          <div class="tool-card__body">
+            Tương tự Circle: Click tâm → kéo xác định bán kính. Mặc định 6 cạnh, nhập "8s" → Enter để đổi thành 8 cạnh.
+            Cũng thể hiện màu sắc theo mặt phẳng làm việc.
+          </div>
+        </div>
+
+        <!-- ═══ FREEHAND ═══ -->
+        <h2 id="freehand">4.5. Freehand Tool <span class="key">Ctrl+F</span></h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">✏️</div>
+            <div class="tool-card__name">Freehand — Phác tay</div>
+            <div class="tool-card__shortcut"><span class="key">Ctrl+F</span></div>
+          </div>
+          <div class="tool-card__body">
+            Vẽ tự do bằng cách rê chuột. Đường khép kín tạo mặt phẳng (màu nhạt), đường hở có màu đậm hơn.
+          </div>
+        </div>
+        <ul>
+          <li>Dùng Push/Pull với đường cong kín → đường cong mượt dù Freehand có nhiều đoạn chia</li>
+          <li>Click phải → <strong>Convert to Polygon:</strong> Chia mặt trơn thành các khía cạnh ghồ ghề</li>
+          <li>Click phải → <strong>Explode Curve:</strong> Tách đường cong thành các cạnh riêng biệt</li>
+        </ul>
+
+        <div class="section-divider"></div>
+
+        <!-- ═══ MOVE ═══ -->
+        <h2 id="move">4.6. Move Tool <span class="key">M</span></h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">↔️</div>
+            <div class="tool-card__name">Move — Di chuyển đối tượng</div>
+            <div class="tool-card__shortcut"><span class="key">M</span></div>
+          </div>
+          <div class="tool-card__body">
+            Chọn đối tượng → xác định điểm đầu → di chuyển chuột → xác định vị trí đến. 
+            Có thể co dãn đối tượng khi kéo đỉnh.
+          </div>
+        </div>
+        <h4>Copy với Move</h4>
+        <ul>
+          <li>Giữ <span class="key">Ctrl</span> khi di chuyển → lệnh Move trở thành <strong>lệnh Copy</strong></li>
+          <li>Sau khi copy, nhập <span class="key">x3</span> → Enter để copy ra 3 bản</li>
+          <li>Nhập <span class="key">/3</span> → Enter để chia đều khoảng cách thành 3 phần</li>
+        </ul>
+
+        <!-- ═══ ROTATE ═══ -->
+        <h2 id="rotate">4.7. Rotate Tool <span class="key">Q</span></h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🔄</div>
+            <div class="tool-card__name">Rotate — Xoay đối tượng</div>
+            <div class="tool-card__shortcut"><span class="key">Q</span></div>
+          </div>
+          <div class="tool-card__body">
+            Xuất hiện thước hình tròn, mỗi vạch = 15°. Màu sắc thước tương ứng mặt phẳng: 
+            xanh lục (OXY), đỏ (OYZ), xanh dương (OXZ).
+          </div>
+        </div>
+        <h4>Các thao tác Rotate</h4>
+        <ol class="steps">
+          <li>Chọn đối tượng, chọn Rotate (<span class="key">Q</span>), đưa lên mặt phẳng cần xoay</li>
+          <li>Chọn 1 điểm làm tâm quay, click chuột</li>
+          <li>Đưa chuột ra xác định trục chuẩn, click chuột</li>
+          <li>Rê chuột xoay hoặc nhập <span class="key">45</span> trong VCB</li>
+        </ol>
+        <ul>
+          <li><strong>Hiệu ứng Vặn (Twist):</strong> Chọn chỉ mặt phẳng phía trên → xoay → tạo hiệu ứng vặn xoắn</li>
+          <li><strong>Copy với Rotate:</strong> Giữ <span class="key">Ctrl</span> khi xoay → nhập <span class="key">x4</span> để copy 4 bản</li>
+          <li><strong>Chia đều góc:</strong> Nhập <span class="key">/4</span> để chia đều khoảng góc thành 4 phần</li>
+        </ul>
+
+        <!-- ═══ SCALE ═══ -->
+        <h2 id="scale">4.8. Scale Tool <span class="key">S</span></h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">📐</div>
+            <div class="tool-card__name">Scale — Thu phóng đối tượng</div>
+            <div class="tool-card__shortcut"><span class="key">S</span></div>
+          </div>
+          <div class="tool-card__body">
+            Xuất hiện các grip màu xanh. Grip giữa: thu phóng 1 phương. Grip cạnh: 2 phương. Grip đỉnh: 3 phương.
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr><th>Grip</th><th>Kết hợp phím</th><th>Hiệu quả</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Grip giữa</td><td>—</td><td>Thu phóng 1 phương</td></tr>
+            <tr><td>Grip cạnh</td><td>—</td><td>Thu phóng 2 phương (tỉ lệ riêng)</td></tr>
+            <tr><td>Grip đỉnh</td><td>—</td><td>Thu phóng 3 phương (tỉ lệ chung)</td></tr>
+            <tr><td>Bất kỳ</td><td><span class="key">Ctrl</span></td><td>Thu phóng từ tâm</td></tr>
+            <tr><td>Bất kỳ</td><td><span class="key">Shift</span></td><td>Thu phóng đều (giữ tỉ lệ)</td></tr>
+          </tbody>
+        </table>
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Tạo phép đối xứng (Mirror)</div>
+          <div class="info-box__content">
+            Kéo grip theo hướng ngược lại cho đến khi VCB hiển thị <strong>"-1"</strong> → click chuột: 
+            khối hộp đã được đối xứng qua mặt phẳng.
+          </div>
+        </div>
+
+        <!-- ═══ FOLLOW ME ═══ -->
+        <h2 id="followme">4.9. Follow Me Tool <span class="key">Alt+F</span></h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🔀</div>
+            <div class="tool-card__name">Follow Me — Trượt dẫn đối tượng</div>
+            <div class="tool-card__shortcut"><span class="key">Alt+F</span></div>
+          </div>
+          <div class="tool-card__body">
+            Trượt một tiết diện theo đường dẫn để tạo khối 3D. 
+            Rất mạnh cho tạo các profile phức tạp: cornice, phào, tay vịn lan can...
+          </div>
+        </div>
+        <h4>Các cách sử dụng</h4>
+        <ul>
+          <li><strong>Cách 1:</strong> Click chọn tiết diện → kéo chuột dọc theo đường dẫn</li>
+          <li><strong>Cách 2 (chính xác hơn):</strong> Chọn đường dẫn trước → click Follow Me → chọn tiết diện</li>
+          <li><strong>Giữ <span class="key">Alt</span>:</strong> Tự động dò đường dẫn — trượt dẫn khép kín theo chu vi mặt phẳng</li>
+          <li><strong>Khối tròn xoay:</strong> Trượt dẫn tiết diện theo đường tròn có tâm trên trục đối xứng</li>
+        </ul>
+
+        <!-- ═══ OFFSET ═══ -->
+        <h2 id="offset">4.10. Offset Tool <span class="key">F</span></h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">⊡</div>
+            <div class="tool-card__name">Offset — Sao chép đồng dạng</div>
+            <div class="tool-card__shortcut"><span class="key">F</span></div>
+          </div>
+          <div class="tool-card__body">
+            Tạo bản sao đồng dạng của các đường hoặc mặt phẳng. Đưa chuột vào đường/mặt → click → 
+            rê chuột xác định khoảng cách hoặc nhập trong VCB. Click đôi để lặp lại khoảng cách trước.
+          </div>
+        </div>
+        <ul>
+          <li>Với <strong>đường thẳng:</strong> Chọn các đường → click Offset → xác định khoảng cách</li>
+          <li>Với <strong>mặt phẳng:</strong> Đưa vào mặt phẳng → click → rê chuột → tạo khung đồng dạng bên trong/ngoài</li>
+          <li><strong>Click đôi:</strong> Lặp lại khoảng cách Offset trước đó</li>
+        </ul>
+
+        <div class="section-divider"></div>
+
+        <!-- ═══ COMPONENT & GROUP ═══ -->
+        <h2 id="component">5. Component & Group — Quản lý đối tượng</h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">📦</div>
+            <div class="tool-card__name">Component & Group</div>
+          </div>
+          <div class="tool-card__body">
+            Hai cách tổ chức đối tượng quan trọng nhất trong SketchUp. Group (nhóm) giúp cách ly đối tượng, 
+            Component giúp quản lý và chỉnh sửa đồng loạt.
+          </div>
+        </div>
+
+        <h3>5.1 Group — Nhóm</h3>
+        <ul>
+          <li>Chọn đối tượng → Click phải → <strong>Make Group</strong></li>
+          <li>Group cách ly đối tượng — không dính với geometry khác</li>
+          <li>Double-click vào Group để vào chỉnh sửa bên trong</li>
+          <li>Mỗi Group là bản sao <strong>độc lập</strong> — chỉnh 1 Group không ảnh hưởng Group khác</li>
+        </ul>
+
+        <h3>5.2 Component — Thành phần</h3>
+        <ul>
+          <li>Chọn đối tượng → Click phải → <strong>Make Component</strong> (hoặc nhấn <span class="key">G</span>)</li>
+          <li>Component có thuộc tính đặc biệt: <strong>Cut Opening</strong> — tự tạo lỗ trống khi đặt lên mặt phẳng (dùng cho cửa sổ, cửa đi)</li>
+          <li>Đặt tên cho component để dễ quản lý</li>
+          <li><strong>Chỉnh sửa đồng loạt:</strong> Double-click vào 1 component → chỉnh sửa → tất cả bản sao tự cập nhật</li>
+        </ul>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Copy dãy Component (Array)</div>
+          <div class="info-box__content">
+            <strong>Cách 1 — Nhân bản:</strong> Move + <span class="key">Ctrl</span> để copy, sau đó nhập <span class="key">x5</span> → Enter → tạo 5 bản copy.<br>
+            <strong>Cách 2 — Chia đều:</strong> Copy đến vị trí cuối, nhập <span class="key">/7</span> → Enter → chia đều 7 bản giữa điểm đầu và cuối.<br>
+            <strong>Rotate Array:</strong> Tương tự với Rotate — giữ <span class="key">Ctrl</span> khi xoay rồi nhập <span class="key">x6</span> cho dãy xoay tròn.
+          </div>
+        </div>
+
+        <h3>5.3 Make Unique — Tách component</h3>
+        <p>Khi muốn một số component có sự khác biệt (ví dụ: cửa sổ tầng trên có mái che, tầng dưới không có):</p>
+        <ol class="steps">
+          <li>Chọn các component cần tách riêng</li>
+          <li>Click phải → <strong>Make Unique</strong></li>
+          <li>Component đã tách trở thành loại riêng — chỉnh sửa không ảnh hưởng các component gốc</li>
+        </ol>
+
+        <h3>5.4 3D Warehouse — Thư viện mô hình</h3>
+        <p>Kho thư viện mô hình 3D miễn phí của Google. Truy cập qua <strong>Window → Components</strong> hoặc <strong>File → 3D Warehouse</strong>.</p>
+        <ul>
+          <li><strong>Tìm kiếm:</strong> Nhập từ khóa (furniture, door, tree...) để tìm model</li>
+          <li><strong>Import:</strong> Click thumbnail → kéo vào mô hình</li>
+          <li><strong>Lưu ý:</strong> Model từ Warehouse không đảm bảo chất lượng — kiểm tra tỉ lệ và vị trí sau khi import</li>
+          <li><strong>Upload:</strong> Bạn có thể chia sẻ mô hình của mình lên Warehouse (<strong>File → Share Model</strong>)</li>
+        </ul>
+      </div>
+
+      <div class="chapter-nav">
+        <a href="chuong1.html" class="chapter-nav__link chapter-nav__link--prev">
+          <span class="chapter-nav__label">← Trước</span>
+          <span class="chapter-nav__title">Chương 1: Giao diện người dùng</span>
+        </a>
+        <a href="chuong3.html" class="chapter-nav__link chapter-nav__link--next">
+          <span class="chapter-nav__label">Tiếp theo →</span>
+          <span class="chapter-nav__title">Chương 3: Bài tập thực hành</span>
+        </a>
+      </div>
+
+      <footer class="footer">
+        <p class="footer__text">Giáo trình SketchUp — <span class="footer__author">DORIC</span> — KTS: <span class="footer__author">Nguyễn Văn Duy</span></p>
+      </footer>
+    </div>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 4: Dựng biệt thự & nhà phố | Giáo Trình SketchUp</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="reading-progress" id="reading-progress"></div>
+  <header class="header"><a href="../index.html" class="header__brand"><div class="header__logo">SU</div>Giáo Trình SketchUp</a><button class="header__toggle" id="sidebar-toggle">☰</button></header>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <aside class="sidebar" id="sidebar"><div class="sidebar__section"><div class="sidebar__label">Nội dung</div><ul class="sidebar__nav"><li><a href="../index.html" class="sidebar__link"><span class="sidebar__icon">🏠</span>Trang chủ</a></li><li><a href="gioi-thieu.html" class="sidebar__link"><span class="sidebar__icon">📖</span>Giới thiệu</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Các Chương</div><ul class="sidebar__nav"><li><a href="chuong1.html" class="sidebar__link"><span class="sidebar__chapter-num">1</span>Giao diện người dùng</a></li><li><a href="chuong2.html" class="sidebar__link"><span class="sidebar__chapter-num">2</span>Các công cụ làm việc</a></li><li><a href="chuong3.html" class="sidebar__link"><span class="sidebar__chapter-num">3</span>Bài tập thực hành</a></li><li><a href="chuong4.html" class="sidebar__link active"><span class="sidebar__chapter-num">4</span>Dựng biệt thự & nhà phố</a></li><li><a href="chuong5.html" class="sidebar__link"><span class="sidebar__chapter-num">5</span>Sandbox Tools</a></li><li><a href="chuong6.html" class="sidebar__link"><span class="sidebar__chapter-num">6</span>Công cụ nâng cao</a></li><li><a href="chuong7.html" class="sidebar__link"><span class="sidebar__chapter-num">7</span>VRay cho SketchUp</a></li><li><a href="chuong8.html" class="sidebar__link"><span class="sidebar__chapter-num">8</span>Ôn tập</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Dự án</div><ul class="sidebar__nav"><li><a href="du-an-thuc-hanh.html" class="sidebar__link"><span class="sidebar__icon">🎯</span>Dự án thực hành</a></li></ul></div></aside>
+
+  <main class="main">
+    <div class="content">
+      <div class="chapter-header">
+        <div class="chapter-header__breadcrumb"><a href="../index.html">Trang chủ</a> <span>/</span> <span>Chương 4</span></div>
+        <div class="chapter-header__num">Chương 4</div>
+        <h1 class="chapter-header__title">Thực hành: Dựng biệt thự & nhà phố</h1>
+        <p class="chapter-header__desc">Dựng hình công trình hoàn chỉnh từ bản vẽ AutoCAD — tường, sàn, cửa, mái, vật liệu, ánh sáng, Scenes và xuất ảnh.</p>
+      </div>
+
+      <div class="chapter-content">
+        <div class="toc">
+          <div class="toc__title">Nội dung chương</div>
+          <ul class="toc__list">
+            <li><a href="#biet-thu">Phần 1: Dựng biệt thự</a></li>
+            <li><a href="#nha-pho">Phần 2: Dựng nhà phố</a></li>
+          </ul>
+        </div>
+
+        <!-- ═══ BIỆT THỰ ═══ -->
+        <h2 id="biet-thu">Phần 1: Dựng biệt thự</h2>
+
+        <h3>A. Chuẩn bị & Import bản vẽ CAD</h3>
+        <ol class="steps">
+          <li>Chỉnh đơn vị trong SketchUp: <strong>Window → Model Info → Units</strong></li>
+          <li>Import file CAD: <strong>File → Import</strong>, chọn đường dẫn tới File Cad</li>
+          <li>Trước khi Import, chỉnh đơn vị trong phần <strong>Options</strong> cho khớp</li>
+          <li>Chuyển về <strong>Camera → Standard Views → Top</strong></li>
+          <li>Vào <strong>Camera → Parallel Projection</strong></li>
+          <li>Zoom Extents để nhìn tổng quan bản vẽ</li>
+          <li>Chọn mặt bằng tầng trệt → Click phải → <strong>Make Group</strong></li>
+          <li>Làm tương tự với mặt bằng lầu 1</li>
+          <li><strong>Lock</strong> mặt bằng trệt để không bị thay đổi khi vẽ</li>
+        </ol>
+
+        <h3>B. Dựng tường tầng trệt</h3>
+        <ol class="steps">
+          <li>Dùng <strong>Rectangle (R)</strong> tạo mặt theo tường bao ngoài</li>
+          <li>Click phải → <strong>Reverse Face</strong> để đảo ngược mặt</li>
+          <li>Dùng <strong>Offset (F)</strong> với kích thước 200 (độ dày tường), xóa mặt phẳng phía trong</li>
+          <li>Làm tương tự với tường bên và tường bên trong</li>
+          <li>Tạo <strong>Layer</strong>: vào Window → Layers, thêm "TUONG TRET"</li>
+          <li>Click đôi vào mặt tường → bảng layers → chọn TUONG TRET</li>
+          <li>Click phải → <strong>Make Group</strong></li>
+          <li>Chuyển về Isometric view → <strong>Push/Pull (P)</strong> tường cao 3000mm</li>
+        </ol>
+
+        <h3>C. Tạo cửa đi & cửa sổ</h3>
+        <ol class="steps">
+          <li>Bật chế độ <strong>X-ray</strong> (Face Style) để thấy bản vẽ CAD bên dưới</li>
+          <li>Dùng <strong>Tape Measure (T)</strong> tạo đường gióng guides: chiều cao cửa 2000mm, bệ cửa sổ 1200mm</li>
+          <li>Tạo guides thẳng đứng theo mặt bằng CAD</li>
+          <li>Dùng <strong>Rectangle</strong> vẽ cửa theo các đường guides</li>
+          <li>Dùng <strong>Push/Pull</strong> để khoét lỗ cửa xuyên qua tường (200mm)</li>
+          <li>Vào <strong>Edit → Delete Guides</strong> để xóa đường gióng</li>
+        </ol>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Mẹo khoét cửa</div>
+          <div class="info-box__content">
+            Khi dùng Push/Pull khoét cửa, có thể dùng chế độ gióng điểm <strong>"On Edge"</strong> 
+            để Push/Pull chính xác đến mặt bên kia của tường, hoặc nhập giá trị 200 (độ dày tường) trong VCB.
+          </div>
+        </div>
+
+        <h3>D. Dựng sàn lầu 1 & tường lầu 1</h3>
+        <ol class="steps">
+          <li>Dùng <strong>Rectangle</strong> vẽ hình chữ nhật bao quanh tường → <strong>Push/Pull</strong> xuống 100mm → Make Group</li>
+          <li>Tạo layer "SAN LAU 1"</li>
+          <li>Vẽ tường lầu 1 tương tự tầng trệt → Push/Pull cao 3000mm → Group → Layer "TUONG LAU 1"</li>
+          <li>Tạo cửa tương tự: X-ray → Tape Measure → Rectangle → Push/Pull khoét</li>
+          <li>Tạo mái: Rectangle → Push/Pull 100mm → Group → Layer "SAN MAI"</li>
+          <li>Dùng <strong>Move</strong> chồng tường + sàn lầu 1 lên tường trệt</li>
+        </ol>
+
+        <h3>E. Chi tiết cửa đi</h3>
+        <ol class="steps">
+          <li>Dùng <strong>Rectangle + Line</strong> vẽ khung cửa → Push/Pull 2000mm</li>
+          <li>Dùng <strong>Offset</strong> mặt phẳng vào 50mm → Push/Pull khoét lỗ</li>
+          <li>Make Group khung cửa</li>
+          <li>Vẽ pano kính: Rectangle → Push/Pull 10mm → Make Group → Move vào giữa khung</li>
+          <li>Tạo layers: "KHUNG CUA" và "KINH"</li>
+          <li><strong>Make Component</strong> cả bộ cửa → Copy ra cho các vị trí khác</li>
+          <li>Để chỉnh sửa cửa copy riêng: Click phải → <strong>Make Unique</strong></li>
+        </ol>
+
+        <h3>F. Ốp vật liệu</h3>
+        <ol class="steps">
+          <li>Mở <strong>Window → Materials</strong></li>
+          <li><strong>Kính:</strong> Chọn mục Translucent → chọn ô màu thứ 2 → click vào pano kính</li>
+          <li><strong>Tường:</strong> Chọn Colors → chọn Color_000 (trắng) → click tường</li>
+          <li><strong>Khung cửa:</strong> Chọn Metal → chọn ô đầu tiên</li>
+          <li><strong>Sàn ngoài:</strong> Chọn Wood → ốp → vào Edit chỉnh kích thước</li>
+          <li>Click phải → Texture → <strong>Position</strong> → Rotate 90° để xoay Map vật liệu</li>
+          <li><strong>Đá ốp:</strong> Chọn Stone → browse ảnh Map khác nếu cần</li>
+          <li><strong>Bể bơi:</strong> Wood cho thành, Tile cho vành, Water cho mặt nước</li>
+          <li><strong>Nền cỏ:</strong> Chọn Vegetation → chỉnh tỉ lệ trong Edit</li>
+        </ol>
+
+        <h3>G. Ánh sáng & Scenes</h3>
+        <ol class="steps">
+          <li>Mở <strong>Window → Shadow</strong>: Display Shadow, chọn Time & Date</li>
+          <li>Chỉnh Light (cường độ sáng), Dark (cường độ tối), On face, On ground</li>
+          <li>Thiết lập Location trong <strong>Window → Model Info → Location</strong></li>
+          <li>Chuyển về <strong>Camera → Perspective</strong></li>
+          <li>Mở <strong>Window → Scenes</strong> → click "+" thêm Scene mới</li>
+          <li>Tạo nhiều Scene ở các góc nhìn khác nhau</li>
+        </ol>
+
+        <h3>H. Xuất ảnh</h3>
+        <ol class="steps">
+          <li>Vào <strong>File → Export → 2D Graphic...</strong></li>
+          <li>Chọn định dạng file trong Export type</li>
+          <li>Click <strong>Options</strong>: bỏ chọn "Use view size" → nhập W × H lớn</li>
+          <li>Bật <strong>Anti-alias</strong> (khử răng cưa)</li>
+          <li>JPEG Compression: chọn <strong>Better (max)</strong></li>
+          <li>Đặt tên, chọn vị trí → Click <strong>Export</strong></li>
+        </ol>
+
+        <div class="section-divider"></div>
+
+        <!-- ═══ NHÀ PHỐ ═══ -->
+        <h2 id="nha-pho">Phần 2: Dựng nhà phố</h2>
+
+        <h3>A. Chuẩn bị bản vẽ CAD</h3>
+        <div class="info-box info-box--warning">
+          <div class="info-box__title">⚠️ Xử lý bản vẽ CAD trước khi Import</div>
+          <div class="info-box__content">
+            Cần 1 bản vẽ thật sạch, gọn nhẹ — không có Dim, Text, Hatch:<br>
+            <strong>1.</strong> Dùng lệnh <strong>Filter</strong> trong CAD để lọc và xóa Dimension, Hatch, Text, Leader…<br>
+            <strong>2.</strong> Xoay MB sao cho lối vào chính hướng xuống phía dưới.<br>
+            <strong>3.</strong> Gióng mặt đứng cho chính xác với mặt bằng.<br>
+            <strong>4.</strong> Cho tất cả về Layer 0, Purge bản vẽ cho sạch.<br>
+            <strong>5.</strong> Import vào SketchUp: chọn Scale trong Options = mm.
+          </div>
+        </div>
+
+        <h3>B. Quy trình dựng nhà phố</h3>
+        <ol class="steps">
+          <li>Import file CAD → Group mỗi mặt bằng & mặt đứng</li>
+          <li>Đưa bản vẽ về gần gốc tọa độ → Xóa layer CAD thừa, chỉ giữ Layer 0</li>
+          <li>Xoay mặt đứng lên theo phương thẳng đứng</li>
+          <li>Tạo các Layer: CAD, Tường 1, Sàn 1, Cửa, Mái...</li>
+          <li>Vẽ tường bao ngoại thất bằng <strong>Line</strong> → <strong>Offset</strong> 200mm → <strong>Reverse Faces</strong></li>
+          <li><strong>Push/Pull</strong> tường cao 3900mm (hoặc gióng theo mặt đứng)</li>
+          <li>Tạo đường gióng cửa bằng <strong>Tape Measure</strong> → khoét cửa bằng Push/Pull</li>
+          <li>Xóa Guides → Group tường → đưa vào Layer</li>
+          <li>Vẽ đế tầng trệt, bậc tam cấp (cao 150mm)</li>
+          <li>Vẽ tường lầu 1 tương tự → Push 3600mm → Move chồng lên trệt</li>
+          <li>Gióng kích thước cửa từ mặt đứng → Rectangle → Push khoét cửa lầu 1</li>
+          <li>Tạo sàn lầu 1: Push 100mm → Group → Layer</li>
+          <li>Vẽ lanh tô cửa, mái ban công bằng Rectangle</li>
+          <li>Vẽ joint tường: Line tạo rãnh → Push 10mm</li>
+          <li>Vẽ lan can kính (10mm), thanh chống đứng, tay vịn</li>
+          <li>Dùng <strong>Follow Me</strong> tạo tay vịn lan can</li>
+          <li>Dựng sân thượng tương tự → Bồn hoa, lan can sắt</li>
+          <li>Tạo mái → Group → Layer → Move lên vị trí</li>
+        </ol>
+
+        <h3>C. Cửa đi nhà phố</h3>
+        <ol class="steps">
+          <li>Dùng <strong>Rectangle + Line</strong> tạo khung cửa → Push/Pull 200mm → Make Group → Layer CUA DI</li>
+          <li>Hide layer CUA DI → vẽ cánh cửa dễ dàng</li>
+          <li>Rectangle vẽ cánh cửa → Push/Pull 50mm</li>
+          <li>Cánh cửa dưới: <strong>Make Component</strong>; cánh phía trên: <strong>Make Group</strong></li>
+          <li>Vẽ Pano cửa: Rectangle → Push/Pull 5mm → Offset vào 20mm → Line chéo → Move 5mm → Push/Pull 5mm</li>
+          <li>Make Component Pano → dùng <strong>Move + Ctrl</strong> copy → nhập <span class="key">x4</span> VCB</li>
+          <li>Hiện layer CUA DI → Move cánh cửa + pano vào đúng vị trí</li>
+        </ol>
+
+        <h3>D. Ốp vật liệu nhà phố</h3>
+        <ul>
+          <li><strong>Tường:</strong> Colors → màu trắng (Color_000) → ốp cho tất cả tường trước</li>
+          <li><strong>Tường lầu 1:</strong> Color_C16 (màu đậm) cho tường lồi</li>
+          <li><strong>Khung cửa & cánh cửa:</strong> Wood → ô thứ 4 hàng trên</li>
+          <li><strong>Pano kính:</strong> Translucent → ô thứ 2</li>
+          <li><strong>Nền sàn:</strong> Stone → ô thứ 1 → chỉnh kích thước trong Edit</li>
+          <li><strong>Lan can sắt:</strong> Metal → ô thứ 3 hàng dưới</li>
+        </ul>
+
+        <h3>E. Thiết lập & Xuất ảnh</h3>
+        <p>Thiết lập ánh sáng, Styles, Scenes và xuất ảnh tương tự như phần biệt thự. Vào <strong>File → Export → 2D Graphic</strong>.</p>
+      </div>
+
+      <div class="chapter-nav">
+        <a href="chuong3.html" class="chapter-nav__link chapter-nav__link--prev"><span class="chapter-nav__label">← Trước</span><span class="chapter-nav__title">Chương 3: Bài tập thực hành</span></a>
+        <a href="chuong5.html" class="chapter-nav__link chapter-nav__link--next"><span class="chapter-nav__label">Tiếp theo →</span><span class="chapter-nav__title">Chương 5: Sandbox Tools</span></a>
+      </div>
+      <footer class="footer"><p class="footer__text">Giáo trình SketchUp — <span class="footer__author">DORIC</span> — KTS: <span class="footer__author">Nguyễn Văn Duy</span></p></footer>
+    </div>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 6: Công cụ nâng cao | Giáo Trình SketchUp</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="reading-progress" id="reading-progress"></div>
+  <header class="header"><a href="../index.html" class="header__brand"><div class="header__logo">SU</div>Giáo Trình SketchUp</a><button class="header__toggle" id="sidebar-toggle">☰</button></header>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <aside class="sidebar" id="sidebar"><div class="sidebar__section"><div class="sidebar__label">Nội dung</div><ul class="sidebar__nav"><li><a href="../index.html" class="sidebar__link"><span class="sidebar__icon">🏠</span>Trang chủ</a></li><li><a href="gioi-thieu.html" class="sidebar__link"><span class="sidebar__icon">📖</span>Giới thiệu</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Các Chương</div><ul class="sidebar__nav"><li><a href="chuong1.html" class="sidebar__link"><span class="sidebar__chapter-num">1</span>Giao diện người dùng</a></li><li><a href="chuong2.html" class="sidebar__link"><span class="sidebar__chapter-num">2</span>Các công cụ làm việc</a></li><li><a href="chuong3.html" class="sidebar__link"><span class="sidebar__chapter-num">3</span>Bài tập thực hành</a></li><li><a href="chuong4.html" class="sidebar__link"><span class="sidebar__chapter-num">4</span>Dựng biệt thự & nhà phố</a></li><li><a href="chuong5.html" class="sidebar__link"><span class="sidebar__chapter-num">5</span>Sandbox Tools</a></li><li><a href="chuong6.html" class="sidebar__link active"><span class="sidebar__chapter-num">6</span>Công cụ nâng cao</a></li><li><a href="chuong7.html" class="sidebar__link"><span class="sidebar__chapter-num">7</span>VRay cho SketchUp</a></li><li><a href="chuong8.html" class="sidebar__link"><span class="sidebar__chapter-num">8</span>Ôn tập</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Dự án</div><ul class="sidebar__nav"><li><a href="du-an-thuc-hanh.html" class="sidebar__link"><span class="sidebar__icon">🎯</span>Dự án thực hành</a></li></ul></div></aside>
+
+  <main class="main">
+    <div class="content">
+      <div class="chapter-header">
+        <div class="chapter-header__breadcrumb"><a href="../index.html">Trang chủ</a> <span>/</span> <span>Chương 6</span></div>
+        <div class="chapter-header__num">Chương 6</div>
+        <h1 class="chapter-header__title">Các công cụ dựng hình nâng cao (Ruby Script)</h1>
+        <p class="chapter-header__desc">Plugin 1001 Bit — bộ công cụ Ruby hữu hiệu nhất với hơn 30 tính năng cho kiến trúc.</p>
+      </div>
+
+      <div class="chapter-content">
+        <h2>Plugin 1001 Bit</h2>
+        <p>Trình bày một số nhóm Ruby hữu hiệu nhất và thông dụng nhất cho SketchUp. Plugin 1001 Bit cung cấp hơn 30 công cụ chuyên dụng cho thiết kế kiến trúc.</p>
+
+        <h3>Nhóm 1: Công cụ điểm và đường</h3>
+        <div class="plugin-grid">
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.1</div>
+            <div class="plugin-item__name">Point on Face</div>
+            <div class="plugin-item__desc">Đặt điểm tham chiếu trên mặt bằng cách xác định khoảng cách ngang và dọc. VD: đặt đèn tường 600mm từ cạnh tường ở độ cao 1800mm.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.2</div>
+            <div class="plugin-item__name">Divide</div>
+            <div class="plugin-item__desc">Chia cạnh lựa chọn với các tùy chọn khác nhau — tạo loạt điểm bằng nhau dọc theo cạnh.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.3</div>
+            <div class="plugin-item__name">Align Selected Entities</div>
+            <div class="plugin-item__desc">Căn chỉnh Group/Component bằng cách xác định 3 điểm cơ sở và 3 điểm gốc. VD: đặt xe trên dốc.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.4</div>
+            <div class="plugin-item__name">Perpendicular Line</div>
+            <div class="plugin-item__desc">Gióng cạnh vuông góc với cạnh khác hoặc vuông góc với mặt.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.5</div>
+            <div class="plugin-item__name">Face on Plane (3 Points)</div>
+            <div class="plugin-item__desc">Vẽ mặt trên mặt phẳng xác định bởi 3 điểm. Kích đúp điểm cuối cùng để tạo mặt.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.6</div>
+            <div class="plugin-item__name">Best Fit Face</div>
+            <div class="plugin-item__desc">Tạo mặt từ loạt điểm không đồng phẳng — hữu ích khi vá mô hình.</div>
+          </div>
+        </div>
+
+        <h3>Nhóm 2: Extrude và hiệu chỉnh</h3>
+        <div class="plugin-grid">
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.7</div>
+            <div class="plugin-item__name">Extrude theo đường cong dốc</div>
+            <div class="plugin-item__desc">Extrude đối tượng theo đường cong dốc — duy trì hướng dốc. VD: ramp garage, lan can cầu thang xoắn ốc.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.8</div>
+            <div class="plugin-item__name">Extrude Maintaining Taper</div>
+            <div class="plugin-item__desc">Extrude mặt lựa chọn trong khi duy trì xu hướng giảm dần liên kết với mặt.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.9</div>
+            <div class="plugin-item__name">Xoay mặt</div>
+            <div class="plugin-item__desc">Tạo bề mặt bằng cách quay cấu hình đã chọn theo trục xác định.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.10</div>
+            <div class="plugin-item__name">Move đỉnh</div>
+            <div class="plugin-item__desc">Chỉnh sửa linh hoạt các đỉnh mô hình. Dùng phím mũi tên để khóa trục.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.11</div>
+            <div class="plugin-item__name">Fillet — Bo cạnh</div>
+            <div class="plugin-item__desc">Tạo philê bán kính từ 2 cạnh.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.12</div>
+            <div class="plugin-item__name">Chamfer — Vát góc</div>
+            <div class="plugin-item__desc">Tương tự Fillet nhưng tạo vát góc thay vì bo tròn.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.13</div>
+            <div class="plugin-item__name">Extend</div>
+            <div class="plugin-item__desc">Kéo dài cạnh đến mặt hoặc cạnh khác.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.14</div>
+            <div class="plugin-item__name">Offset</div>
+            <div class="plugin-item__desc">Offset nâng cao cho các trường hợp phức tạp.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.15</div>
+            <div class="plugin-item__name">Mặt cắt ngang</div>
+            <div class="plugin-item__desc">Tạo mặt cắt ngang cho đối tượng.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.16</div>
+            <div class="plugin-item__name">Độ dốc cạnh</div>
+            <div class="plugin-item__desc">Thay đổi cạnh được chọn với độ dốc liên tục.</div>
+          </div>
+        </div>
+
+        <h3>Nhóm 3: Array (Sao chép dãy)</h3>
+        <div class="plugin-grid">
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.17</div>
+            <div class="plugin-item__name">Linear Array</div>
+            <div class="plugin-item__desc">Tạo dãy Group/Component dọc theo đường thẳng. Chọn điểm bắt đầu → điểm cuối.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.18</div>
+            <div class="plugin-item__name">Rectangular Array</div>
+            <div class="plugin-item__desc">Tạo mảng hình chữ nhật 2 chiều. Chọn hướng cột → hướng hàng.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.19</div>
+            <div class="plugin-item__name">Polar Array</div>
+            <div class="plugin-item__desc">Tạo dãy xoay quanh trục trung tâm. Nhập giá trị → chọn 2 điểm xác định trục quay.</div>
+          </div>
+        </div>
+
+        <h3>Nhóm 4: Kiến trúc</h3>
+        <div class="plugin-grid">
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.20</div>
+            <div class="plugin-item__name">Vertical Walls</div>
+            <div class="plugin-item__desc">Tạo tường thẳng đứng nhanh chóng. Nhập kích thước → chọn các điểm tường.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.21</div>
+            <div class="plugin-item__name">Opening on Wall</div>
+            <div class="plugin-item__desc">Tạo khoảng hở cửa trên tường — hỗ trợ cả profile tùy ý.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.22</div>
+            <div class="plugin-item__name">Rãnh ngang</div>
+            <div class="plugin-item__desc">Tạo đường rãnh ngang hoặc đường trồi. Kết hợp smooth/soften tạo hình tấm tôn.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.23</div>
+            <div class="plugin-item__name">Staircases (6 loại)</div>
+            <div class="plugin-item__desc">Cầu thang thẳng (4 kiểu), cầu thang xoắn ốc, thang cuốn (Escalator).</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.24</div>
+            <div class="plugin-item__name">Khung cửa sổ</div>
+            <div class="plugin-item__desc">Tạo nhanh khung cửa sổ và tấm cửa sổ.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.25</div>
+            <div class="plugin-item__name">Khung cửa đi</div>
+            <div class="plugin-item__desc">Tạo nhanh khung cửa đi hoàn chỉnh.</div>
+          </div>
+        </div>
+
+        <h3>Nhóm 5: Chi tiết kiến trúc</h3>
+        <div class="plugin-grid">
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.26</div>
+            <div class="plugin-item__name">Panel Divider</div>
+            <div class="plugin-item__desc">Chia mặt phẳng thành các panel.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.27</div>
+            <div class="plugin-item__name">Perforated Screen</div>
+            <div class="plugin-item__desc">Tạo tấm lưới đục lỗ trang trí.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.28–1.29</div>
+            <div class="plugin-item__name">Lam thông gió 1 & 2</div>
+            <div class="plugin-item__desc">Tạo các thanh lam thông gió với 2 kiểu khác nhau.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.30–1.31</div>
+            <div class="plugin-item__name">Tiết diện từ cạnh</div>
+            <div class="plugin-item__desc">Tạo tiết diện hình chữ nhật hoặc hình tròn từ các cạnh.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.32</div>
+            <div class="plugin-item__name">Joists</div>
+            <div class="plugin-item__desc">Tạo hệ dầm nhanh chóng.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.33</div>
+            <div class="plugin-item__name">Vì kèo, Xà gồ, Litô</div>
+            <div class="plugin-item__desc">Tạo hệ kết cấu mái hoàn chỉnh.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">1.34</div>
+            <div class="plugin-item__name">Hip Roof</div>
+            <div class="plugin-item__desc">Tạo mái chóp nóc tự động.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter-nav">
+        <a href="chuong5.html" class="chapter-nav__link chapter-nav__link--prev"><span class="chapter-nav__label">← Trước</span><span class="chapter-nav__title">Chương 5: Sandbox Tools</span></a>
+        <a href="chuong7.html" class="chapter-nav__link chapter-nav__link--next"><span class="chapter-nav__label">Tiếp theo →</span><span class="chapter-nav__title">Chương 7: VRay cho SketchUp</span></a>
+      </div>
+      <footer class="footer"><p class="footer__text">Giáo trình SketchUp — <span class="footer__author">DORIC</span> — KTS: <span class="footer__author">Nguyễn Văn Duy</span></p></footer>
+    </div>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>

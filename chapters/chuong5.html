@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 5: Sandbox Tools | Giáo Trình SketchUp</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="reading-progress" id="reading-progress"></div>
+  <header class="header"><a href="../index.html" class="header__brand"><div class="header__logo">SU</div>Giáo Trình SketchUp</a><button class="header__toggle" id="sidebar-toggle">☰</button></header>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <aside class="sidebar" id="sidebar"><div class="sidebar__section"><div class="sidebar__label">Nội dung</div><ul class="sidebar__nav"><li><a href="../index.html" class="sidebar__link"><span class="sidebar__icon">🏠</span>Trang chủ</a></li><li><a href="gioi-thieu.html" class="sidebar__link"><span class="sidebar__icon">📖</span>Giới thiệu</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Các Chương</div><ul class="sidebar__nav"><li><a href="chuong1.html" class="sidebar__link"><span class="sidebar__chapter-num">1</span>Giao diện người dùng</a></li><li><a href="chuong2.html" class="sidebar__link"><span class="sidebar__chapter-num">2</span>Các công cụ làm việc</a></li><li><a href="chuong3.html" class="sidebar__link"><span class="sidebar__chapter-num">3</span>Bài tập thực hành</a></li><li><a href="chuong4.html" class="sidebar__link"><span class="sidebar__chapter-num">4</span>Dựng biệt thự & nhà phố</a></li><li><a href="chuong5.html" class="sidebar__link active"><span class="sidebar__chapter-num">5</span>Sandbox Tools</a></li><li><a href="chuong6.html" class="sidebar__link"><span class="sidebar__chapter-num">6</span>Công cụ nâng cao</a></li><li><a href="chuong7.html" class="sidebar__link"><span class="sidebar__chapter-num">7</span>VRay cho SketchUp</a></li><li><a href="chuong8.html" class="sidebar__link"><span class="sidebar__chapter-num">8</span>Ôn tập</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Dự án</div><ul class="sidebar__nav"><li><a href="du-an-thuc-hanh.html" class="sidebar__link"><span class="sidebar__icon">🎯</span>Dự án thực hành</a></li></ul></div></aside>
+
+  <main class="main">
+    <div class="content">
+      <div class="chapter-header">
+        <div class="chapter-header__breadcrumb"><a href="../index.html">Trang chủ</a> <span>/</span> <span>Chương 5</span></div>
+        <div class="chapter-header__num">Chương 5</div>
+        <h1 class="chapter-header__title">Công cụ Sandbox Tools</h1>
+        <p class="chapter-header__desc">Nhóm công cụ tạo địa hình — dùng để dựng bề mặt địa hình tại vị trí đặt công trình.</p>
+      </div>
+
+      <div class="chapter-content">
+        <div class="info-box info-box--note">
+          <div class="info-box__title">📌 Kích hoạt Sandbox Tools</div>
+          <div class="info-box__content">
+            Nhóm công cụ nâng cao này mặc định ẩn. Để sử dụng: <strong>Window → Preferences → Extension → check Sandbox Tools</strong>.<br>
+            Sau đó vào <strong>Menu → Toolbar → Sandbox</strong> để bật thanh công cụ.
+          </div>
+        </div>
+
+        <h2>1. From Contours — Tạo từ đường đồng mức</h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🏔️</div>
+            <div class="tool-card__name">From Contours</div>
+          </div>
+          <div class="tool-card__body">Tạo mặt địa hình từ các đường đồng mức (contour lines).</div>
+        </div>
+        <ol class="steps">
+          <li>Dùng <strong>Freehand</strong> vẽ các đường đồng mức ở chế độ Top view</li>
+          <li>Xóa bỏ các mặt phẳng tạo thành (chỉ giữ đường)</li>
+          <li>Chuyển về Isometric → <strong>Move</strong> từng đường đồng mức lên cao độ bằng nhau (ví dụ: 150mm)</li>
+          <li>Chọn hết các đường → <strong>Draw → Sandbox → From Contour</strong></li>
+          <li>Mặt địa hình tự động tạo ra dựa trên đường đồng mức</li>
+        </ol>
+
+        <h2>2. Sandbox from Scratch — Tạo từ mặt TIN phẳng</h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🔲</div>
+            <div class="tool-card__name">From Scratch</div>
+          </div>
+          <div class="tool-card__body">
+            Tạo lưới TIN phẳng với khoảng cách ô lưới tùy chỉnh (mặc định 10 đơn vị). 
+            Nhập Grid Spacing trong VCB trước khi vẽ.
+          </div>
+        </div>
+        <ul>
+          <li>Kích hoạt công cụ → nhập khoảng cách ô lưới vào VCB</li>
+          <li>Click điểm đầu → kéo xác định chiều dài → kéo xác định chiều rộng</li>
+          <li>Đối tượng lưới tự tạo thành Group. Cần phá vỡ Group hoặc vào bối cảnh để hiệu chỉnh.</li>
+        </ul>
+
+        <h2>3. Smoove Tool — Tạc bề mặt địa hình</h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">⛰️</div>
+            <div class="tool-card__name">Smoove</div>
+          </div>
+          <div class="tool-card__body">
+            Kéo đẩy bề mặt TIN để tạo đồi, thung lũng. Vòng tròn đỏ = phạm vi ảnh hưởng.
+          </div>
+        </div>
+        <ol class="steps">
+          <li>Từ mặt TIN phẳng, click phải → <strong>Explode</strong></li>
+          <li>Click công cụ Smoove → nhập bán kính ảnh hưởng (ví dụ: <span class="key">3000</span>) trong VCB</li>
+          <li>Click vào điểm trên lưới — xuất hiện các điểm vàng trong phạm vi</li>
+          <li>Di chuột lên để tạo ngọn đồi, nhập chiều cao (ví dụ: <span class="key">2500</span>) trong VCB</li>
+        </ol>
+        <h4>Làm mềm bề mặt</h4>
+        <ul>
+          <li>Mở <strong>Window → Soften Edges</strong> → di chuyển thanh chạy để loại bỏ đường nét</li>
+          <li>Chọn <strong>Soften Coplanar</strong> — loại bỏ đường nét trên bề mặt phẳng</li>
+          <li>Chọn <strong>Smooth normals</strong> — tạo bề mặt trơn láng</li>
+        </ul>
+
+        <h2>4. Stamp Tool — San nền</h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🏗️</div>
+            <div class="tool-card__name">Stamp</div>
+          </div>
+          <div class="tool-card__body">
+            Tạo mặt nền phẳng để đặt khối kiến trúc lên trên bề mặt địa hình.
+          </div>
+        </div>
+        <ol class="steps">
+          <li>Tạo mặt phẳng nền (hình chữ nhật) → định vị trên mặt TIN</li>
+          <li>Chọn <strong>Stamp Tool</strong> → click mặt nền → nhập khoảng vát chân nền trong VCB</li>
+          <li>Click lên mặt địa hình TIN → di chuột xác định cao độ → click kết thúc</li>
+        </ol>
+
+        <h2>5. Drape Tool — Phủ mặt địa hình</h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🛤️</div>
+            <div class="tool-card__name">Drape</div>
+          </div>
+          <div class="tool-card__body">
+            Chiếu đối tượng (con đường) thành đường phủ trên bề mặt địa hình.
+          </div>
+        </div>
+        <ol class="steps">
+          <li>Vẽ con đường → Move vào vị trí trên địa hình</li>
+          <li>Click <strong>Drape Tool</strong> → chọn đối tượng → chọn địa hình</li>
+          <li>Nét phủ sẽ tự động được tạo trên bề mặt địa hình</li>
+        </ol>
+
+        <h2>6. Add Detail Tool — Chi tiết hóa mặt TIN</h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🔍</div>
+            <div class="tool-card__name">Add Detail</div>
+          </div>
+          <div class="tool-card__body">
+            Tăng độ chi tiết (chia nhỏ tam giác) tại vùng cần độ mềm cao khi dùng Smoove. 
+            Sử dụng nơi thật cần thiết, tránh làm nặng mô hình.
+          </div>
+        </div>
+        <ol class="steps">
+          <li>Bỏ chọn Soften Coplanar & Smooth normals để thấy lưới tam giác</li>
+          <li>Chọn đỉnh / cạnh / tam giác đơn vị trên mặt TIN</li>
+          <li>Click <strong>Add Detail Tool</strong> → phần chọn được chi tiết hóa</li>
+          <li>Dùng <strong>Smoove</strong> để hiệu chỉnh phần đã chi tiết hóa</li>
+        </ol>
+
+        <h2>7. Flip Edge Tool — Lật cạnh tam giác đơn vị</h2>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🔀</div>
+            <div class="tool-card__name">Flip Edge</div>
+          </div>
+          <div class="tool-card__body">
+            Lật cạnh tam giác cơ sở để khắc phục mặt dốc không như ý. 
+            Vào <strong>View → Hidden Geometry</strong> để thấy tam giác đơn vị.
+          </div>
+        </div>
+        <ul>
+          <li>Kích hoạt công cụ → di chuột trên mặt dốc → cạnh có thể lật sẽ sáng lên</li>
+          <li>Click xác nhận cạnh lật</li>
+          <li>Chỉ những cạnh SketchUp cho phép mới có thể lật</li>
+        </ul>
+      </div>
+
+      <div class="chapter-nav">
+        <a href="chuong4.html" class="chapter-nav__link chapter-nav__link--prev"><span class="chapter-nav__label">← Trước</span><span class="chapter-nav__title">Chương 4: Dựng biệt thự & nhà phố</span></a>
+        <a href="chuong6.html" class="chapter-nav__link chapter-nav__link--next"><span class="chapter-nav__label">Tiếp theo →</span><span class="chapter-nav__title">Chương 6: Công cụ nâng cao</span></a>
+      </div>
+      <footer class="footer"><p class="footer__text">Giáo trình SketchUp — <span class="footer__author">DORIC</span> — KTS: <span class="footer__author">Nguyễn Văn Duy</span></p></footer>
+    </div>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# PDFs
+*.pdf
+
+# Extracted text
+extracted_text.txt
+teacherguide_text.txt
+
+# Python
+*.py
+__pycache__/
+*.pyc

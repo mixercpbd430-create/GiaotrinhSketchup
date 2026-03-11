@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 7: VRay cho SketchUp | Giáo Trình SketchUp</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="reading-progress" id="reading-progress"></div>
+  <header class="header"><a href="../index.html" class="header__brand"><div class="header__logo">SU</div>Giáo Trình SketchUp</a><button class="header__toggle" id="sidebar-toggle">☰</button></header>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <aside class="sidebar" id="sidebar"><div class="sidebar__section"><div class="sidebar__label">Nội dung</div><ul class="sidebar__nav"><li><a href="../index.html" class="sidebar__link"><span class="sidebar__icon">🏠</span>Trang chủ</a></li><li><a href="gioi-thieu.html" class="sidebar__link"><span class="sidebar__icon">📖</span>Giới thiệu</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Các Chương</div><ul class="sidebar__nav"><li><a href="chuong1.html" class="sidebar__link"><span class="sidebar__chapter-num">1</span>Giao diện người dùng</a></li><li><a href="chuong2.html" class="sidebar__link"><span class="sidebar__chapter-num">2</span>Các công cụ làm việc</a></li><li><a href="chuong3.html" class="sidebar__link"><span class="sidebar__chapter-num">3</span>Bài tập thực hành</a></li><li><a href="chuong4.html" class="sidebar__link"><span class="sidebar__chapter-num">4</span>Dựng biệt thự & nhà phố</a></li><li><a href="chuong5.html" class="sidebar__link"><span class="sidebar__chapter-num">5</span>Sandbox Tools</a></li><li><a href="chuong6.html" class="sidebar__link"><span class="sidebar__chapter-num">6</span>Công cụ nâng cao</a></li><li><a href="chuong7.html" class="sidebar__link active"><span class="sidebar__chapter-num">7</span>VRay cho SketchUp</a></li><li><a href="chuong8.html" class="sidebar__link"><span class="sidebar__chapter-num">8</span>Ôn tập</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Dự án</div><ul class="sidebar__nav"><li><a href="du-an-thuc-hanh.html" class="sidebar__link"><span class="sidebar__icon">🎯</span>Dự án thực hành</a></li></ul></div></aside>
+
+  <main class="main">
+    <div class="content">
+      <div class="chapter-header">
+        <div class="chapter-header__breadcrumb"><a href="../index.html">Trang chủ</a> <span>/</span> <span>Chương 7</span></div>
+        <div class="chapter-header__num">Chương 7</div>
+        <h1 class="chapter-header__title">VRay cho SketchUp</h1>
+        <p class="chapter-header__desc">Tạo vật liệu VRay, ốp vật liệu cho công trình, thiết lập ánh sáng mặt trời và cài đặt render. Version 1.48.</p>
+      </div>
+
+      <div class="chapter-content">
+        <div class="toc">
+          <div class="toc__title">Nội dung chương</div>
+          <ul class="toc__list">
+            <li><a href="#ui">1. Giao diện người dùng (UI)</a></li>
+            <li><a href="#vat-lieu">2. Tạo vật liệu</a></li>
+            <li><a href="#op-vat-lieu">3. Cách ốp vật liệu cho công trình</a></li>
+            <li><a href="#render">4. Tùy chọn Render</a></li>
+          </ul>
+        </div>
+
+        <h2 id="ui">1. Giao diện người dùng (UI)</h2>
+        <p>Truy cập V-Ray qua <strong>Plugins → V-Ray</strong>. Kích hoạt/vô hiệu qua <strong>Windows → Preferences → Extensions</strong>.</p>
+        
+        <h4>Thanh công cụ VRay gồm:</h4>
+        <ul>
+          <li><strong>M</strong> — Material Editor (Trình biên tập vật liệu)</li>
+          <li><strong>Render</strong> — Bắt đầu render</li>
+          <li><strong>Options</strong> — Cài đặt render nâng cao</li>
+          <li><strong>Lights</strong> — Quản lý đèn</li>
+        </ul>
+
+        <h2 id="vat-lieu">2. Tạo vật liệu VRay</h2>
+        <p>Mở bằng cách nhấp vào biểu tượng đầu tiên trên thanh công cụ V-Ray (hoặc nhấn <span class="key">M</span>).</p>
+
+        <h3>3 vùng chính của Material Editor</h3>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">👁️</div>
+            <div class="tool-card__name">1. Preview (Xem trước)</div>
+          </div>
+          <div class="tool-card__body">Click nút Preview để xem trước vật liệu được chọn.</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">📋</div>
+            <div class="tool-card__name">2. Vùng làm việc</div>
+          </div>
+          <div class="tool-card__body">Hiển thị tất cả vật liệu đã tạo. Click phải chuột để có menu tùy chọn.</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">⚙️</div>
+            <div class="tool-card__name">3. Điều chỉnh vật liệu</div>
+          </div>
+          <div class="tool-card__body">Thay đổi tất cả thông số, thuộc tính của vật liệu: Diffuse, Reflection, Refraction, Maps...</div>
+        </div>
+
+        <h3>5 loại vật liệu VRay</h3>
+        <ol>
+          <li><strong>Skp Two Sided Material</strong></li>
+          <li><strong>V-Ray Default Material</strong></li>
+          <li><strong>Toon Material</strong></li>
+          <li><strong>Angle Blend Material</strong></li>
+          <li><strong>Two Sided Material</strong></li>
+        </ol>
+
+        <h3>Thêm vật liệu mới</h3>
+        <ol class="steps">
+          <li>Nhấp phải chuột vào "Scene Material"</li>
+          <li>Chọn <strong>"Create Material"</strong></li>
+          <li>Chọn 1 trong 5 loại vật liệu VRay</li>
+        </ol>
+
+        <h3>Thêm Layer vào vật liệu</h3>
+        <ol class="steps">
+          <li>Nhấp phải chuột vào vật liệu</li>
+          <li>Chọn <strong>"Create Layer"</strong></li>
+          <li>Chọn loại layer: <strong>Reflection</strong> (phản chiếu), <strong>Refraction</strong> (khúc xạ), v.v.</li>
+        </ol>
+
+        <h4>Các tùy chọn vật liệu (Click phải):</h4>
+        <ul>
+          <li><strong>Save Material</strong> — Lưu vật liệu</li>
+          <li><strong>Duplicate Material</strong> — Tạo bản sao</li>
+          <li><strong>Rename Material</strong> — Đổi tên</li>
+          <li><strong>Remove Material</strong> — Hủy bỏ</li>
+          <li><strong>Import Material</strong> — Nhập vật liệu</li>
+          <li><strong>Apply Material to Selection</strong> — Áp dụng cho đối tượng đã chọn</li>
+          <li><strong>Apply Material to Layer</strong> — Áp dụng cho layer</li>
+          <li><strong>Purge Unused Materials</strong> — Làm sạch vật liệu chưa sử dụng</li>
+        </ul>
+
+        <h3>Texture Editor</h3>
+        <p>Truy cập bằng cách click trái vào "m" hoặc "M" trên vật liệu.</p>
+        <ol class="steps">
+          <li>Click vào <strong>"m"</strong> để mở Texture Editor</li>
+          <li>Chọn loại texture mapping (ví dụ: TexBitmap)</li>
+          <li>Click vào <strong>ba dấu chấm</strong> bên cạnh "File" để chọn hình ảnh</li>
+          <li>Click <strong>OK</strong></li>
+        </ol>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Load vật liệu từ thư viện</div>
+          <div class="info-box__content">
+            Nếu muốn thay đổi ảnh Map vật liệu, vào phần <strong>Maps</strong> của vật liệu → click vào ảnh đang có → 
+            Browse tìm file ảnh mới → chỉnh kích thước trong phần <strong>Displacement</strong>.
+          </div>
+        </div>
+
+        <h2 id="op-vat-lieu">3. Cách ốp vật liệu cho công trình</h2>
+        <p>Ví dụ ốp vật liệu cho công trình nhà phố:</p>
+
+        <h3>A. Ốp tường</h3>
+        <ol class="steps">
+          <li>Click <span class="key">M</span> mở bảng vật liệu VRay</li>
+          <li>Tạo vật liệu mới, đặt tên "tường tầng trệt"</li>
+          <li>Trong mục <strong>Diffuse</strong>, chọn màu trắng</li>
+          <li>Click phải → <strong>Apply Material to Selection</strong> → click chọn các mặt tường</li>
+          <li>Tạo thêm vật liệu màu xanh đậm cho tường lồi lầu 1</li>
+        </ol>
+
+        <h3>B. Ốp lan can sắt</h3>
+        <ol class="steps">
+          <li>Tạo vật liệu mới "lan can sắt" với màu sắc phù hợp</li>
+          <li>Thêm <strong>Reflection Layer</strong> (phản chiếu) vào vật liệu</li>
+          <li>Ốp cho tất cả lan can sắt</li>
+        </ol>
+
+        <h3>C. Ốp tay vịn gỗ</h3>
+        <ol class="steps">
+          <li>Tạo vật liệu gỗ tương tự, thêm <strong>Reflection Layer</strong></li>
+          <li>Vào <strong>Maps</strong> để chỉnh độ gồ ghề (bump) của vật liệu gỗ</li>
+          <li>Ốp cho tay vịn lan can và toàn bộ cửa</li>
+        </ol>
+
+        <h3>D. Ốp kính</h3>
+        <ol class="steps">
+          <li>Tạo vật liệu kính</li>
+          <li>Thêm <strong>Reflection Layer</strong> (phản chiếu)</li>
+          <li>Thêm <strong>Refraction Layer</strong> (khúc xạ, trong suốt)</li>
+          <li>Hide các layer, chỉ để lại KINH → ốp vật liệu kính</li>
+          <li><strong>Duplicate</strong> vật liệu kính → đổi tên "lan can kính" → chỉnh Fog/color</li>
+        </ol>
+
+        <h3>E. Ốp gạch lát nền</h3>
+        <ol class="steps">
+          <li>Tạo vật liệu gạch với Texture Editor → chọn ảnh gạch</li>
+          <li>Thêm <strong>Reflection Layer</strong></li>
+          <li>Ốp cho nền sàn và tam cấp</li>
+        </ol>
+
+        <h2 id="render">4. Tùy chọn Render</h2>
+        
+        <h3>V-Ray Render Options</h3>
+        <p>Điều khiển tất cả thông số render qua bảng Options trên thanh Toolbar V-Ray.</p>
+        <ul>
+          <li><strong>Save V-Ray Option:</strong> Lưu lại tất cả thông số để dùng sau</li>
+          <li><strong>Open V-Ray Option:</strong> Mở file thông số đã lưu</li>
+          <li><strong>Load Default:</strong> Phục hồi cài đặt mặc định</li>
+        </ul>
+
+        <h3>Hiệu chỉnh ánh sáng mặt trời (VRay Sun)</h3>
+        <ol class="steps">
+          <li>Vào <strong>Menu Option</strong> của VRay → mở bảng thiết lập</li>
+          <li>Trong <strong>Environment</strong>: GI Color và BG Color đều chọn <strong>Sky</strong></li>
+          <li>Chỉnh các thông số ánh sáng mặt trời</li>
+        </ol>
+
+        <h4>Các thông số VRay Sun quan trọng:</h4>
+        <table>
+          <thead>
+            <tr><th>Thông số</th><th>Mô tả</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Shadow bias</strong></td><td>Độ lệch tia bóng đổ. Nhỏ = bóng kéo dài, quá cao = bóng tách rời.</td></tr>
+            <tr><td><strong>Photon radius</strong></td><td>Bán kính phát ra photon ánh sáng.</td></tr>
+            <tr><td><strong>Turbidity</strong></td><td>Bụi trong khí quyển. Nhỏ = trời xanh (vùng quê). Lớn = vàng cam (thành phố).</td></tr>
+            <tr><td><strong>Ozone</strong></td><td>Ảnh hưởng màu ánh sáng. 0 = vàng, 1 = xanh hơn.</td></tr>
+            <tr><td><strong>Intensity Multiplier</strong></td><td>Độ chói mặt trời. Giảm nếu quá chói.</td></tr>
+            <tr><td><strong>Size Multiplier</strong></td><td>Kích thước ảnh mặt trời (cần khi có mặt trời trong ảnh).</td></tr>
+            <tr><td><strong>Shadow subdivs</strong></td><td>Chất lượng bóng đổ. Cao = đẹp hơn nhưng render lâu hơn.</td></tr>
+          </tbody>
+        </table>
+
+        <div class="info-box info-box--warning">
+          <div class="info-box__title">⚠️ Lưu ý về Render</div>
+          <div class="info-box__content">
+            Các setting trong giáo trình chỉ là <strong>tham khảo</strong>. Trong quá trình thực hành, 
+            bạn sẽ tìm ra nhiều setting khác đẹp hơn tùy theo từng dự án và phong cách riêng.
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter-nav">
+        <a href="chuong6.html" class="chapter-nav__link chapter-nav__link--prev"><span class="chapter-nav__label">← Trước</span><span class="chapter-nav__title">Chương 6: Công cụ nâng cao</span></a>
+        <a href="chuong8.html" class="chapter-nav__link chapter-nav__link--next"><span class="chapter-nav__label">Tiếp theo →</span><span class="chapter-nav__title">Chương 8: Ôn tập</span></a>
+      </div>
+      <footer class="footer"><p class="footer__text">Giáo trình SketchUp — <span class="footer__author">DORIC</span> — KTS: <span class="footer__author">Nguyễn Văn Duy</span></p></footer>
+    </div>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>

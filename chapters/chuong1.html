@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chương 1: Giao diện người dùng SketchUp - Toolbars, Menu, Shortcut Keys">
+  <title>Chương 1: Giao diện người dùng | Giáo Trình SketchUp</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="reading-progress" id="reading-progress"></div>
+  <header class="header">
+    <a href="../index.html" class="header__brand"><div class="header__logo">SU</div>Giáo Trình SketchUp</a>
+    <button class="header__toggle" id="sidebar-toggle">☰</button>
+  </header>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__section">
+      <div class="sidebar__label">Nội dung</div>
+      <ul class="sidebar__nav">
+        <li><a href="../index.html" class="sidebar__link"><span class="sidebar__icon">🏠</span>Trang chủ</a></li>
+        <li><a href="gioi-thieu.html" class="sidebar__link"><span class="sidebar__icon">📖</span>Giới thiệu</a></li>
+      </ul>
+    </div>
+    <div class="sidebar__section">
+      <div class="sidebar__label">Các Chương</div>
+      <ul class="sidebar__nav">
+        <li><a href="chuong1.html" class="sidebar__link active"><span class="sidebar__chapter-num">1</span>Giao diện người dùng</a></li>
+        <li><a href="chuong2.html" class="sidebar__link"><span class="sidebar__chapter-num">2</span>Các công cụ làm việc</a></li>
+        <li><a href="chuong3.html" class="sidebar__link"><span class="sidebar__chapter-num">3</span>Bài tập thực hành</a></li>
+        <li><a href="chuong4.html" class="sidebar__link"><span class="sidebar__chapter-num">4</span>Dựng biệt thự & nhà phố</a></li>
+        <li><a href="chuong5.html" class="sidebar__link"><span class="sidebar__chapter-num">5</span>Sandbox Tools</a></li>
+        <li><a href="chuong6.html" class="sidebar__link"><span class="sidebar__chapter-num">6</span>Công cụ nâng cao</a></li>
+        <li><a href="chuong7.html" class="sidebar__link"><span class="sidebar__chapter-num">7</span>VRay cho SketchUp</a></li>
+        <li><a href="chuong8.html" class="sidebar__link"><span class="sidebar__chapter-num">8</span>Ôn tập</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="content">
+      <div class="chapter-header">
+        <div class="chapter-header__breadcrumb">
+          <a href="../index.html">Trang chủ</a> <span>/</span> <span>Chương 1</span>
+        </div>
+        <div class="chapter-header__num">Chương 1</div>
+        <h1 class="chapter-header__title">Giao diện người dùng</h1>
+        <p class="chapter-header__desc">Làm quen với màn hình làm việc, thanh công cụ, menu và phím tắt trong SketchUp.</p>
+      </div>
+
+      <div class="chapter-content">
+        <!-- TOC -->
+        <div class="toc">
+          <div class="toc__title">Nội dung chương</div>
+          <ul class="toc__list">
+            <li><a href="#man-hinh">1. Màn hình làm việc của SketchUp</a></li>
+            <li><a href="#menu-file">Menu File</a></li>
+            <li><a href="#menu-edit">Menu Edit</a></li>
+            <li><a href="#menu-view">Menu View</a></li>
+            <li><a href="#menu-camera">Menu Camera</a></li>
+            <li><a href="#shortcut">2. Phím tắt (Shortcut Keys)</a></li>
+          </ul>
+        </div>
+
+        <h2 id="man-hinh">1. Màn hình làm việc của SketchUp</h2>
+        <p>
+          So với một số phần mềm đồ họa 3 chiều khác thì chương trình SketchUp khi mới cài đặt 
+          có giao diện <strong>đơn giản</strong>, chỉ bố trí một số chức năng cơ bản giúp cho những 
+          người không chuyên vẫn có thể tiếp cận và sử dụng dễ dàng.
+        </p>
+
+        <h3>a. Toolbars (Thanh công cụ)</h3>
+        
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🛠️</div>
+            <div class="tool-card__name">Drawing and Editing Tool</div>
+          </div>
+          <div class="tool-card__body">
+            Những thanh công cụ tạo ra các hình học cơ bản (hình chữ nhật, hình vuông, hình tròn, các đa giác…); 
+            những công cụ dựng hình, đo lường và thước đo góc, những công cụ di chuyển (Move, Rotate, Push/Pull, …).
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">📐</div>
+            <div class="tool-card__name">Drawing Axes (Hệ trục tọa độ)</div>
+          </div>
+          <div class="tool-card__body">
+            Bố trí một hệ trục tọa độ ba chiều XYZ tương ứng với 3 màu: 
+            <strong style="color:#ea4335;">đỏ (X)</strong>, 
+            <strong style="color:#34a853;">xanh cây (Y)</strong> và 
+            <strong style="color:#4285f4;">xanh dương (Z)</strong>. 
+            Khi vẽ theo một phương bất kỳ, đường vẽ sẽ có màu đen. 
+            Nếu đường vẽ chuyển sang 1 trong 3 màu thì đường vẽ sẽ song song với trục tương ứng.
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">💬</div>
+            <div class="tool-card__name">Status Prompts & Value Control Box (VCB)</div>
+          </div>
+          <div class="tool-card__body">
+            <strong>Status Prompts:</strong> Mô tả công cụ hiện ra khi bạn điều khiển con trỏ quanh công cụ. 
+            Đưa ra những sự lựa chọn cần thiết như "Select start point" hay "Enter Value".<br><br>
+            <strong>VCB (Value Control Box):</strong> Được dùng cho việc nhập giá trị và biểu hiện các thông tin số liệu. 
+            Bạn có thể nhập số liệu kích thước, số đo góc, hoặc số của các bản sao.
+          </div>
+        </div>
+
+        <h2 id="menu-file">Menu File</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item__name">New <span class="key">Ctrl+N</span></div>
+            <div class="menu-item__desc">Mở bản vẽ mới</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Open <span class="key">Ctrl+O</span></div>
+            <div class="menu-item__desc">Mở bản vẽ đã có sẵn</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Save <span class="key">Ctrl+S</span></div>
+            <div class="menu-item__desc">Lưu bản vẽ</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Save As</div>
+            <div class="menu-item__desc">Lưu thành file mới</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">3D Warehouse</div>
+            <div class="menu-item__desc">Kho thư viện vật dụng phong phú. Gõ từ khóa để tìm kiếm.</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Export</div>
+            <div class="menu-item__desc">Xuất bản vẽ ra file 3D, 2D, Section Slice hoặc Animation (AVI)</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Import</div>
+            <div class="menu-item__desc">Thêm vào bản vẽ các file 2D, 3D hoặc hình ảnh</div>
+          </div>
+        </div>
+
+        <h2 id="menu-edit">Menu Edit</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item__name">Undo / Redo</div>
+            <div class="menu-item__desc">Quay trở lại / tiến tới các bước lệnh (khoảng 100 lệnh)</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Cut / Copy / Paste <span class="key">Ctrl+X/C/V</span></div>
+            <div class="menu-item__desc">Cắt, sao chép và dán đối tượng</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Select All <span class="key">Ctrl+A</span></div>
+            <div class="menu-item__desc">Chọn tất cả các vật thể</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Hide <span class="key">H</span></div>
+            <div class="menu-item__desc">Ẩn các vật thể cần ẩn</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Lock / Unlock</div>
+            <div class="menu-item__desc">Khóa vật thể, không thể xóa hay chỉnh sửa (chỉ có tác dụng khi Group/Component)</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Make Component <span class="key">G</span></div>
+            <div class="menu-item__desc">Nhóm đối tượng — khi thay đổi một bản copy, các bản khác cũng thay đổi theo</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Make Group</div>
+            <div class="menu-item__desc">Nhóm đối tượng — các nhóm copy hoàn toàn độc lập với nhau</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Intersect with Model</div>
+            <div class="menu-item__desc">Thể hiện các đường giao giữa các khối hoặc mặt phẳng</div>
+          </div>
+        </div>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Mẹo hay</div>
+          <div class="info-box__content">
+            <strong>Paste in Place:</strong> Đặt vật thể "copy" hoặc "cut" ngay chính tại vị trí vật thể gốc —  
+            rất hữu ích khi copy đối tượng giữa các Group/Component khác nhau.
+          </div>
+        </div>
+
+        <h2 id="menu-view">Menu View</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item__name">Hidden Geometry</div>
+            <div class="menu-item__desc">Thể hiện lưới các đường sin của vật thể</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Section Planes / Cuts</div>
+            <div class="menu-item__desc">Hiện các mặt cắt và nét cắt</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Axes</div>
+            <div class="menu-item__desc">Hiện hệ trục tọa độ</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Shadows <span class="key">Ctrl+B</span></div>
+            <div class="menu-item__desc">Hiện bóng đổ của vật thể</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Face Style</div>
+            <div class="menu-item__desc">X-ray (trong suốt), Wireframe, Hidden Line, Shaded, Shaded with Textures, Monochrome</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Animation / Scenes</div>
+            <div class="menu-item__desc">Tạo các Scene — lưu giữ những góc nhìn khác nhau</div>
+          </div>
+        </div>
+
+        <h2 id="menu-camera">Menu Camera</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item__name">Standard Views</div>
+            <div class="menu-item__desc">Top, Bottom, Front, Right, Back, Left, Isometric</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Parallel Projection</div>
+            <div class="menu-item__desc">Hình chiếu trục đo</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Perspective</div>
+            <div class="menu-item__desc">Phối cảnh (hay dùng trong quá trình làm việc)</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Two-Point Perspective</div>
+            <div class="menu-item__desc">Phối cảnh hai điểm tụ</div>
+          </div>
+        </div>
+
+        <h3>Các công cụ Camera quan trọng</h3>
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🔄</div>
+            <div class="tool-card__name">Orbit</div>
+            <div class="tool-card__shortcut"><span class="key">Middle Mouse</span></div>
+          </div>
+          <div class="tool-card__body">
+            Quay xung quanh vật thể. Giữ chuột giữa khi di chuyển chuột để luân phiên điểm nhìn khi đang dùng công cụ khác.
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">✋</div>
+            <div class="tool-card__name">Pan</div>
+            <div class="tool-card__shortcut"><span class="key">Shift + Middle Mouse</span></div>
+          </div>
+          <div class="tool-card__body">
+            Di chuyển điểm nhìn lên, xuống, trái, phải. Giữ đồng thời chuột giữa và phím Shift để di chuyển điểm nhìn.
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🔍</div>
+            <div class="tool-card__name">Zoom / Zoom Extents / Zoom Windows</div>
+            <div class="tool-card__shortcut"><span class="key">Scroll Wheel</span></div>
+          </div>
+          <div class="tool-card__body">
+            <strong>Zoom:</strong> Dùng con lăn để phóng to/thu nhỏ.<br>
+            <strong>Zoom Extents:</strong> Đưa vật thể về vị trí trung tâm vừa vặn với màn hình.<br>
+            <strong>Zoom Windows:</strong> Phóng to khu vực cần nhìn rõ bằng cách quét vùng chọn.<br>
+            <strong>Field of View:</strong> Nhấn Shift khi zoom — nhập giá trị như 45deg hoặc 35mm.
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card__header">
+            <div class="tool-card__icon">🚶</div>
+            <div class="tool-card__name">Walk / Position Camera / Look Around</div>
+          </div>
+          <div class="tool-card__body">
+            <strong>Walk:</strong> Di chuyển quanh vật thể mô phỏng như đi bộ.<br>
+            <strong>Position Camera:</strong> Hiển thị góc nhìn ở vị trí quan sát, nhập chiều cao tầm nhìn trong VCB.<br>
+            <strong>Look Around:</strong> Camera quay xung quanh một điểm cố định, mô phỏng như quan sát từ trái sang phải.
+          </div>
+        </div>
+
+        <h2 id="shortcut">2. Phím tắt (Shortcut Keys)</h2>
+        <p>
+          Có thể tùy chỉnh lại phím tắt theo thói quen: Vào <strong>Windows/Preferences</strong>, chọn mục <strong>Shortcut</strong>.
+        </p>
+
+        <div class="info-box info-box--note">
+          <div class="info-box__title">💡 Tùy chỉnh phím tắt</div>
+          <div class="info-box__content">
+            <strong>Ô Filter:</strong> Gõ tên lệnh cần tạo phím tắt<br>
+            <strong>Function:</strong> Chọn chính xác tên lệnh<br>
+            <strong>Add Shortcut:</strong> Gõ phím tắt rồi bấm dấu + kế bên<br>
+            Để gỡ bỏ phím tắt, bấm vào dấu − trong phần Assigned.
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Phím tắt</th>
+              <th>Công cụ</th>
+              <th>Mô tả</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="key">L</span></td><td>Line</td><td>Vẽ đoạn thẳng</td></tr>
+            <tr><td><span class="key">R</span></td><td>Rectangle</td><td>Vẽ hình chữ nhật</td></tr>
+            <tr><td><span class="key">C</span></td><td>Circle</td><td>Vẽ hình tròn</td></tr>
+            <tr><td><span class="key">A</span></td><td>Arc</td><td>Vẽ cung tròn</td></tr>
+            <tr><td><span class="key">P</span></td><td>Push/Pull</td><td>Kéo/Nén đối tượng</td></tr>
+            <tr><td><span class="key">M</span></td><td>Move</td><td>Di chuyển đối tượng</td></tr>
+            <tr><td><span class="key">Q</span></td><td>Rotate</td><td>Xoay đối tượng</td></tr>
+            <tr><td><span class="key">S</span></td><td>Scale</td><td>Thu phóng đối tượng</td></tr>
+            <tr><td><span class="key">F</span></td><td>Offset</td><td>Sao chép đồng dạng</td></tr>
+            <tr><td><span class="key">T</span></td><td>Tape Measure</td><td>Thước đo / đường gióng</td></tr>
+            <tr><td><span class="key">E</span></td><td>Eraser</td><td>Tẩy xóa</td></tr>
+            <tr><td><span class="key">B</span></td><td>Paint Bucket</td><td>Tô vật liệu</td></tr>
+            <tr><td><span class="key">Space</span></td><td>Select</td><td>Chọn đối tượng</td></tr>
+            <tr><td><span class="key">H</span></td><td>Hide</td><td>Ẩn đối tượng</td></tr>
+            <tr><td><span class="key">G</span></td><td>Make Component</td><td>Tạo Component</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="chapter-nav">
+        <a href="gioi-thieu.html" class="chapter-nav__link chapter-nav__link--prev">
+          <span class="chapter-nav__label">← Trước</span>
+          <span class="chapter-nav__title">Giới thiệu</span>
+        </a>
+        <a href="chuong2.html" class="chapter-nav__link chapter-nav__link--next">
+          <span class="chapter-nav__label">Tiếp theo →</span>
+          <span class="chapter-nav__title">Chương 2: Các công cụ làm việc</span>
+        </a>
+      </div>
+
+      <footer class="footer">
+        <p class="footer__text">Giáo trình SketchUp — <span class="footer__author">DORIC</span> — KTS: <span class="footer__author">Nguyễn Văn Duy</span></p>
+      </footer>
+    </div>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>
