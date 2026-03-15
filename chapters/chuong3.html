@@ -10,7 +10,7 @@
   <div class="reading-progress" id="reading-progress"></div>
   <header class="header"><a href="../index.html" class="header__brand"><div class="header__logo">SU</div>Giáo Trình SketchUp</a><button class="header__toggle" id="sidebar-toggle">☰</button></header>
   <div class="sidebar-overlay" id="sidebar-overlay"></div>
-  <aside class="sidebar" id="sidebar"><div class="sidebar__section"><div class="sidebar__label">Nội dung</div><ul class="sidebar__nav"><li><a href="../index.html" class="sidebar__link"><span class="sidebar__icon">🏠</span>Trang chủ</a></li><li><a href="gioi-thieu.html" class="sidebar__link"><span class="sidebar__icon">📖</span>Giới thiệu</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Các Chương</div><ul class="sidebar__nav"><li><a href="chuong1.html" class="sidebar__link"><span class="sidebar__chapter-num">1</span>Giao diện người dùng</a></li><li><a href="chuong2.html" class="sidebar__link"><span class="sidebar__chapter-num">2</span>Các công cụ làm việc</a></li><li><a href="chuong3.html" class="sidebar__link active"><span class="sidebar__chapter-num">3</span>Bài tập thực hành</a></li><li><a href="chuong4.html" class="sidebar__link"><span class="sidebar__chapter-num">4</span>Dựng biệt thự & nhà phố</a></li><li><a href="chuong5.html" class="sidebar__link"><span class="sidebar__chapter-num">5</span>Sandbox Tools</a></li><li><a href="chuong6.html" class="sidebar__link"><span class="sidebar__chapter-num">6</span>Công cụ nâng cao</a></li><li><a href="chuong7.html" class="sidebar__link"><span class="sidebar__chapter-num">7</span>VRay cho SketchUp</a></li><li><a href="chuong8.html" class="sidebar__link"><span class="sidebar__chapter-num">8</span>Ôn tập</a></li><li><a href="chuong9.html" class="sidebar__link"><span class="sidebar__chapter-num">9</span>Site Plan Modeling</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Dự án</div><ul class="sidebar__nav"><li><a href="du-an-thuc-hanh.html" class="sidebar__link"><span class="sidebar__icon">🎯</span>Dự án thực hành</a></li></ul></div></aside>
+  <aside class="sidebar" id="sidebar"><div class="sidebar__section"><div class="sidebar__label">Nội dung</div><ul class="sidebar__nav"><li><a href="../index.html" class="sidebar__link"><span class="sidebar__icon">🏠</span>Trang chủ</a></li><li><a href="gioi-thieu.html" class="sidebar__link"><span class="sidebar__icon">📖</span>Giới thiệu</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Các Chương</div><ul class="sidebar__nav"><li><a href="chuong1.html" class="sidebar__link"><span class="sidebar__chapter-num">1</span>Giao diện người dùng</a></li><li><a href="chuong2.html" class="sidebar__link"><span class="sidebar__chapter-num">2</span>Các công cụ làm việc</a></li><li><a href="chuong3.html" class="sidebar__link active"><span class="sidebar__chapter-num">3</span>Bài tập thực hành</a></li><li><a href="chuong4.html" class="sidebar__link"><span class="sidebar__chapter-num">4</span>Dựng biệt thự & nhà phố</a></li><li><a href="chuong5.html" class="sidebar__link"><span class="sidebar__chapter-num">5</span>Sandbox Tools</a></li><li><a href="chuong6.html" class="sidebar__link"><span class="sidebar__chapter-num">6</span>Công cụ nâng cao</a></li><li><a href="chuong7.html" class="sidebar__link"><span class="sidebar__chapter-num">7</span>VRay cho SketchUp</a></li><li><a href="chuong8.html" class="sidebar__link"><span class="sidebar__chapter-num">8</span>Ôn tập</a></li><li><a href="chuong9.html" class="sidebar__link"><span class="sidebar__chapter-num">9</span>Site Plan Modeling</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Dự án</div><ul class="sidebar__nav"><li><a href="du-an-thuc-hanh.html" class="sidebar__link"><span class="sidebar__icon">🎯</span>Dự án thực hành</a></li><li><a href="huong-dan-giang-day.html" class="sidebar__link"><span class="sidebar__icon">👨‍🏫</span>Hướng dẫn giảng dạy</a></li></ul></div></aside>
 
   <main class="main">
     <div class="content">
@@ -212,6 +212,144 @@
           <div class="info-box__content">
             Giữ <span class="key">Ctrl</span> khi Pull sẽ tạo <strong>phần mới</strong> thay vì kéo mặt phẳng hiện tại. 
             Rất hữu ích khi thêm chi tiết (mái che, gờ, khung cửa) mà không ảnh hưởng hình dạng gốc.
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <h2>Bài tập bổ sung 3: Khung tranh Gallery</h2>
+        <p>Thực hành Import Image, Explode, Push/Pull, Offset, Follow Me — dựng tranh có khung treo trong phòng trưng bày.</p>
+
+        <div class="info-box info-box--note">
+          <div class="info-box__title">📌 Nguồn tham khảo</div>
+          <div class="info-box__content">
+            Bài tập dựa trên "Art / History Project: Grades 6–9" trong <strong>SketchUp Teacher Guide</strong> (3DVinci).
+          </div>
+        </div>
+
+        <!-- SVG Illustration: Gallery workflow -->
+        <div style="text-align:center; margin: 24px 0;">
+          <svg viewBox="0 0 640 110" width="100%" style="max-width:640px;" xmlns="http://www.w3.org/2000/svg">
+            <defs><marker id="ah3" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#a78bfa"/></marker></defs>
+            <style>.s3{font:700 10px 'Inter',sans-serif;fill:#a78bfa;}.l3{font:500 10px 'Inter',sans-serif;fill:#94a3b8;}.a3{stroke:#a78bfa;stroke-width:2;fill:none;marker-end:url(#ah3);}</style>
+            <!-- Step 1 -->
+            <rect x="5" y="15" width="110" height="80" rx="8" fill="#1a2332" stroke="#334155" stroke-width="1.5"/>
+            <text x="60" y="10" class="s3" text-anchor="middle">① Tìm ảnh</text>
+            <rect x="20" y="30" width="80" height="50" rx="4" fill="#2D3748"/>
+            <text x="60" y="58" class="l3" text-anchor="middle" font-size="9">🖼️ painting</text>
+            <!-- Arrow -->
+            <line x1="125" y1="55" x2="155" y2="55" class="a3"/>
+            <!-- Step 2 -->
+            <rect x="165" y="15" width="110" height="80" rx="8" fill="#1a2332" stroke="#334155" stroke-width="1.5"/>
+            <text x="220" y="10" class="s3" text-anchor="middle">② Import + Explode</text>
+            <rect x="185" y="30" width="70" height="50" rx="3" fill="rgba(167,139,250,0.15)" stroke="#a78bfa" stroke-width="1"/>
+            <text x="220" y="58" class="l3" text-anchor="middle" font-size="8">Face + Texture</text>
+            <!-- Arrow -->
+            <line x1="285" y1="55" x2="315" y2="55" class="a3"/>
+            <!-- Step 3 -->
+            <rect x="325" y="15" width="110" height="80" rx="8" fill="#1a2332" stroke="#334155" stroke-width="1.5"/>
+            <text x="380" y="10" class="s3" text-anchor="middle">③ Offset + Frame</text>
+            <rect x="345" y="28" width="70" height="55" rx="3" fill="#2D3748" stroke="#fbbc04" stroke-width="1.5"/>
+            <rect x="352" y="34" width="56" height="43" rx="2" fill="rgba(167,139,250,0.1)"/>
+            <!-- Arrow -->
+            <line x1="445" y1="55" x2="475" y2="55" class="a3"/>
+            <!-- Step 4 -->
+            <rect x="485" y="15" width="140" height="80" rx="8" fill="#1a2332" stroke="#334155" stroke-width="1.5"/>
+            <text x="555" y="10" class="s3" text-anchor="middle">④ Glue to Any → Treo</text>
+            <rect x="510" y="25" width="8" height="60" rx="1" fill="#334155"/>
+            <rect x="518" y="35" width="40" height="45" rx="3" fill="rgba(167,139,250,0.15)" stroke="#a78bfa" stroke-width="1"/>
+            <rect x="523" y="40" width="30" height="35" rx="2" fill="rgba(66,133,244,0.1)"/>
+            <text x="538" y="60" class="l3" text-anchor="middle" font-size="7">🖼️</text>
+          </svg>
+        </div>
+
+        <ol class="steps">
+          <li>Tìm ảnh tranh trên Internet (Google Image Search) → lưu file JPG/PNG</li>
+          <li>Mở SketchUp file mới → <strong>File → Import → Use as image</strong> → đặt ảnh lên mặt đất</li>
+          <li>Click phải → <strong>Explode</strong> để biến ảnh thành Face</li>
+          <li>Dùng <strong>Push/Pull</strong> kéo mặt ảnh lên ~5mm</li>
+          <li>Chọn mặt sau → <strong>Offset</strong> ra ngoài ~15mm → tạo viền khung</li>
+          <li>Dùng <strong>Push/Pull</strong> kéo viền khung ra ~10mm → tô vật liệu gỗ từ "Wood"</li>
+          <li>(Nâng cao) Vẽ tiết diện phào chỉ → dùng <strong>Follow Me</strong> trượt theo viền khung</li>
+          <li>Vào <strong>Window → Model Info → File</strong> → đặt <strong>Glue to: Any</strong></li>
+          <li>Lưu file (mỗi bức tranh 1 file riêng) → <strong>File → Save As</strong></li>
+          <li>Mở file phòng trưng bày → <strong>File → Import</strong> (chọn .skp) → đặt tranh lên tường</li>
+        </ol>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Mẹo trình bày Gallery</div>
+          <div class="info-box__content">
+            Dùng <strong>Walk</strong>, <strong>Look Around</strong>, <strong>Position Camera</strong> để "đi bộ" xem tranh trong gallery → lưu từng góc nhìn thành <strong>Scene</strong> (<strong>Window → Scenes</strong>) → chạy animation bằng <strong>View → Animation → Play</strong>.
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <h2>Bài tập bổ sung 4: Cầu thang từ Component</h2>
+        <p>Thực hành Component, Move Copy / chia đều, Follow Me — dựng cầu thang có lan can từ 1 bậc thang component.</p>
+
+        <!-- SVG Illustration: Staircase workflow -->
+        <div style="text-align:center; margin: 24px 0;">
+          <svg viewBox="0 0 640 130" width="100%" style="max-width:640px;" xmlns="http://www.w3.org/2000/svg">
+            <defs><marker id="ah4" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#34a853"/></marker></defs>
+            <style>.s4{font:700 10px 'Inter',sans-serif;fill:#34a853;}.l4{font:500 10px 'Inter',sans-serif;fill:#94a3b8;}.a4{stroke:#34a853;stroke-width:2;fill:none;marker-end:url(#ah4);}</style>
+            <!-- Step 1: 1 bậc -->
+            <rect x="5" y="15" width="120" height="100" rx="8" fill="#1a2332" stroke="#334155" stroke-width="1.5"/>
+            <text x="65" y="10" class="s4" text-anchor="middle">① 1 bậc Component</text>
+            <rect x="20" y="70" width="90" height="15" rx="3" fill="rgba(52,168,83,0.2)" stroke="#34a853" stroke-width="1"/>
+            <text x="65" y="82" class="l4" text-anchor="middle" font-size="8">bậc thang</text>
+            <!-- Arrow -->
+            <line x1="135" y1="65" x2="165" y2="65" class="a4"/>
+            <!-- Step 2: Copy / divide -->
+            <rect x="175" y="15" width="120" height="100" rx="8" fill="#1a2332" stroke="#334155" stroke-width="1.5"/>
+            <text x="235" y="10" class="s4" text-anchor="middle">② Copy /N chia đều</text>
+            <!-- Mini stairs -->
+            <rect x="195" y="90" width="80" height="10" rx="2" fill="rgba(52,168,83,0.15)" stroke="#34a853" stroke-width="0.8"/>
+            <rect x="195" y="76" width="65" height="10" rx="2" fill="rgba(52,168,83,0.15)" stroke="#34a853" stroke-width="0.8"/>
+            <rect x="195" y="62" width="50" height="10" rx="2" fill="rgba(52,168,83,0.15)" stroke="#34a853" stroke-width="0.8"/>
+            <rect x="195" y="48" width="35" height="10" rx="2" fill="rgba(52,168,83,0.15)" stroke="#34a853" stroke-width="0.8"/>
+            <text x="235" y="40" class="l4" text-anchor="middle" font-size="8">/9 → 10 bậc</text>
+            <!-- Arrow -->
+            <line x1="305" y1="65" x2="335" y2="65" class="a4"/>
+            <!-- Step 3: Edit + railing -->
+            <rect x="345" y="15" width="130" height="100" rx="8" fill="#1a2332" stroke="#334155" stroke-width="1.5"/>
+            <text x="410" y="10" class="s4" text-anchor="middle">③ Edit → Lan can</text>
+            <!-- Mini stairs with rail -->
+            <rect x="365" y="90" width="80" height="8" rx="2" fill="rgba(52,168,83,0.1)" stroke="#34a853" stroke-width="0.6"/>
+            <rect x="365" y="78" width="65" height="8" rx="2" fill="rgba(52,168,83,0.1)" stroke="#34a853" stroke-width="0.6"/>
+            <rect x="365" y="66" width="50" height="8" rx="2" fill="rgba(52,168,83,0.1)" stroke="#34a853" stroke-width="0.6"/>
+            <rect x="365" y="54" width="35" height="8" rx="2" fill="rgba(52,168,83,0.1)" stroke="#34a853" stroke-width="0.6"/>
+            <line x1="365" y1="54" x2="365" y2="30" stroke="#fbbc04" stroke-width="1.5"/>
+            <line x1="365" y1="30" x2="445" y2="68" stroke="#fbbc04" stroke-width="1.5"/>
+            <text x="410" y="42" class="l4" text-anchor="middle" font-size="8" fill="#fbbc04">Follow Me</text>
+            <!-- Arrow -->
+            <line x1="485" y1="65" x2="515" y2="65" class="a4"/>
+            <!-- Step 4: Result -->
+            <rect x="525" y="15" width="105" height="100" rx="8" fill="#1a2332" stroke="#334155" stroke-width="1.5"/>
+            <text x="577" y="10" class="s4" text-anchor="middle">④ Kết quả</text>
+            <text x="577" y="65" class="l4" text-anchor="middle" font-size="22">🪜</text>
+            <text x="577" y="90" class="l4" text-anchor="middle" font-size="8">Cầu thang</text>
+            <text x="577" y="100" class="l4" text-anchor="middle" font-size="8">+ lan can</text>
+          </svg>
+        </div>
+
+        <ol class="steps">
+          <li>Vẽ <strong>Rectangle</strong> nhỏ (~120cm × 2cm) dọc theo tường → đây là bậc thang đầu tiên</li>
+          <li><strong>Select</strong> mặt + cạnh → Click phải → <strong>Make Component</strong> (đặt tên "Step")</li>
+          <li>Double-click vào component → dùng <strong>Push/Pull</strong> kéo bậc thang dài ~100cm</li>
+          <li>Đóng component → dùng <strong>Move</strong> + <span class="key">Ctrl</span> copy bậc thang đầu lên đầu cầu thang</li>
+          <li>Nhập <span class="key">/9</span> → Enter → SketchUp tự chia đều 10 bậc giữa 2 điểm</li>
+          <li>Double-click vào bất kỳ bậc nào → vẽ đường <strong>Line</strong> thẳng đứng (3 feet) tại góc bậc</li>
+          <li>Vẽ thêm Line nối đỉnh cột thẳng đứng sang bậc kế tiếp (đường chéo lan can)</li>
+          <li>Vẽ <strong>Circle</strong> nhỏ tại chân cột → <strong>Select</strong> 2 đường Line</li>
+          <li>Kích hoạt <strong>Follow Me</strong> → click vào Circle → ống lan can xuất hiện tại <strong>tất cả</strong> bậc thang</li>
+          <li>Tô vật liệu Metal cho lan can, Wood cho bậc thang</li>
+        </ol>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Sức mạnh Component</div>
+          <div class="info-box__content">
+            Vì mọi bậc thang đều là <strong>component giống nhau</strong>, chỉ cần vẽ lan can trong <strong>1 bậc</strong> → tất cả bậc khác tự tạo lan can tương tự. Đây là lợi ích lớn nhất của Component so với Group!
           </div>
         </div>
       </div>

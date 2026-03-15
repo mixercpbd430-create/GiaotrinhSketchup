@@ -36,6 +36,13 @@
               <li><a href="chuong9.html" class="sidebar__link"><span class="sidebar__chapter-num">9</span>Site Plan Modeling</a></li>
         </ul>
     </div>
+    <div class="sidebar__section">
+      <div class="sidebar__label">Dự án</div>
+      <ul class="sidebar__nav">
+        <li><a href="du-an-thuc-hanh.html" class="sidebar__link"><span class="sidebar__icon">🎯</span>Dự án thực hành</a></li>
+        <li><a href="huong-dan-giang-day.html" class="sidebar__link"><span class="sidebar__icon">👨‍🏫</span>Hướng dẫn giảng dạy</a></li>
+      </ul>
+    </div>
   </aside>
 
   <main class="main">
@@ -72,6 +79,9 @@
             <li><a href="#protractor">6.2. Protractor</a></li>
             <li><a href="#dimension">6.3. Dimension & Text</a></li>
             <li><a href="#section-plane">6.4. Section Plane</a></li>
+            <li><a href="#import-image">7.1. Import Image — Nhập ảnh</a></li>
+            <li><a href="#glue-to">7.2. Glue to — Dán component</a></li>
+            <li><a href="#scale-center">7.3. Scale từ tâm</a></li>
           </ul>
         </div>
 
@@ -568,6 +578,188 @@
             Vào <strong>View → Face Style → X-ray</strong> để mô hình trở nên <strong>trong suốt</strong>. 
             Rất tiện khi cần nhìn và chỉnh sửa các đường bên trong mô hình (ví dụ: xóa đường thừa bên trong nhà). 
             Kết hợp X-ray với Section Plane giúp kiểm tra thiết kế nội thất từ mọi góc nhìn.
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- ═══ IMPORT IMAGE ═══ -->
+        <h2 id="import-image">7.1. Import Image — Nhập ảnh vào mô hình</h2>
+        <div class="info-box info-box--note">
+          <div class="info-box__title">📌 Nguồn bổ sung</div>
+          <div class="info-box__content">
+            Nội dung phần 7 tham khảo từ <strong>"SketchUp Teacher Guide"</strong> — 3DVinci (www.3dvinci.net).
+          </div>
+        </div>
+        <p>SketchUp cho phép nhập ảnh (JPEG, PNG, BMP, TIF) vào mô hình để làm vật liệu hoặc dán lên bề mặt.</p>
+
+        <h3>Cách 1: Import as Image (Ảnh độc lập)</h3>
+        <ol class="steps">
+          <li>Vào <strong>File → Import</strong> → chọn loại file "Image files"</li>
+          <li>Check <strong>"Use as image"</strong> → chọn file ảnh → Open</li>
+          <li>Click đặt góc ảnh lên mô hình → kéo chuột xác định kích thước → click xong</li>
+          <li>Ảnh nhập vào là <strong>Component</strong> — có thể Move, Rotate, Scale</li>
+        </ol>
+
+        <!-- SVG Illustration: Import Image flow -->
+        <div style="text-align:center; margin: 24px 0;">
+          <svg viewBox="0 0 680 120" width="100%" style="max-width:680px;" xmlns="http://www.w3.org/2000/svg">
+            <style>
+              .svg-label { font: 500 11px 'Inter', sans-serif; fill: #94a3b8; }
+              .svg-step { font: 700 10px 'Inter', sans-serif; fill: #4285f4; }
+              .svg-arrow { stroke: #4285f4; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+            </style>
+            <defs><marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#4285f4"/></marker></defs>
+            <!-- Step 1: File Import -->
+            <rect x="10" y="20" width="120" height="80" rx="8" fill="#1a2332" stroke="#334155" stroke-width="1.5"/>
+            <text x="70" y="10" class="svg-step" text-anchor="middle">① File → Import</text>
+            <rect x="25" y="40" width="90" height="12" rx="3" fill="#334155"/>
+            <text x="70" y="49" class="svg-label" text-anchor="middle" font-size="9">photo.jpg</text>
+            <rect x="35" y="60" width="70" height="28" rx="4" fill="rgba(66,133,244,0.15)" stroke="#4285f4" stroke-width="1"/>
+            <text x="70" y="78" class="svg-label" text-anchor="middle" fill="#60a5fa" font-size="9">Use as image ✓</text>
+            <!-- Arrow 1 -->
+            <line x1="140" y1="60" x2="175" y2="60" class="svg-arrow"/>
+            <!-- Step 2: Place -->
+            <rect x="185" y="20" width="120" height="80" rx="8" fill="#1a2332" stroke="#334155" stroke-width="1.5"/>
+            <text x="245" y="10" class="svg-step" text-anchor="middle">② Đặt lên model</text>
+            <rect x="205" y="35" width="80" height="55" rx="4" fill="#2D3748" stroke="#4285f4" stroke-width="1" stroke-dasharray="4,3"/>
+            <text x="245" y="66" class="svg-label" text-anchor="middle" font-size="9">🖼️ Ảnh</text>
+            <!-- Arrow 2 -->
+            <line x1="315" y1="60" x2="350" y2="60" class="svg-arrow"/>
+            <!-- Step 3: Explode -->
+            <rect x="360" y="20" width="120" height="80" rx="8" fill="#1a2332" stroke="#334155" stroke-width="1.5"/>
+            <text x="420" y="10" class="svg-step" text-anchor="middle">③ Explode</text>
+            <rect x="380" y="35" width="80" height="55" rx="4" fill="rgba(52,168,83,0.15)" stroke="#34a853" stroke-width="1"/>
+            <text x="420" y="60" class="svg-label" text-anchor="middle" fill="#34a853" font-size="9">Face có</text>
+            <text x="420" y="74" class="svg-label" text-anchor="middle" fill="#34a853" font-size="9">Texture ✓</text>
+            <!-- Arrow 3 -->
+            <line x1="490" y1="60" x2="525" y2="60" class="svg-arrow"/>
+            <!-- Step 4: Push/Pull -->
+            <rect x="535" y="20" width="120" height="80" rx="8" fill="#1a2332" stroke="#334155" stroke-width="1.5"/>
+            <text x="595" y="10" class="svg-step" text-anchor="middle">④ Push/Pull + Frame</text>
+            <rect x="555" y="32" width="80" height="58" rx="4" fill="#2D3748" stroke="#fbbc04" stroke-width="1.5"/>
+            <rect x="563" y="38" width="64" height="46" rx="2" fill="rgba(66,133,244,0.1)"/>
+            <text x="595" y="66" class="svg-label" text-anchor="middle" font-size="9">🖼️</text>
+          </svg>
+        </div>
+
+        <h3>Cách 2: Import as Texture (Vật liệu)</h3>
+        <ol class="steps">
+          <li>Vào <strong>File → Import</strong> → check <strong>"Use as texture"</strong></li>
+          <li>Click vào mặt phẳng cần dán ảnh → ảnh tự phủ đầy mặt phẳng</li>
+          <li>Ảnh trở thành vật liệu — có thể dùng Paint Bucket dán lên mặt khác</li>
+        </ol>
+
+        <h3>Explode Image — Biến ảnh thành Face</h3>
+        <p>Ảnh import dạng Image là Component — không thể Push/Pull trực tiếp. Cần <strong>Explode</strong> trước:</p>
+        <ol class="steps">
+          <li>Click phải vào ảnh → chọn <strong>Explode</strong></li>
+          <li>Ảnh trở thành <strong>Face</strong> có texture (hình ảnh) dán phủ lên</li>
+          <li>Bây giờ có thể <strong>Push/Pull</strong> để tạo chiều sâu cho ảnh</li>
+          <li>Dùng <strong>Offset</strong> trên mặt sau → Push/Pull tạo khung tranh</li>
+        </ol>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Tạo khung tranh chuyên nghiệp</div>
+          <div class="info-box__content">
+            Sau khi Explode ảnh → <strong>Push/Pull</strong> nhẹ lên (~5mm) để ảnh không cùng mặt phẳng với tường → <strong>Offset</strong> mặt sau → Push/Pull khung ra → tô màu gỗ cho khung. Dùng <strong>Follow Me</strong> với tiết diện để tạo khung phào chỉ phức tạp.
+          </div>
+        </div>
+
+        <!-- ═══ GLUE TO ═══ -->
+        <h2 id="glue-to">7.2. Glue to — Cài đặt dán Component</h2>
+        <p>Khi tạo Component dùng lại nhiều lần (tranh, cửa sổ, biển hiệu), cài đặt <strong>Glue to</strong> giúp component tự căn chỉnh khi đặt lên mặt phẳng.</p>
+
+        <!-- SVG Illustration: Glue to options -->
+        <div style="text-align:center; margin: 24px 0;">
+          <svg viewBox="0 0 560 130" width="100%" style="max-width:560px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Horizontal -->
+            <rect x="10" y="10" width="160" height="110" rx="8" fill="#1a2332" stroke="#334155" stroke-width="1.5"/>
+            <text x="90" y="30" class="svg-step" text-anchor="middle">Horizontal</text>
+            <rect x="30" y="45" width="120" height="8" rx="2" fill="#334155"/>
+            <rect x="60" y="20" width="40" height="25" rx="3" fill="rgba(66,133,244,0.2)" stroke="#4285f4" stroke-width="1"/>
+            <text x="90" y="75" class="svg-label" text-anchor="middle" font-size="9">Dán lên mặt ngang</text>
+            <text x="90" y="88" class="svg-label" text-anchor="middle" font-size="9">(sàn, trần, mái)</text>
+            <!-- Vertical -->
+            <rect x="200" y="10" width="160" height="110" rx="8" fill="#1a2332" stroke="#334155" stroke-width="1.5"/>
+            <text x="280" y="30" class="svg-step" text-anchor="middle">Vertical</text>
+            <rect x="220" y="35" width="8" height="75" rx="2" fill="#334155"/>
+            <rect x="228" y="50" width="25" height="40" rx="3" fill="rgba(52,168,83,0.2)" stroke="#34a853" stroke-width="1"/>
+            <text x="280" y="88" class="svg-label" text-anchor="middle" font-size="9">Dán lên tường</text>
+            <!-- Any -->
+            <rect x="390" y="10" width="160" height="110" rx="8" fill="#1a2332" stroke="#334155" stroke-width="1.5"/>
+            <text x="470" y="30" class="svg-step" text-anchor="middle">Any</text>
+            <line x1="410" y1="90" x2="530" y2="45" stroke="#334155" stroke-width="2"/>
+            <rect x="445" y="48" width="30" height="25" rx="3" fill="rgba(251,188,4,0.2)" stroke="#fbbc04" stroke-width="1" transform="rotate(-20,460,60)"/>
+            <text x="470" y="88" class="svg-label" text-anchor="middle" font-size="9">Dán lên mặt bất kỳ</text>
+            <text x="470" y="101" class="svg-label" text-anchor="middle" font-size="9">(tường, sàn, dốc)</text>
+          </svg>
+        </div>
+
+        <ol class="steps">
+          <li>Vào <strong>Window → Model Info → File</strong></li>
+          <li>Tại mục <strong>Glue to</strong>, chọn:
+            <ul>
+              <li><strong>None:</strong> Component không dính vào mặt nào</li>
+              <li><strong>Any:</strong> Dán lên mọi mặt phẳng (khuyến nghị cho tranh, biển hiệu)</li>
+              <li><strong>Horizontal:</strong> Chỉ dán lên mặt ngang (nội thất sàn)</li>
+              <li><strong>Vertical:</strong> Chỉ dán lên mặt đứng (cửa sổ, tranh tường)</li>
+            </ul>
+          </li>
+          <li>Lưu file component → khi Import vào model khác, component tự dán đúng mặt</li>
+        </ol>
+
+        <div class="info-box info-box--warning">
+          <div class="info-box__title">⚠️ Lưu ý Model từ 3D Warehouse</div>
+          <div class="info-box__content">
+            Model tải từ 3D Warehouse có thể:
+            <ul style="margin-top:8px;">
+              <li>Nằm <strong>xa gốc tọa độ</strong> — cần Move về gốc</li>
+              <li>Có <strong>tỉ lệ sai</strong> — dùng Tape Measure để đo và điều chỉnh</li>
+              <li>Thiếu cài đặt <strong>Glue to</strong> — cần kiểm tra Model Info</li>
+            </ul>
+            Luôn kiểm tra kỹ trước khi sử dụng trong dự án chính thức.
+          </div>
+        </div>
+
+        <!-- ═══ SCALE FROM CENTER ═══ -->
+        <h2 id="scale-center">7.3. Scale từ tâm — Giữ Ctrl khi Scale</h2>
+        <p>Kỹ thuật nâng cao khi dùng Scale để tạo hình dạng phức tạp:</p>
+
+        <!-- SVG Illustration: Scale from center -->
+        <div style="text-align:center; margin: 24px 0;">
+          <svg viewBox="0 0 500 140" width="100%" style="max-width:500px;" xmlns="http://www.w3.org/2000/svg">
+            <!-- Before -->
+            <rect x="10" y="10" width="200" height="120" rx="8" fill="#1a2332" stroke="#334155" stroke-width="1.5"/>
+            <text x="110" y="30" class="svg-step" text-anchor="middle">Trước: Hộp</text>
+            <rect x="40" y="45" width="140" height="75" rx="2" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4,3"/>
+            <rect x="40" y="45" width="140" height="10" rx="2" fill="rgba(66,133,244,0.2)" stroke="#4285f4" stroke-width="1"/>
+            <text x="110" y="53" class="svg-label" text-anchor="middle" font-size="8" fill="#60a5fa">Mặt trên</text>
+            <circle cx="110" cy="50" r="3" fill="#fbbc04"/>
+            <text x="115" y="42" class="svg-label" font-size="8" fill="#fbbc04">tâm</text>
+            <!-- Arrow -->
+            <line x1="220" y1="75" x2="275" y2="75" class="svg-arrow"/>
+            <text x="248" y="68" class="svg-label" text-anchor="middle" font-size="8">Scale + Ctrl</text>
+            <!-- After -->
+            <rect x="290" y="10" width="200" height="120" rx="8" fill="#1a2332" stroke="#334155" stroke-width="1.5"/>
+            <text x="390" y="30" class="svg-step" text-anchor="middle">Sau: Hình thang</text>
+            <polygon points="340,120 460,120 430,50 370,50" fill="none" stroke="#34a853" stroke-width="1.5"/>
+            <rect x="370" y="50" width="60" height="8" rx="2" fill="rgba(52,168,83,0.2)" stroke="#34a853" stroke-width="1"/>
+            <text x="400" y="56" class="svg-label" text-anchor="middle" font-size="7" fill="#34a853">thu nhỏ</text>
+          </svg>
+        </div>
+
+        <ol class="steps">
+          <li>Chọn <strong>mặt trên</strong> của khối hộp (dùng Select)</li>
+          <li>Kích hoạt <strong>Scale</strong> (<span class="key">S</span>)</li>
+          <li>Giữ <span class="key">Ctrl</span> (Mac: <span class="key">Option</span>) → kéo grip đỉnh → mặt thu nhỏ <strong>từ tâm</strong></li>
+          <li>Kết quả: khối thang cắt / hình chóp cụt — rất hữu ích khi làm mái, bệ, tượng đài</li>
+        </ol>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Kết hợp với Unfold</div>
+          <div class="info-box__content">
+            Sau khi Scale tạo hình thang, mỗi mặt có thể tách thành <strong>Group</strong> riêng → dùng <strong>Rotate</strong> "mở" từng mặt ra phẳng → in ra giấy và gấp → tạo mô hình vật lý thực!
           </div>
         </div>
       </div>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hướng dẫn giảng dạy SketchUp - Phân bổ dự án theo cấp độ, mẹo giảng dạy, rubric đánh giá">
+  <title>Hướng dẫn giảng dạy | Giáo Trình SketchUp</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="reading-progress" id="reading-progress"></div>
+  <header class="header"><a href="../index.html" class="header__brand"><div class="header__logo">SU</div>Giáo Trình SketchUp</a><button class="header__toggle" id="sidebar-toggle">☰</button></header>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <aside class="sidebar" id="sidebar"><div class="sidebar__section"><div class="sidebar__label">Nội dung</div><ul class="sidebar__nav"><li><a href="../index.html" class="sidebar__link"><span class="sidebar__icon">🏠</span>Trang chủ</a></li><li><a href="gioi-thieu.html" class="sidebar__link"><span class="sidebar__icon">📖</span>Giới thiệu</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Các Chương</div><ul class="sidebar__nav"><li><a href="chuong1.html" class="sidebar__link"><span class="sidebar__chapter-num">1</span>Giao diện người dùng</a></li><li><a href="chuong2.html" class="sidebar__link"><span class="sidebar__chapter-num">2</span>Các công cụ làm việc</a></li><li><a href="chuong3.html" class="sidebar__link"><span class="sidebar__chapter-num">3</span>Bài tập thực hành</a></li><li><a href="chuong4.html" class="sidebar__link"><span class="sidebar__chapter-num">4</span>Dựng biệt thự &amp; nhà phố</a></li><li><a href="chuong5.html" class="sidebar__link"><span class="sidebar__chapter-num">5</span>Sandbox Tools</a></li><li><a href="chuong6.html" class="sidebar__link"><span class="sidebar__chapter-num">6</span>Công cụ nâng cao</a></li><li><a href="chuong7.html" class="sidebar__link"><span class="sidebar__chapter-num">7</span>VRay cho SketchUp</a></li><li><a href="chuong8.html" class="sidebar__link"><span class="sidebar__chapter-num">8</span>Ôn tập</a></li><li><a href="chuong9.html" class="sidebar__link"><span class="sidebar__chapter-num">9</span>Site Plan Modeling</a></li></ul></div><div class="sidebar__section"><div class="sidebar__label">Dự án</div><ul class="sidebar__nav"><li><a href="du-an-thuc-hanh.html" class="sidebar__link"><span class="sidebar__icon">🎯</span>Dự án thực hành</a></li><li><a href="huong-dan-giang-day.html" class="sidebar__link active"><span class="sidebar__icon">👨‍🏫</span>Hướng dẫn giảng dạy</a></li></ul></div></aside>
+
+  <main class="main">
+    <div class="content">
+      <div class="chapter-header">
+        <div class="chapter-header__breadcrumb"><a href="../index.html">Trang chủ</a> <span>/</span> <span>Hướng dẫn giảng dạy</span></div>
+        <div class="chapter-header__num">👨‍🏫 Dành cho Giáo viên</div>
+        <h1 class="chapter-header__title">Hướng dẫn giảng dạy SketchUp</h1>
+        <p class="chapter-header__desc">Phân bổ dự án theo cấp độ, mẹo giảng dạy hiệu quả, tiêu chí đánh giá chi tiết — dành cho giáo viên và người hướng dẫn.</p>
+      </div>
+
+      <div class="chapter-content">
+        <div class="info-box info-box--note">
+          <div class="info-box__title">📌 Nguồn tham khảo</div>
+          <div class="info-box__content">
+            Trang này được biên soạn dựa trên <strong>"SketchUp Teacher Guide"</strong> của 3DVinci (www.3dvinci.net) kết hợp kinh nghiệm giảng dạy thực tế.
+          </div>
+        </div>
+
+        <!-- ═══ 1. PHÂN BỔ DỰ ÁN ═══ -->
+        <h2 id="phan-bo">1. Phân bổ dự án theo cấp độ</h2>
+        <p>Các dự án trong giáo trình được chia thành 3 cấp độ, phù hợp cho việc sắp xếp lộ trình giảng dạy.</p>
+
+        <!-- SVG: Level distribution -->
+        <div style="text-align:center; margin: 24px 0;">
+          <svg viewBox="0 0 700 180" width="100%" style="max-width:700px;" xmlns="http://www.w3.org/2000/svg">
+            <style>
+              .lvl-h{font:700 12px 'Inter',sans-serif;fill:#f1f5f9;}
+              .lvl-t{font:500 10px 'Inter',sans-serif;fill:#94a3b8;}
+              .lvl-n{font:700 9px 'Inter',sans-serif;}
+            </style>
+            <!-- Beginner -->
+            <rect x="10" y="10" width="210" height="160" rx="10" fill="#1a2332" stroke="rgba(52,168,83,0.3)" stroke-width="1.5"/>
+            <rect x="10" y="10" width="210" height="4" rx="2" fill="#34a853"/>
+            <text x="115" y="35" class="lvl-h" text-anchor="middle">🟢 Cơ bản</text>
+            <text x="115" y="55" class="lvl-t" text-anchor="middle">Tuần 1–4</text>
+            <text x="30" y="80" class="lvl-n" fill="#34a853">DA1</text><text x="55" y="80" class="lvl-t">Nhà đơn giản</text>
+            <text x="30" y="100" class="lvl-n" fill="#34a853">DA4</text><text x="55" y="100" class="lvl-t">Hoa văn tròn</text>
+            <text x="30" y="120" class="lvl-n" fill="#34a853">DA7</text><text x="55" y="120" class="lvl-t">Biệt thự đơn giản</text>
+            <text x="30" y="140" class="lvl-n" fill="#34a853">DA10</text><text x="58" y="140" class="lvl-t">Nhà garage</text>
+            <text x="115" y="162" class="lvl-t" text-anchor="middle" font-size="9">4 dự án · ~16 tiết</text>
+            <!-- Intermediate -->
+            <rect x="240" y="10" width="210" height="160" rx="10" fill="#1a2332" stroke="rgba(251,188,4,0.3)" stroke-width="1.5"/>
+            <rect x="240" y="10" width="210" height="4" rx="2" fill="#fbbc04"/>
+            <text x="345" y="35" class="lvl-h" text-anchor="middle">🟡 Trung bình</text>
+            <text x="345" y="55" class="lvl-t" text-anchor="middle">Tuần 5–10</text>
+            <text x="260" y="80" class="lvl-n" fill="#fbbc04">DA2</text><text x="285" y="80" class="lvl-t">Tòa nhà Component</text>
+            <text x="260" y="100" class="lvl-n" fill="#fbbc04">DA5</text><text x="285" y="100" class="lvl-t">Gấp mở khối</text>
+            <text x="260" y="120" class="lvl-n" fill="#fbbc04">DA8</text><text x="285" y="120" class="lvl-t">Nhà phố liền kề</text>
+            <text x="260" y="140" class="lvl-n" fill="#fbbc04">DA9</text><text x="285" y="140" class="lvl-t">Cải tạo nội thất</text>
+            <text x="345" y="162" class="lvl-t" text-anchor="middle" font-size="9">4 dự án · ~24 tiết</text>
+            <!-- Advanced -->
+            <rect x="470" y="10" width="220" height="160" rx="10" fill="#1a2332" stroke="rgba(234,67,53,0.3)" stroke-width="1.5"/>
+            <rect x="470" y="10" width="220" height="4" rx="2" fill="#ea4335"/>
+            <text x="580" y="35" class="lvl-h" text-anchor="middle">🔴 Nâng cao</text>
+            <text x="580" y="55" class="lvl-t" text-anchor="middle">Tuần 11–14</text>
+            <text x="490" y="80" class="lvl-n" fill="#ea4335">DA3</text><text x="515" y="80" class="lvl-t">Dream Bedroom</text>
+            <text x="490" y="100" class="lvl-n" fill="#ea4335">DA6</text><text x="515" y="100" class="lvl-t">Golden Section</text>
+            <text x="490" y="120" class="lvl-n" fill="#ea4335">DA11</text><text x="518" y="120" class="lvl-t">Site Plan Plaza</text>
+            <text x="490" y="140" class="lvl-n" fill="#ea4335">DA12–13</text><text x="535" y="140" class="lvl-t">Grading / Canopy</text>
+            <text x="580" y="162" class="lvl-t" text-anchor="middle" font-size="9">5 dự án · ~20 tiết</text>
+          </svg>
+        </div>
+
+        <table>
+          <thead>
+            <tr><th>Cấp độ</th><th>Dự án</th><th>Kỹ năng chính</th><th>Số tiết</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span style="color:#34a853;">🟢 Cơ bản</span></td><td>DA 1, 4, 7, 10</td><td>Rectangle, Push/Pull, Line, Move, Paint Bucket, Arc</td><td>~4 tiết/DA</td></tr>
+            <tr><td><span style="color:#fbbc04;">🟡 Trung bình</span></td><td>DA 2, 5, 8, 9</td><td>Component, Array Copy, Rotate, Follow Me, Offset, Group</td><td>~6 tiết/DA</td></tr>
+            <tr><td><span style="color:#ea4335;">🔴 Nâng cao</span></td><td>DA 3, 6, 11–13</td><td>Scale, Import, Glue to, Terrain, Google Earth, Extension</td><td>~4 tiết/DA</td></tr>
+          </tbody>
+        </table>
+
+        <!-- ═══ 2. MẸO GIẢNG DẠY ═══ -->
+        <h2 id="meo">2. Mẹo giảng dạy hiệu quả</h2>
+
+        <h3>2.1 Thứ tự giới thiệu công cụ</h3>
+        <ol class="steps">
+          <li><strong>Buổi 1:</strong> Giao diện (Ch1) + Rectangle + Push/Pull → học sinh tạo được khối 3D trong 15 phút đầu</li>
+          <li><strong>Buổi 2:</strong> Line + Move + Arc → vẽ mái nhà, cửa vòm → hoàn thành DA1</li>
+          <li><strong>Buổi 3:</strong> Paint Bucket + Eraser + Materials → tô màu và vật liệu</li>
+          <li><strong>Buổi 4:</strong> Group + Component + Make Component → khái niệm quan trọng nhất</li>
+          <li><strong>Buổi 5:</strong> Move Copy (x3, /7) + Rotate Copy → sức mạnh array</li>
+          <li><strong>Buổi 6+:</strong> Follow Me, Offset, Scale, Import → kỹ thuật nâng cao</li>
+        </ol>
+
+        <h3>2.2 Lỗi phổ biến của học sinh</h3>
+        <table>
+          <thead>
+            <tr><th>Lỗi</th><th>Nguyên nhân</th><th>Cách khắc phục</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Line không tạo mặt phẳng</td><td>Đường không khép kín hoặc không đồng phẳng</td><td>Kiểm tra "On Face" tooltip, vẽ trên cùng 1 mặt</td></tr>
+            <tr><td>Đối tượng dính nhau</td><td>Không dùng Group/Component</td><td>Luôn Group ngay khi tạo xong bộ phận</td></tr>
+            <tr><td>Push/Pull sai hướng</td><td>Không khóa hướng</td><td>Giữ Shift khóa trục trước khi kéo</td></tr>
+            <tr><td>Model quá chậm</td><td>Quá nhiều polygon từ Circle/Arc</td><td>Giảm segment (12s thay vì 24s)</td></tr>
+            <tr><td>Component sai tỉ lệ từ Warehouse</td><td>Người upload thiếu kiểm tra</td><td>Dùng Tape Measure đo + nhập kích thước thật</td></tr>
+            <tr><td>Mặt bị đen (reversed)</td><td>Mặt trái hiển thị</td><td>Click phải → Reverse Faces</td></tr>
+          </tbody>
+        </table>
+
+        <h3>2.3 Mẹo quản lý lớp</h3>
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Workflow lớp học</div>
+          <div class="info-box__content">
+            <strong>1. Demo:</strong> Giáo viên chiếu màn hình làm mẫu 10–15 phút<br>
+            <strong>2. Practice:</strong> Học sinh tự làm theo — giáo viên đi quanh hỗ trợ<br>
+            <strong>3. Explore:</strong> Học sinh thêm sáng tạo riêng (thay đổi màu, hình dạng, chi tiết)<br>
+            <strong>4. Share:</strong> Lưu vào thư mục chung hoặc upload 3D Warehouse → cả lớp xem
+          </div>
+        </div>
+
+        <!-- ═══ 3. RUBRIC ═══ -->
+        <h2 id="rubric">3. Tiêu chí đánh giá (Rubric)</h2>
+        <p>Bảng tiêu chí gợi ý cho việc chấm điểm các dự án thực hành:</p>
+
+        <table>
+          <thead>
+            <tr><th>Tiêu chí</th><th>Xuất sắc (9–10)</th><th>Khá (7–8)</th><th>Đạt (5–6)</th><th>Chưa đạt (&lt;5)</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Hoàn thành</strong></td>
+              <td>Đầy đủ các bước, có thêm chi tiết sáng tạo</td>
+              <td>Đầy đủ các bước cơ bản</td>
+              <td>Thiếu 1–2 bước</td>
+              <td>Thiếu nhiều bước</td>
+            </tr>
+            <tr>
+              <td><strong>Kỹ thuật</strong></td>
+              <td>Dùng đúng công cụ, quy trình tối ưu</td>
+              <td>Dùng đúng công cụ</td>
+              <td>Có sai sót nhỏ</td>
+              <td>Sai công cụ hoặc bỏ qua Group</td>
+            </tr>
+            <tr>
+              <td><strong>Thẩm mỹ</strong></td>
+              <td>Vật liệu phong phú, tỉ lệ hài hòa</td>
+              <td>Có vật liệu, tỉ lệ hợp lý</td>
+              <td>Ít vật liệu hoặc tỉ lệ chưa đúng</td>
+              <td>Không tô màu</td>
+            </tr>
+            <tr>
+              <td><strong>Sáng tạo</strong></td>
+              <td>Thiết kế độc đáo, cá nhân hóa</td>
+              <td>Có thay đổi so với mẫu</td>
+              <td>Làm theo mẫu</td>
+              <td>Copy từ bạn</td>
+            </tr>
+            <tr>
+              <td><strong>Tổ chức mô hình</strong></td>
+              <td>Group/Component rõ ràng, đặt tên</td>
+              <td>Có Group/Component</td>
+              <td>Thiếu 1 số Group</td>
+              <td>Không dùng Group</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- ═══ 4. TÀI NGUYÊN ═══ -->
+        <h2 id="tai-nguyen">4. Tài nguyên bổ sung</h2>
+
+        <div class="plugin-grid">
+          <div class="plugin-item">
+            <div class="plugin-item__num">WEBSITE</div>
+            <div class="plugin-item__name">3D Warehouse</div>
+            <div class="plugin-item__desc">Kho mô hình 3D miễn phí — tìm kiếm furniture, architecture, landscape components cho dự án.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">WEBSITE</div>
+            <div class="plugin-item__name">Extension Warehouse</div>
+            <div class="plugin-item__desc">Plugin mở rộng: Instant Fence, 1001bit, Fredo6 — cài đặt qua Window → Extension Warehouse.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">PDF</div>
+            <div class="plugin-item__name">SketchUp Teacher Guide</div>
+            <div class="plugin-item__desc">3DVinci — hướng dẫn 9 dự án từ Grades 1–12, bao gồm Design, Math, Science, Art.</div>
+          </div>
+          <div class="plugin-item">
+            <div class="plugin-item__num">PDF</div>
+            <div class="plugin-item__name">SketchUp for Site Design</div>
+            <div class="plugin-item__desc">Bonnie Roskes — Process Modeling, Terrain, Flatwork, AutoCAD integration.</div>
+          </div>
+        </div>
+
+        <div class="info-box info-box--tip">
+          <div class="info-box__title">💡 Tạo bộ sưu tập lớp học</div>
+          <div class="info-box__content">
+            Tạo <strong>Google Account</strong> cho lớp → upload model lên 3D Warehouse → tạo <strong>Collection</strong> riêng. Học sinh có thể tải lẫn nhau, vote model đẹp nhất. Đây là cách tuyệt vời để khuyến khích sáng tạo và chia sẻ!
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter-nav">
+        <a href="du-an-thuc-hanh.html" class="chapter-nav__link chapter-nav__link--prev"><span class="chapter-nav__label">← Trước</span><span class="chapter-nav__title">Dự án thực hành</span></a>
+        <a href="../index.html" class="chapter-nav__link chapter-nav__link--next"><span class="chapter-nav__label">Trang chủ →</span><span class="chapter-nav__title">Về trang chủ</span></a>
+      </div>
+      <footer class="footer"><p class="footer__text">Giáo trình SketchUp — <span class="footer__author">DORIC</span> — KTS: <span class="footer__author">Nguyễn Văn Duy</span></p></footer>
+    </div>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>
